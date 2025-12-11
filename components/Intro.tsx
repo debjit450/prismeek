@@ -97,7 +97,7 @@ const Intro: React.FC<IntroProps> = ({ onComplete }) => {
              transition={{ delay: 3, duration: 1 }}
              className="text-[10px] text-p-gold uppercase tracking-[0.5em] font-sans"
         >
-            Atelier
+            Digital Atelier
         </motion.div>
       </div>
     </motion.div>
