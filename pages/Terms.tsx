@@ -1,10 +1,16 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import SEOHead, { PAGE_SEO_CONFIG } from '../components/SEOHead';
 
 const Terms: React.FC = () => {
     useEffect(() => { window.scrollTo(0, 0); }, []);
   return (
     <div className="bg-p-paper dark:bg-p-black min-h-screen pt-32 pb-20 px-6">
+      <SEOHead 
+        title={PAGE_SEO_CONFIG.terms.title}
+        description={PAGE_SEO_CONFIG.terms.description}
+        keywords={PAGE_SEO_CONFIG.terms.keywords}
+      />
       <div className="max-w-3xl mx-auto text-p-ink dark:text-p-cream">
         <h1 className="text-5xl font-serif mb-12">Terms of Service</h1>
         <p className="text-sm font-light text-p-ink/60 dark:text-p-cream/60 mb-12">Last Updated: March 2024</p>

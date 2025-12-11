@@ -1,0 +1,147 @@
+{
+  "organization": {
+    "name": "Prismeek",
+    "type": "Luxury Digital Agency",
+    "tagline": "Elevating Brands to Heritage Status",
+    "founded": "2023",
+    "headquarters": "India",
+    "locations": ["Mumbai", "Bangalore", "Worldwide"],
+    "website": "https://prismeek.com",
+    "contact": {
+      "email": "prismeek@yahoo.com",
+      "phone": "+917439749872",
+      "whatsapp": "https://wa.me/917439749872"
+    },
+    "social": {
+      "instagram": "https://instagram.com/prismeek",
+      "linkedin": "https://linkedin.com/company/prismeek"
+    }
+  },
+  "leadership": {
+    "founder": {
+      "name": "Debjit Dey",
+      "title": "Founder & CEO",
+      "role": "Principal Designer, Lead Developer, Creative Director"
+    }
+  },
+  "services": [
+    {
+      "name": "Web Platforms",
+      "description": "High-performance luxury websites including corporate flagships, e-commerce ateliers, immersive WebGL experiences, and headless CMS development"
+    },
+    {
+      "name": "Software Engineering",
+      "description": "Enterprise SaaS architecture, cloud infrastructure, custom API integrations, and business logic development"
+    },
+    {
+      "name": "Mobile Ecosystems",
+      "description": "iOS and Android native apps, React Native cross-platform development, and mobile UI/UX design"
+    },
+    {
+      "name": "Brand Identity",
+      "description": "Visual identity systems, rebranding, art direction, and motion graphics"
+    },
+    {
+      "name": "Growth Strategy",
+      "description": "SEO, content curation, performance analytics, and market positioning"
+    },
+    {
+      "name": "AI Concierge",
+      "description": "LLM integration with ChatGPT, Claude, Gemini, workflow automation, and AI consulting"
+    }
+  ],
+  "industries": [
+    "E-Commerce & Retail",
+    "Hospitality & Travel",
+    "Fintech & Banking",
+    "Real Estate",
+    "SaaS & Technology",
+    "Art & Culture"
+  ],
+  "pricing": {
+    "packages": [
+      {
+        "name": "The Essential",
+        "price": "From ₹60,000 (approx $720 USD)",
+        "includes": ["Visual Identity System", "Custom Web Development", "Mobile Optimization", "Basic SEO Framework"]
+      },
+      {
+        "name": "The Signature",
+        "price": "From ₹1,50,000 (approx $1,800 USD)",
+        "includes": ["Brand Strategy", "Full-Stack Web App", "Content Management System", "Content Writing", "Marketing Setup"]
+      },
+      {
+        "name": "The Heritage",
+        "price": "Custom Pricing",
+        "includes": ["Global Brand Architecture", "AI Integration", "3D & Immersive Design", "App Development", "24/7 Support"]
+      }
+    ]
+  },
+  "portfolio": [
+    {
+      "client": "Collabtalent",
+      "category": "AI Productivity",
+      "year": "2024",
+      "description": "AI tool that records meetings and turns them into notes and tasks automatically",
+      "technologies": ["React", "Python (FastAPI)", "OpenAI Whisper", "WebSockets"],
+      "results": "300% increase in user retention, Product Hunt 'Product of the Month'",
+      "url": "https://collabtalent.ai"
+    },
+    {
+      "client": "Octa",
+      "category": "Travel Tech Platform",
+      "year": "2023",
+      "description": "Complete travel platform with customer app, driver app, and admin dashboard",
+      "technologies": ["React Native", "Node.js", "Google Maps API", "AWS"],
+      "results": "2.5 second booking speed improvement, 4.8-star App Store rating",
+      "url": "https://octacabs.com"
+    },
+    {
+      "client": "Project Ledger",
+      "category": "Fintech Interface",
+      "year": "2024",
+      "description": "Premium financial dashboard for tracking investments and wealth growth",
+      "technologies": ["Next.js", "D3.js", "WebGL", "PostgreSQL"],
+      "results": "Used by 3 major wealth management firms in Mumbai and Singapore"
+    },
+    {
+      "client": "Vanya Heritage",
+      "category": "Luxury Hospitality",
+      "year": "2023",
+      "description": "3D website and booking engine for boutique luxury hotel in Rajasthan",
+      "technologies": ["Three.js", "React", "Sanity CMS", "Stripe"],
+      "results": "85% increase in direct bookings",
+      "url": "https://vanyaheritage.com"
+    }
+  ],
+  "technologies": [
+    "React", "Next.js", "Vue.js", "TypeScript", "Node.js", "Python", "FastAPI",
+    "React Native", "Three.js", "WebGL", "D3.js", "GSAP", "Framer Motion",
+    "PostgreSQL", "MongoDB", "AWS", "Google Cloud", "OpenAI GPT", "Anthropic Claude", "Google Gemini"
+  ],
+  "faqs": [
+    {
+      "question": "What makes Prismeek different from other agencies?",
+      "answer": "Prismeek operates as a boutique atelier with direct founder involvement. Clients work directly with CEO Debjit Dey who personally oversees every project."
+    },
+    {
+      "question": "What industries does Prismeek serve?",
+      "answer": "Prismeek specializes in E-Commerce, Hospitality, Fintech, Real Estate, SaaS, and Art & Culture industries."
+    },
+    {
+      "question": "Does Prismeek develop AI chatbots?",
+      "answer": "Yes, Prismeek's AI Concierge service includes integration with ChatGPT, Claude, Gemini, and other LLMs for intelligent automation."
+    },
+    {
+      "question": "Where is Prismeek located?",
+      "answer": "Prismeek is based in India with offices in Mumbai and Bangalore, serving clients worldwide."
+    }
+  ],
+  "keywords": {
+    "primary": ["luxury digital agency india", "premium web design mumbai", "bespoke website development", "high-end branding agency"],
+    "services": ["ai chatbot development", "react native app india", "three.js website", "fintech ui design"],
+    "industries": ["hospitality web design", "luxury hotel website", "fintech dashboard", "e-commerce platform india"],
+    "location": ["digital agency mumbai", "web design bangalore", "software development india"]
+  },
+  "lastUpdated": "2024-12-11"
+}

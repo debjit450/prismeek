@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { ArrowRight } from 'lucide-react';
-import debjit from '/debjit.jpg'
+const debjit = '/debjit.jpg';
 const About: React.FC = () => {
   return (
     <section id="about" className="py-32 px-6 bg-p-paper dark:bg-p-black relative overflow-hidden border-t border-p-ink/5 dark:border-white/5">

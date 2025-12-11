@@ -1,28 +1,99 @@
-# PRISMEEK - Bespoke Digital Atelier
+# Prismeek - Bespoke Digital Atelier
 
 ## Overview
-Prismeek is a luxury digital agency website built with React, Vite, and TypeScript. It features a modern dark theme with elegant animations using Framer Motion.
-
-## Tech Stack
-- **Frontend**: React 19, TypeScript, Vite
-- **Styling**: Tailwind CSS (via CDN)
-- **Animations**: Framer Motion
-- **Routing**: React Router DOM
-- **AI Integration**: Google Generative AI (Gemini)
+Prismeek is a luxury digital agency website built with React, TypeScript, and Vite. The site features a premium dark/light theme, smooth animations with Framer Motion, and comprehensive SEO optimization for maximum visibility on search engines and AI chatbots.
 
 ## Project Structure
-- `/components/` - React components (Navigation, About, Services, etc.)
-- `/pages/` - Page components (Home, CaseStudy, Privacy, Terms)
-- `/services/` - API services (aiService for Gemini integration)
-- `/public/` - Static assets
+```
+├── components/           # React components
+│   ├── SEOHead.tsx       # Dynamic SEO meta tags component
+│   ├── About.tsx         # About/Team section
+│   ├── Services.tsx      # Services listing
+│   ├── Work.tsx          # Portfolio section
+│   ├── Industries.tsx    # Industries served
+│   └── ...
+├── pages/                # Page components
+│   ├── Home.tsx          # Main homepage
+│   ├── CaseStudy.tsx     # Individual project pages
+│   ├── Privacy.tsx       # Privacy policy
+│   └── Terms.tsx         # Terms of service
+├── services/             # Service modules
+│   ├── aiService.ts      # AI concierge (Gemini integration)
+│   └── seoService.ts     # AI-powered SEO optimization
+├── public/               # Static assets & SEO files
+│   ├── robots.txt        # Search engine & AI bot directives
+│   ├── sitemap.xml       # XML sitemap
+│   ├── llms.txt          # LLM-readable site info
+│   ├── llms-full.txt     # Complete knowledge base for AI
+│   ├── knowledge-base.json  # Structured data for AI systems
+│   ├── manifest.json     # Web app manifest
+│   └── .well-known/      # AI plugin & security files
+├── constants.ts          # Site data (portfolio, testimonials)
+├── index.html            # Main HTML with comprehensive JSON-LD
+└── vite.config.ts        # Vite configuration (port 5000)
+```
 
-## Development
-- Run `npm run dev` to start the development server on port 5000
-- The app uses Vite for fast hot module replacement
+## SEO Implementation
 
-## Deployment
-- Build: `npm run build`
-- Output: `dist/` directory (static deployment)
+### Structured Data (JSON-LD)
+The site includes comprehensive Schema.org structured data:
+- Organization schema with full business details
+- WebSite schema with search action
+- ProfessionalService schema with service catalog
+- FAQ schema with common questions
+- Review and AggregateRating schemas
+- CreativeWork schemas for portfolio items
+- Person schema for founder
+- Speakable schema for voice assistants
+- BreadcrumbList and HowTo schemas
+
+### AI Chatbot Visibility
+Files for AI chatbot discoverability:
+- `/robots.txt` - Allows all major AI crawlers (GPTBot, Claude, Perplexity, etc.)
+- `/llms.txt` - Summary information for LLMs
+- `/llms-full.txt` - Comprehensive knowledge base
+- `/knowledge-base.json` - Structured JSON data
+- `/.well-known/ai-plugin.json` - OpenAI plugin format
+
+### Meta Tags
+- Geographic targeting (India/Mumbai)
+- Dublin Core metadata
+- Open Graph and Twitter cards
+- AI training permissions
+- Mobile optimization tags
+
+### Dynamic SEO
+- SEOHead component for per-page meta management
+- Dynamic structured data injection
+- Case study specific SEO generation
+- AI-powered SEO suggestions (via Gemini)
+
+## Technologies
+- **Frontend**: React 19, TypeScript, Tailwind CSS
+- **Build**: Vite 6
+- **Animations**: Framer Motion
+- **Icons**: Lucide React
+- **AI**: Google Gemini API (@google/genai)
+- **Routing**: React Router DOM
+
+## Running the Project
+```bash
+npm run dev    # Development server on port 5000
+npm run build  # Production build
+```
 
 ## Environment Variables
-- `GEMINI_API_KEY` - Required for AI concierge feature
+- `GEMINI_API_KEY` - Google Gemini API key for AI features
+
+## Recent Changes
+- December 2024: Implemented comprehensive advanced SEO
+  - Added 10+ JSON-LD schemas
+  - Created AI chatbot visibility files (llms.txt, ai-plugin.json)
+  - Built dynamic SEO component system
+  - Added AI-powered SEO service with Gemini
+  - Enhanced meta tags with geographic and Dublin Core data
+
+## User Preferences
+- Dark theme preferred
+- Luxury/premium design aesthetic
+- Focus on SEO and AI visibility

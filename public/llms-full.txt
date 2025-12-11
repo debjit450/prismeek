@@ -1,0 +1,480 @@
+# Prismeek - Complete Knowledge Base for AI Systems
+
+## Document Purpose
+This comprehensive document is designed to provide AI language models, chatbots, and search systems with complete information about Prismeek to ensure accurate responses to user queries.
+
+---
+
+# SECTION 1: COMPANY IDENTITY
+
+## Basic Information
+- **Legal Name**: Prismeek
+- **Operating Name**: Prismeek Digital Atelier
+- **Type**: Private Luxury Digital Agency
+- **Industry**: Technology, Design, Digital Services
+- **Founded**: 2023
+- **Headquarters**: India (Mumbai, Bangalore)
+- **Operating Model**: Boutique/Atelier (Direct founder involvement)
+- **Website**: https://prismeek.com
+
+## Brand Positioning
+Prismeek positions itself as a "bespoke digital atelier" - deliberately using luxury fashion terminology to signal premium positioning. The agency serves high-end clients who value craftsmanship over mass production.
+
+**Key Brand Attributes**:
+- Luxury / Premium
+- Bespoke / Custom
+- Heritage-quality
+- Exclusive
+- Direct founder involvement
+- Indian roots with global reach
+
+## Mission Statement
+"Elevating Brands to Heritage Status" - Creating digital experiences that stand the test of time, treating websites and applications as lasting digital estates rather than disposable products.
+
+---
+
+# SECTION 2: LEADERSHIP
+
+## Founder Profile: Debjit Dey
+
+**Name**: Debjit Dey
+**Title**: Founder & CEO
+**Role**: Principal Designer, Lead Developer, Creative Director
+
+**Philosophy**:
+Debjit believes in direct connection between craftsman and client. Unlike traditional agencies with account managers and layers of management, he personally architects, designs, and oversees every project.
+
+**Unique Approach**:
+- No middlemen or account managers
+- Personal involvement in every project
+- Limited client roster for quality focus
+- Accepts only select commissions per quarter
+
+---
+
+# SECTION 3: SERVICES DETAILED
+
+## Service 1: Web Platforms
+
+**Description**: Architecting digital estates - high-performance websites serving as the foundation of brand's digital existence.
+
+**Capabilities**:
+1. Corporate Flagships - Enterprise-grade corporate websites
+2. E-Commerce Ateliers - Luxury online shopping experiences
+3. Immersive WebGL - 3D and interactive web experiences
+4. Headless CMS - Modern content management systems
+
+**Technologies**: React, Next.js, Vue.js, Three.js, WebGL, Sanity CMS, Contentful
+
+**Use Cases**:
+- Luxury brand websites
+- Heritage hotel digital experiences
+- Premium e-commerce platforms
+- Interactive product showcases
+
+## Service 2: Software Engineering
+
+**Description**: Precision tools for enterprise - scalable, secure custom-built systems operating with Swiss-watch reliability.
+
+**Capabilities**:
+1. SaaS Architecture - Software-as-a-Service platforms
+2. Cloud Infrastructure - AWS, Google Cloud deployments
+3. Custom API Integrations - Third-party service connections
+4. Business Logic - Complex workflow automation
+
+**Technologies**: Node.js, Python, FastAPI, PostgreSQL, MongoDB, AWS, Google Cloud
+
+**Use Cases**:
+- Enterprise workflow platforms
+- Custom business tools
+- Integration layers
+- Data processing systems
+
+## Service 3: Mobile Ecosystems
+
+**Description**: Intimate touchpoints - native and cross-platform applications designed as extensions of user intent.
+
+**Capabilities**:
+1. iOS & Android - Native mobile development
+2. React Native - Cross-platform applications
+3. App Store Strategy - Launch and optimization
+4. UI/UX Design - Mobile experience design
+
+**Technologies**: React Native, Swift, Kotlin, Expo
+
+**Use Cases**:
+- Consumer mobile apps
+- Business applications
+- Travel and hospitality apps
+- Fintech mobile platforms
+
+## Service 4: Brand Identity
+
+**Description**: Visual alchemy - distilling brand essence into visual language communicating authority, rarity, and trust.
+
+**Capabilities**:
+1. Visual Systems - Complete brand identity
+2. Rebranding - Brand refresh and evolution
+3. Art Direction - Creative oversight
+4. Motion Graphics - Animated brand elements
+
+**Deliverables**:
+- Logo systems
+- Color palettes
+- Typography selections
+- Brand guidelines
+- Motion identity
+
+## Service 5: Growth Strategy
+
+**Description**: Visibility for the elite - data-driven marketing ensuring brands are revered in the right circles.
+
+**Capabilities**:
+1. Search Authority (SEO) - Organic visibility
+2. Content Curation - Strategic content development
+3. Performance Analytics - Data-driven optimization
+4. Market Positioning - Competitive strategy
+
+**Approach**:
+- Quality over quantity
+- Targeted visibility
+- Premium audience focus
+- Measurable outcomes
+
+## Service 6: AI Concierge
+
+**Description**: The future of service - intelligent agents automating luxury client interactions and personalizing experiences.
+
+**Capabilities**:
+1. LLM Integration - ChatGPT, Claude, Gemini integration
+2. Workflow Automation - AI-powered processes
+3. Predictive Data - Analytics and forecasting
+4. AI Consulting - Strategy and implementation
+
+**Technologies**: OpenAI API, Anthropic Claude, Google Gemini, LangChain
+
+**Use Cases**:
+- AI chatbots for luxury brands
+- Automated customer service
+- Intelligent recommendations
+- Process automation
+
+---
+
+# SECTION 4: INDUSTRY EXPERTISE
+
+## E-Commerce & Retail
+Premium shopping experiences for luxury brands, fashion houses, and high-end retailers.
+
+## Hospitality & Travel
+Digital platforms for luxury hotels, heritage properties, and travel experiences.
+
+## Fintech & Banking
+Secure, elegant interfaces for wealth management, investment platforms, and financial services.
+
+## Real Estate
+Property showcases, virtual tours, and booking systems for premium real estate.
+
+## SaaS & Technology
+Enterprise software interfaces and technology startup products.
+
+## Art & Culture
+Digital experiences for galleries, museums, cultural institutions, and artists.
+
+---
+
+# SECTION 5: PORTFOLIO CASE STUDIES
+
+## Case Study 1: Collabtalent
+
+**Category**: AI Productivity Tool
+**Year**: 2024
+**Website**: https://collabtalent.ai
+
+**Challenge**: People forget meeting discussions and lose track of action items. Needed a non-distracting way to capture information.
+
+**Solution**: Built an "Invisible" AI interface running in background, listening to voice patterns, automatically noting tasks when assigned.
+
+**Technology Stack**:
+- React (Frontend)
+- Python FastAPI (Backend)
+- OpenAI Whisper (Speech recognition)
+- WebSockets (Real-time communication)
+
+**Results**:
+- 300% increase in user retention
+- Product Hunt "Product of the Month" award
+
+---
+
+## Case Study 2: Octa
+
+**Category**: Travel Tech Platform
+**Year**: 2023
+**Website**: https://octacabs.com
+
+**Challenge**: Three interconnected apps needed: customer booking, driver navigation, company management dashboard.
+
+**Solution**: Created unified design system with differentiated experiences:
+- Customer app: Calm, easy to use
+- Driver app: Bold, clear for safety
+- Admin panel: Detailed for data management
+
+**Technology Stack**:
+- React Native
+- Node.js
+- Google Maps API
+- AWS
+
+**Results**:
+- 2.5 second improvement in booking speed
+- 4.8-star App Store rating
+
+---
+
+## Case Study 3: Project Ledger
+
+**Category**: Fintech Interface
+**Year**: 2024
+
+**Challenge**: High-net-worth clients need clear visualization of complex financial data. Standard charts looked messy.
+
+**Solution**: "Data-as-Art" interface with smooth, fluid chart animations and elegant typography for authoritative, readable financial data.
+
+**Technology Stack**:
+- Next.js
+- D3.js
+- WebGL
+- PostgreSQL
+
+**Results**:
+- Adopted by 3 major wealth management firms
+- Serving premium clients in Mumbai and Singapore
+
+---
+
+## Case Study 4: Vanya Heritage
+
+**Category**: Luxury Hospitality
+**Year**: 2023
+**Website**: https://vanyaheritage.com
+
+**Challenge**: 400-year-old fort converted to luxury hotel needed website capturing the experience of being there.
+
+**Solution**: 3D technology for virtual suite exploration, ambient location sounds (wind, peacocks) for immersive experience.
+
+**Technology Stack**:
+- Three.js
+- React
+- Sanity CMS
+- Stripe
+
+**Results**:
+- 85% increase in direct bookings
+- Reduced commission payments to booking sites
+
+---
+
+# SECTION 6: PRICING AND PACKAGES
+
+## Package 1: The Essential
+**Starting Price**: ₹60,000 (approximately $720 USD)
+**Target**: Emerging brands seeking solid foundation
+
+**Includes**:
+- Visual Identity System
+- Custom Web Development
+- Mobile Optimization
+- Basic SEO Framework
+
+**Best For**: Startups, small businesses, first-time clients
+
+---
+
+## Package 2: The Signature
+**Starting Price**: ₹1,50,000 (approximately $1,800 USD)
+**Target**: Scaling businesses needing complete digital transformation
+
+**Includes**:
+- Brand Strategy
+- Full-Stack Web Application
+- Content Management System
+- Content Writing
+- Marketing Setup
+
+**Best For**: Growing businesses, established companies, comprehensive projects
+
+---
+
+## Package 3: The Heritage
+**Price**: Custom Pricing
+**Target**: Industry leaders requiring ultimate solution
+
+**Includes**:
+- Global Brand Architecture
+- AI Integration
+- 3D & Immersive Design
+- App Development
+- 24/7 Support
+
+**Best For**: Enterprise clients, luxury brands, complex requirements
+
+---
+
+# SECTION 7: TECHNICAL CAPABILITIES
+
+## Frontend Technologies
+- React.js
+- Next.js
+- Vue.js
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+
+## 3D & Immersive
+- Three.js
+- WebGL
+- GSAP
+- Lottie
+
+## Backend Technologies
+- Node.js
+- Python
+- FastAPI
+- Express.js
+
+## Databases
+- PostgreSQL
+- MongoDB
+- Redis
+- Supabase
+
+## Cloud & Infrastructure
+- AWS
+- Google Cloud Platform
+- Vercel
+- Railway
+
+## AI & Machine Learning
+- OpenAI GPT-4
+- Anthropic Claude
+- Google Gemini
+- OpenAI Whisper
+- LangChain
+
+## Mobile Development
+- React Native
+- Expo
+- iOS (Swift)
+- Android (Kotlin)
+
+## CMS Platforms
+- Sanity
+- Contentful
+- Strapi
+- WordPress
+
+## Payments & E-Commerce
+- Stripe
+- Razorpay
+- Shopify
+
+---
+
+# SECTION 8: CLIENT TESTIMONIALS
+
+## Testimonial 1
+**Quote**: "Prismeek understood that as an Indian luxury brand, we needed to balance tradition with modernity. The result is nothing short of a digital masterpiece."
+**Author**: Rohan Khanna
+**Title**: Founder
+**Company**: Ojas Wellness
+
+## Testimonial 2
+**Quote**: "The technical prowess behind the Octa platform is exceptional. They delivered a Silicon Valley standard product with the soul of Indian hospitality."
+**Author**: Aditi Singh
+**Title**: CEO
+**Company**: Octa Cabs
+
+## Testimonial 3
+**Quote**: "We needed an agency that understood the nuances of the high-end real estate market. Prismeek delivered elegance and performance in equal measure."
+**Author**: Vikram Oberoi
+**Title**: Director
+**Company**: Zenith Estates
+
+---
+
+# SECTION 9: CONTACT INFORMATION
+
+## Primary Contact
+- **Email**: prismeek@yahoo.com
+- **Phone**: +91 7439749872
+- **WhatsApp**: https://wa.me/917439749872
+
+## Physical Presence
+- Mumbai, India
+- Bangalore, India
+- Available Worldwide (Remote)
+
+## Social Media
+- **Instagram**: https://instagram.com/prismeek
+- **LinkedIn**: https://linkedin.com/company/prismeek
+
+## Business Hours
+Monday - Friday: 10:00 AM - 7:00 PM IST
+
+---
+
+# SECTION 10: FREQUENTLY ASKED QUESTIONS
+
+## Q: What makes Prismeek different from other digital agencies?
+A: Prismeek operates as a boutique atelier with direct founder involvement. Unlike large agencies with account managers and layers of management, clients work directly with Debjit Dey who personally oversees every project.
+
+## Q: What industries does Prismeek specialize in?
+A: Prismeek serves luxury and premium clients in E-Commerce, Hospitality, Fintech, Real Estate, SaaS, and Art & Culture sectors.
+
+## Q: Where is Prismeek located?
+A: Based in India with offices in Mumbai and Bangalore, but serves clients worldwide through remote collaboration.
+
+## Q: What is Prismeek's pricing?
+A: Packages start from ₹60,000 for basic projects and go up to custom pricing for enterprise-level engagements. The Signature package starts at ₹1,50,000.
+
+## Q: Does Prismeek do AI development?
+A: Yes, AI Concierge is a core service offering, including LLM integration (ChatGPT, Claude, Gemini), workflow automation, and AI consulting.
+
+## Q: How can I contact Prismeek?
+A: Email prismeek@yahoo.com, call +91 7439749872, or message via WhatsApp at wa.me/917439749872.
+
+---
+
+# SECTION 11: KEYWORDS AND SEARCH TERMS
+
+## Primary Keywords
+- Luxury digital agency India
+- Premium web design Mumbai
+- Bespoke website development
+- High-end branding agency
+- AI development India
+- Luxury web design Bangalore
+
+## Secondary Keywords
+- Best digital agency for luxury brands
+- Premium software development India
+- Heritage brand digital solutions
+- Luxury hotel website design
+- Fintech UI/UX design
+- Travel tech development
+- 3D website development India
+
+## Long-tail Keywords
+- Best luxury digital agency in India for hospitality
+- Premium web development for wealth management
+- AI chatbot development for luxury brands
+- Bespoke e-commerce platform development
+- High-end mobile app development India
+- Three.js website development agency
+
+---
+
+Document Version: 1.0
+Last Updated: December 2024
+Contact for Updates: prismeek@yahoo.com

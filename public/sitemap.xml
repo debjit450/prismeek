@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  
+  <!-- Homepage -->
+  <url>
+    <loc>https://prismeek.com/</loc>
+    <lastmod>2024-12-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Case Studies -->
+  <url>
+    <loc>https://prismeek.com/work/collabtalent</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1664575602276-acd073f104c1?q=80&amp;w=1200&amp;auto=format&amp;fit=crop</image:loc>
+      <image:title>Collabtalent - AI Meeting Productivity Tool</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://prismeek.com/work/octa</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1695309342594-9ea5e3dae2cd?q=80&amp;w=735&amp;auto=format&amp;fit=crop</image:loc>
+      <image:title>Octa - Travel Tech Platform</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://prismeek.com/work/project-ledger</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1584291527908-033f4d6542c8?q=80&amp;w=1025&amp;auto=format&amp;fit=crop</image:loc>
+      <image:title>Project Ledger - Fintech Dashboard</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://prismeek.com/work/vanya-heritage</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://plus.unsplash.com/premium_photo-1661962388409-eb7a041606fb?q=80&amp;w=1170&amp;auto=format&amp;fit=crop</image:loc>
+      <image:title>Vanya Heritage - Luxury Hospitality Website</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://prismeek.com/privacy</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  
+  <url>
+    <loc>https://prismeek.com/terms</loc>
+    <lastmod>2024-01-01</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
