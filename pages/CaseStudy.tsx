@@ -3,10 +3,12 @@ import { useParams, Link } from 'react-router-dom';
 import { PORTFOLIO_ITEMS } from '../constants';
 import { motion } from 'framer-motion';
 import { ArrowLeft, ExternalLink, Code2, Layers, Trophy } from 'lucide-react';
+import SEOHead, { generateCaseStudySEO } from '../components/SEOHead';
 
 const CaseStudy: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
   const project = PORTFOLIO_ITEMS.find(p => p.slug === slug);
+  const seoData = slug ? generateCaseStudySEO(slug) : {};
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -25,6 +27,14 @@ const CaseStudy: React.FC = () => {
 
   return (
     <div className="bg-p-paper dark:bg-p-black min-h-screen pt-32 pb-20 px-6">
+        <SEOHead 
+          title={seoData.title}
+          description={seoData.description}
+          keywords={seoData.keywords}
+          ogImage={project?.image}
+          ogType="article"
+          structuredData={seoData.structuredData}
+        />
         <div className="max-w-7xl mx-auto">
             <Link to="/#work" className="inline-flex items-center gap-2 text-p-ink/50 dark:text-p-cream/50 hover:text-p-gold transition-colors mb-12 text-xs uppercase tracking-widest">
                 <ArrowLeft size={14} /> Back to Archive

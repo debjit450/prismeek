@@ -1,4 +1,3 @@
-// pages/Home.tsx  (or wherever your component lives)
 import React, { useRef, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Star, Loader2, CheckCircle2 } from 'lucide-react';
@@ -12,6 +11,7 @@ import ClientLogos from '../components/ClientLogos';
 import Testimonials from '../components/Testimonials';
 import Industries from '../components/Industries';
 import Packages from '../components/Packages';
+import SEOHead, { PAGE_SEO_CONFIG } from '../components/SEOHead';
 
 const FORMCARRY_URL = "https://formcarry.com/s/6phPvCLSNPL";
 
@@ -88,6 +88,11 @@ const Home: React.FC = () => {
 
     return (
         <div ref={containerRef}>
+            <SEOHead 
+              title={PAGE_SEO_CONFIG.home.title}
+              description={PAGE_SEO_CONFIG.home.description}
+              keywords={PAGE_SEO_CONFIG.home.keywords}
+            />
             {/* HERO SECTION */}
             <section id="hero" className="relative h-screen w-full flex items-center justify-center overflow-hidden mt-20">
                 <motion.div

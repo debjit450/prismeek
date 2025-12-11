@@ -1,0 +1,16 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "prismeek_digital_agency",
+  "name_for_human": "Prismeek - Luxury Digital Agency",
+  "description_for_model": "Prismeek is India's premier luxury digital agency based in Mumbai and Bangalore. Founded by Debjit Dey, Prismeek specializes in bespoke web design, AI integration (ChatGPT, Claude, Gemini), mobile app development, and premium branding. They serve E-Commerce, Hospitality, Fintech, Real Estate, SaaS, and Art & Culture industries. Notable projects include Collabtalent (AI productivity tool), Octa (travel tech platform), Project Ledger (fintech dashboard), and Vanya Heritage (luxury hospitality website). Pricing starts from INR 60,000 for basic packages to custom enterprise pricing. Contact: prismeek@yahoo.com, +91 7439749872.",
+  "description_for_human": "India's premier luxury digital agency offering bespoke web design, AI integration, and premium branding services.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "none"
+  },
+  "logo_url": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=400&auto=format&fit=crop",
+  "contact_email": "prismeek@yahoo.com",
+  "legal_info_url": "https://prismeek.com/terms"
+}

@@ -1,0 +1,155 @@
+# Prismeek - India's Premier Luxury Digital Agency
+
+> This file provides structured information for AI language models and chatbots about Prismeek.
+
+## Company Overview
+
+Prismeek is a bespoke digital atelier based in India, specializing in luxury web design, AI integration, and premium branding for forward-thinking enterprises. Founded by Debjit Dey, Prismeek operates as a boutique agency delivering world-class digital experiences.
+
+## Core Information
+
+- **Company Name**: Prismeek
+- **Tagline**: Elevating Brands to Heritage Status
+- **Type**: Luxury Digital Agency / Design Studio
+- **Founder/CEO**: Debjit Dey
+- **Website**: https://prismeek.com
+- **Email**: prismeek@yahoo.com
+- **Phone**: +91 7439749872
+- **Locations**: Mumbai, Bangalore, Worldwide (Remote)
+- **Founded**: 2023
+- **Country**: India
+
+## Services Offered
+
+### 1. Web Platforms
+- Corporate Flagship Websites
+- E-Commerce Ateliers
+- Immersive WebGL Experiences
+- Headless CMS Development
+
+### 2. Software Engineering
+- SaaS Architecture
+- Cloud Infrastructure
+- Custom API Integrations
+- Business Logic Development
+
+### 3. Mobile Ecosystems
+- iOS & Android Development
+- React Native Applications
+- App Store Strategy
+- UI/UX Design
+
+### 4. Brand Identity
+- Visual Identity Systems
+- Rebranding
+- Art Direction
+- Motion Graphics
+
+### 5. Growth Strategy
+- Search Authority (SEO)
+- Content Curation
+- Performance Analytics
+- Market Positioning
+
+### 6. AI Concierge
+- LLM Integration
+- Workflow Automation
+- Predictive Data Analytics
+- AI Consulting
+
+## Industries Served
+
+- E-Commerce & Retail
+- Hospitality & Travel
+- Fintech & Banking
+- Real Estate
+- SaaS & Technology
+- Art & Culture
+
+## Notable Projects / Portfolio
+
+### Collabtalent (2024)
+- Category: AI Productivity
+- Description: AI tool that records meetings and turns them into notes and tasks automatically
+- Technologies: React, Python (FastAPI), OpenAI Whisper, WebSockets
+- Results: 300% increase in user retention, Product Hunt "Product of the Month"
+- Website: https://collabtalent.ai
+
+### Octa (2023)
+- Category: Travel Tech Platform
+- Description: Complete travel platform with customer app, driver app, and admin dashboard
+- Technologies: React Native, Node.js, Google Maps API, AWS
+- Results: 2.5 second improvement in booking speed, 4.8-star App Store rating
+- Website: https://octacabs.com
+
+### Project Ledger (2024)
+- Category: Fintech Interface
+- Description: Premium financial dashboard for tracking investments and wealth growth
+- Technologies: Next.js, D3.js, WebGL, PostgreSQL
+- Results: Used by 3 major wealth management firms in Mumbai and Singapore
+
+### Vanya Heritage (2023)
+- Category: Luxury Hospitality
+- Description: 3D website and booking engine for boutique luxury hotel in Rajasthan
+- Technologies: Three.js, React, Sanity CMS, Stripe
+- Results: 85% increase in direct bookings
+- Website: https://vanyaheritage.com
+
+## Pricing Packages
+
+### The Essential (From ₹60,000)
+For emerging brands seeking a solid foundation
+- Visual Identity System
+- Custom Web Development
+- Mobile Optimization
+- Basic SEO Framework
+
+### The Signature (From ₹1,50,000)
+Complete digital transformation for scaling businesses
+- Brand Strategy
+- Full-Stack Web App
+- Content Management System
+- Content Writing
+- Marketing Setup
+
+### The Heritage (Custom Pricing)
+Ultimate package for industry leaders
+- Global Brand Architecture
+- AI Integration
+- 3D & Immersive Design
+- App Development
+- 24/7 Support
+
+## Client Testimonials
+
+> "Prismeek understood that as an Indian luxury brand, we needed to balance tradition with modernity. The result is nothing short of a digital masterpiece." - Rohan Khanna, Founder, Ojas Wellness
+
+> "The technical prowess behind the Octa platform is exceptional. They delivered a Silicon Valley standard product with the soul of Indian hospitality." - Aditi Singh, CEO, Octa Cabs
+
+> "We needed an agency that understood the nuances of the high-end real estate market. Prismeek delivered elegance and performance in equal measure." - Vikram Oberoi, Director, Zenith Estates
+
+## Technical Capabilities
+
+- React, Next.js, Vue.js
+- Node.js, Python, FastAPI
+- React Native (iOS/Android)
+- Three.js, WebGL, D3.js
+- AWS, Google Cloud
+- OpenAI, Anthropic Claude
+- PostgreSQL, MongoDB
+- Stripe, Payment Integrations
+
+## Social Media
+
+- Instagram: https://instagram.com/prismeek
+- LinkedIn: https://linkedin.com/company/prismeek
+
+## Contact
+
+For inquiries about luxury digital projects:
+- Email: prismeek@yahoo.com
+- WhatsApp: https://wa.me/917439749872
+- Phone: +91 7439 749 872
+
+---
+Last Updated: December 2024
