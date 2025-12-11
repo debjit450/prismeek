@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en-IN" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Advanced SEO & Meta Tags -->
+    <title>PRISMEEK | India's Premier Luxury Digital Agency & AI Solutions</title>
+    <meta name="description" content="Prismeek is a bespoke digital atelier based in India, specializing in luxury web design, AI integration, and premium branding for forward-thinking enterprises." />
+    <meta name="keywords" content="Luxury Web Design India, Premium Digital Agency, AI Development India, Bespoke Website Design, Prismeek, High-end Branding, Software Development India, Travel Tech, AI Concierge" />
+    <meta name="author" content="Prismeek" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://prismeek.com" />
+    
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://prismeek.com/" />
+    <meta property="og:title" content="PRISMEEK | Bespoke Digital Craftsmanship" />
+    <meta property="og:description" content="Elevating brands to heritage status through design and artificial intelligence." />
+    <meta property="og:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop" />
+    <meta property="og:locale" content="en_IN" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://prismeek.com/" />
+    <meta property="twitter:title" content="PRISMEEK | India's Luxury Digital Agency" />
+    <meta property="twitter:description" content="We build digital legacies. Web, Mobile, AI, and Branding." />
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop" />
+
+    <!-- Structured Data (JSON-LD) for Google & AI Chatbots -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Prismeek",
+      "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
+      "url": "https://prismeek.com",
+      "telephone": "+917439749872",
+      "email": "prismeek@yahoo.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN"
+      },
+      "priceRange": "₹₹₹₹",
+      "description": "Prismeek is a luxury digital agency providing high-end web development, AI solutions, and branding services.",
+      "areaServed": "Worldwide",
+      "sameAs": [
+        "https://instagram.com/prismeek",
+        "https://linkedin.com/company/prismeek"
+      ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "10:00",
+        "closes": "19:00"
+      }
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Premium Fonts: Cormorant Garamond, Plus Jakarta Sans, and Pinyon Script for the logo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@200;300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: {
+          extend: {
+            colors: {
+              // Dark Mode Colors
+              'p-black': '#050505',
+              'p-charcoal': '#0F0F0F',
+              'p-cream': '#EAEAEA', 
+              
+              // Light Mode Colors
+              'p-paper': '#F2F2F0', 
+              'p-ink': '#1A1A1A',   
+              'p-stone': '#E0E0DB', 
+
+              // Accents
+              'p-gold': '#C8AA6E', 
+              'p-gold-dim': '#8C7548',
+              'p-sage': '#2C3A35',
+              
+              // New Rich Accents for Depth
+              'p-emerald': '#064e3b',
+              'p-amethyst': '#4c1d95',
+              'p-rose': '#e11d48',
+            },
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'serif'],
+              sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+              cursive: ['"Pinyon Script"', 'cursive'],
+            },
+            animation: {
+              'spin-slow': 'spin 12s linear infinite',
+              'float': 'float 6s ease-in-out infinite',
+              'scroll': 'scroll 40s linear infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              },
+              scroll: {
+                '0%': { transform: 'translateX(0)' },
+                '100%': { transform: 'translateX(-100%)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050505;
+        color: #EAEAEA;
+        overflow-x: hidden;
+        transition: background-color 0.8s cubic-bezier(0.22, 1, 0.36, 1), color 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+      }
+      
+      /* Noise overlay generation via CSS */
+      .bg-noise {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        z-index: 50;
+        opacity: 0.04;
+        background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='1'/%3E%3C/svg%3E");
+      }
+
+      .dark .bg-noise {
+        opacity: 0.04;
+        filter: invert(0);
+      }
+      
+      .light .bg-noise {
+        opacity: 0.05;
+        filter: invert(1);
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #C8AA6E;
+      }
+      
+      /* Selection Color */
+      ::selection {
+        background: #C8AA6E;
+        color: #050505;
+      }
+      
+      .text-glow {
+        text-shadow: 0 0 20px rgba(200, 170, 110, 0.3);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.1/",
+    "react": "https://esm.sh/react@^19.2.1",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.33.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.560.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
