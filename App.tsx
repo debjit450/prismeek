@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import CustomCursor from './components/CustomCursor';
 import Concierge from './components/Concierge';
@@ -12,7 +12,7 @@ import Home from './pages/Home';
 import CaseStudy from './pages/CaseStudy';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
-
+import logo from '/logo.png'
 // Scroll to anchor wrapper
 const ScrollToAnchor = () => {
     const { hash } = useLocation();
@@ -109,10 +109,16 @@ function App() {
                         {/* Global Footer Elements */}
                         <footer className="bg-p-paper dark:bg-p-black py-20 border-t border-p-ink/10 dark:border-white/5 relative z-10 transition-colors duration-700">
                             <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start gap-16">
+
                                 <div className="max-w-xs">
-                                    <span className="text-4xl font-cursive text-p-ink dark:text-p-cream tracking-wide mb-6 block transition-colors duration-500">
-                                        {AGENCY_INFO.name}<span className="text-p-gold font-sans">.</span>
-                                    </span>
+                                    <div className="flex items-center gap-3 relative z-50 mb-4">
+                                        <Link to="/" className="flex items-center gap-2 group">
+                                            <img src={logo} className="w-12 h-12 object-contain" alt="" />
+                                            <span className="text-5xl font-cursive text-p-ink dark:text-p-cream tracking-wide transition-colors duration-500 mt-1 drop-shadow-sm group-hover:text-p-gold">
+                                                {AGENCY_INFO.name}<span className="text-p-gold font-sans text-sm">.</span>
+                                            </span>
+                                        </Link>
+                                    </div>
                                     <p className="text-p-ink/40 dark:text-p-cream/40 text-[10px] tracking-widest uppercase leading-relaxed transition-colors duration-500">
                                         &copy; 2024 Prismeek Digital Atelier. <br />
                                         Crafted with precision. Available Worldwide.
