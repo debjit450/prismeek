@@ -11,7 +11,7 @@ Prismeek is a bespoke digital atelier based in India, specializing in luxury web
 - **Company Name**: Prismeek
 - **Tagline**: Elevating Brands to Heritage Status
 - **Type**: Luxury Digital Agency / Design Studio
-- **Founder/CEO**: Debjit Dey
+- **Founder**: Debjit Dey
 - **Website**: https://prismeek.com
 - **Email**: prismeek@yahoo.com
 - **Phone**: +91 7439749872
