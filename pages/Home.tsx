@@ -2,7 +2,6 @@ import React, { useRef, useState } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Star, Loader2, CheckCircle2 } from 'lucide-react';
 import { AGENCY_INFO } from '../constants';
-import Intro from '../components/Intro';
 import Manifesto from '../components/Manifesto';
 import About from '../components/About';
 import Work from '../components/Work';
@@ -12,6 +11,7 @@ import Testimonials from '../components/Testimonials';
 import Industries from '../components/Industries';
 import Packages from '../components/Packages';
 import SEOHead, { PAGE_SEO_CONFIG } from '../components/SEOHead';
+import { HeroScene3D } from '../components/Scene3D';
 
 const FORMCARRY_URL = "https://formcarry.com/s/6phPvCLSNPL";
 
@@ -101,6 +101,9 @@ const Home: React.FC = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 1 }}
                 />
+
+                {/* 3D Scene Background */}
+                <HeroScene3D />
 
                 {/* Animated Geometry Background */}
                 <div className="absolute inset-0 flex items-center justify-center opacity-5 dark:opacity-10 pointer-events-none">

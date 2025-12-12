@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { NAV_LINKS, AGENCY_INFO } from '../constants';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
-import logo from '/logo.png'
 interface NavigationProps {
     theme: 'light' | 'dark';
     toggleTheme: () => void;
@@ -25,8 +24,8 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
     const isHome = location.pathname === '/';
 
     const menuVariants = {
-        closed: { height: 0, transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } },
-        open: { height: "100vh", transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] } }
+        closed: { height: 0, transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] as const } },
+        open: { height: "100vh", transition: { duration: 0.8, ease: [0.76, 0, 0.24, 1] as const } }
     };
 
     const linkVariants = {
@@ -34,7 +33,7 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
         open: (i: number) => ({
             y: "0%",
             opacity: 1,
-            transition: { delay: 0.4 + (i * 0.1), duration: 0.6, ease: [0.22, 1, 0.36, 1] }
+            transition: { delay: 0.4 + (i * 0.1), duration: 0.6, ease: [0.22, 1, 0.36, 1] as const }
         })
     };
 
@@ -69,7 +68,7 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
             >
                 <div className="flex items-center gap-3 relative z-50">
                     <Link to="/" className="flex items-center gap-2 group">
-                        <img src={logo} className="w-12 h-12 object-contain" alt="" />
+                        <img src="/logo.png" className="w-12 h-12 object-contain" alt="" />
                         <span className="text-4xl font-cursive text-p-ink dark:text-p-cream tracking-wide transition-colors duration-500 mt-1 drop-shadow-sm group-hover:text-p-gold">
                             {AGENCY_INFO.name}<span className="text-p-gold font-sans text-sm">.</span>
                         </span>

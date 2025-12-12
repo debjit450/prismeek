@@ -1,5 +1,3 @@
-import { link } from "fs";
-
 export const AGENCY_INFO = {
   name: "Prismeek",
   tagline: "Elevating Brands to Heritage Status",
@@ -11,12 +9,12 @@ export const AGENCY_INFO = {
 };
 
 export const NAV_LINKS = [
-  { name: "Maison", href: "/#hero" },
-  { name: "Vision", href: "/#about" },
-  { name: "Atelier", href: "/#services" },
-  { name: "Legacy", href: "/#work" },
-  { name: "Expertise", href: "/#industries" },
-  { name: "Engage", href: "/#contact" },
+  { name: "Maison", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Services", href: "/services" },
+  { name: "Work", href: "/work" },
+  { name: "Journal", href: "/journal" },
+  { name: "Contact", href: "/#contact" },
 ];
 
 export const PORTFOLIO_ITEMS = [

@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
 import Navigation from './components/Navigation';
 import CustomCursor from './components/CustomCursor';
 import Concierge from './components/Concierge';
@@ -7,13 +8,17 @@ import Intro from './components/Intro';
 import { AGENCY_INFO } from './constants';
 import { Loader2, Check } from 'lucide-react';
 import { Analytics } from "@vercel/analytics/react"
-// Pages
+
 import Home from './pages/Home';
 import CaseStudy from './pages/CaseStudy';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
-import logo from '/logo.png'
-// Scroll to anchor wrapper
+import Blog from './pages/Blog';
+import BlogPost from './pages/BlogPost';
+import AboutPage from './pages/AboutPage';
+import ServicesPage from './pages/ServicesPage';
+import WorkPage from './pages/WorkPage';
+
 const ScrollToAnchor = () => {
     const { hash } = useLocation();
     useEffect(() => {
@@ -29,17 +34,40 @@ const ScrollToAnchor = () => {
     return null;
 }
 
+const ScrollToTop = () => {
+    const { pathname } = useLocation();
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [pathname]);
+    return null;
+}
+
+const PageTransition: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+    const location = useLocation();
+    
+    return (
+        <AnimatePresence mode="wait">
+            <motion.div
+                key={location.pathname}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+            >
+                {children}
+            </motion.div>
+        </AnimatePresence>
+    );
+};
+
 function App() {
     const [loading, setLoading] = useState(true);
 
-    // Newsletter State
     const [newsletterEmail, setNewsletterEmail] = useState('');
     const [newsletterStatus, setNewsletterStatus] = useState<'idle' | 'loading' | 'success'>('idle');
 
-    // Theme State
     const [theme, setTheme] = useState<'light' | 'dark'>('dark');
 
-    // Load theme from local storage on mount
     useEffect(() => {
         const savedTheme = localStorage.getItem('theme') as 'light' | 'dark' | null;
         if (savedTheme) {
@@ -47,13 +75,11 @@ function App() {
             document.documentElement.classList.toggle('dark', savedTheme === 'dark');
             document.documentElement.classList.toggle('light', savedTheme !== 'dark');
         } else {
-            // Default to dark
             document.documentElement.classList.add('dark');
             document.documentElement.classList.remove('light');
         }
     }, []);
 
-    // Toggle Theme Function
     const toggleTheme = () => {
         const newTheme = theme === 'dark' ? 'light' : 'dark';
         setTheme(newTheme);
@@ -73,7 +99,6 @@ function App() {
         if (!newsletterEmail) return;
         setNewsletterStatus('loading');
 
-        // Simulate API call
         setTimeout(() => {
             setNewsletterStatus('success');
             setNewsletterEmail('');
@@ -84,6 +109,7 @@ function App() {
     return (
         <Router>
             <ScrollToAnchor />
+            <ScrollToTop />
             <div className="bg-p-paper dark:bg-p-black min-h-screen relative selection:bg-p-gold selection:text-p-black transition-colors duration-700 overflow-x-hidden">
                 {loading && <Intro onComplete={() => setLoading(false)} />}
 
@@ -92,28 +118,32 @@ function App() {
                         <CustomCursor />
                         <Navigation theme={theme} toggleTheme={toggleTheme} />
 
-                        {/* Global Grain via CSS Class */}
                         <div className="bg-noise"></div>
 
-                        {/* Global Ambient Color Blobs */}
                         <div className="fixed top-[-20%] left-[-10%] w-[800px] h-[800px] bg-p-emerald/10 dark:bg-p-emerald/20 rounded-full blur-[180px] pointer-events-none mix-blend-multiply dark:mix-blend-screen opacity-50 z-0"></div>
                         <div className="fixed bottom-[-20%] right-[-10%] w-[800px] h-[800px] bg-p-rose/10 dark:bg-p-amethyst/20 rounded-full blur-[180px] pointer-events-none mix-blend-multiply dark:mix-blend-screen opacity-50 z-0"></div>
 
                         <Routes>
                             <Route path="/" element={<Home />} />
+                            <Route path="/about" element={<AboutPage />} />
+                            <Route path="/services" element={<ServicesPage />} />
+                            <Route path="/work" element={<WorkPage />} />
                             <Route path="/work/:slug" element={<CaseStudy />} />
+                            <Route path="/journal" element={<Blog />} />
+                            <Route path="/journal/:slug" element={<BlogPost />} />
+                            <Route path="/blog" element={<Blog />} />
+                            <Route path="/blog/:slug" element={<BlogPost />} />
                             <Route path="/privacy" element={<Privacy />} />
                             <Route path="/terms" element={<Terms />} />
                         </Routes>
 
-                        {/* Global Footer Elements */}
                         <footer className="bg-p-paper dark:bg-p-black py-20 border-t border-p-ink/10 dark:border-white/5 relative z-10 transition-colors duration-700">
                             <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-start gap-16">
 
                                 <div className="max-w-xs">
                                     <div className="flex items-center gap-3 relative z-50 mb-4">
                                         <Link to="/" className="flex items-center gap-2 group">
-                                            <img src={logo} className="w-12 h-12 object-contain" alt="" />
+                                            <img src="/logo.png" className="w-12 h-12 object-contain" alt="" />
                                             <span className="text-5xl font-cursive text-p-ink dark:text-p-cream tracking-wide transition-colors duration-500 mt-1 drop-shadow-sm group-hover:text-p-gold">
                                                 {AGENCY_INFO.name}<span className="text-p-gold font-sans text-sm">.</span>
                                             </span>
@@ -127,6 +157,15 @@ function App() {
 
                                 <div className="flex flex-wrap gap-16 md:gap-24">
                                     <div>
+                                        <h4 className="text-p-ink dark:text-p-cream text-sm mb-6 font-serif transition-colors duration-500">Navigate</h4>
+                                        <div className="flex flex-col gap-4">
+                                            <Link to="/about" className="text-p-ink/40 dark:text-p-cream/40 hover:text-p-gold text-[10px] uppercase tracking-widest transition-colors">About</Link>
+                                            <Link to="/services" className="text-p-ink/40 dark:text-p-cream/40 hover:text-p-gold text-[10px] uppercase tracking-widest transition-colors">Services</Link>
+                                            <Link to="/work" className="text-p-ink/40 dark:text-p-cream/40 hover:text-p-gold text-[10px] uppercase tracking-widest transition-colors">Work</Link>
+                                            <Link to="/journal" className="text-p-ink/40 dark:text-p-cream/40 hover:text-p-gold text-[10px] uppercase tracking-widest transition-colors">Journal</Link>
+                                        </div>
+                                    </div>
+                                    <div>
                                         <h4 className="text-p-ink dark:text-p-cream text-sm mb-6 font-serif transition-colors duration-500">Socials</h4>
                                         <div className="flex flex-col gap-4">
                                             {['Instagram', 'LinkedIn', 'Twitter'].map(social => (
@@ -139,13 +178,12 @@ function App() {
                                     <div>
                                         <h4 className="text-p-ink dark:text-p-cream text-sm mb-6 font-serif transition-colors duration-500">Legal</h4>
                                         <div className="flex flex-col gap-4">
-                                            <a href="/privacy" className="text-p-ink/40 dark:text-p-cream/40 hover:text-p-gold text-[10px] uppercase tracking-widest transition-colors">Privacy Policy</a>
-                                            <a href="/terms" className="text-p-ink/40 dark:text-p-cream/40 hover:text-p-gold text-[10px] uppercase tracking-widest transition-colors">Terms of Service</a>
+                                            <Link to="/privacy" className="text-p-ink/40 dark:text-p-cream/40 hover:text-p-gold text-[10px] uppercase tracking-widest transition-colors">Privacy Policy</Link>
+                                            <Link to="/terms" className="text-p-ink/40 dark:text-p-cream/40 hover:text-p-gold text-[10px] uppercase tracking-widest transition-colors">Terms of Service</Link>
                                         </div>
                                     </div>
                                 </div>
 
-                                {/* Newsletter */}
                                 <div className="w-full md:w-auto min-w-[300px]">
                                     <h4 className="text-p-ink dark:text-p-cream text-sm mb-6 font-serif transition-colors duration-500">The Journal</h4>
                                     <form onSubmit={handleNewsletterSubmit} className="flex border-b border-p-ink/10 dark:border-white/10 pb-3 relative">
