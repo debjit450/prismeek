@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { NAV_LINKS, AGENCY_INFO } from '../constants';
-import { Menu, X, Sun, Moon } from 'lucide-react';
+import { Menu, X, Sun, Moon, Sparkles } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
+
 interface NavigationProps {
     theme: 'light' | 'dark';
     toggleTheme: () => void;
@@ -39,11 +40,8 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
 
     const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
         setIsOpen(false);
-
-        // If it's a hash link
         if (href.startsWith('/#')) {
             const id = href.replace('/#', '');
-
             if (isHome) {
                 e.preventDefault();
                 const element = document.getElementById(id);
@@ -51,7 +49,6 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
                     element.scrollIntoView({ behavior: 'smooth' });
                 }
             }
-            // If not home, the Link component handles navigation to /#hash
         }
     };
 
@@ -61,76 +58,95 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
                 initial={{ y: -100 }}
                 animate={{ y: 0 }}
                 transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
-                className={`fixed top-0 left-0 right-0 z-50 px-6 md:px-12 py-6 transition-all duration-700 flex justify-between items-center ${scrolled && !isOpen
-                    ? 'bg-p-paper/80 dark:bg-p-black/80 backdrop-blur-xl border-b border-p-ink/5 dark:border-white/5 py-4'
-                    : 'bg-transparent'
-                    }`}
+                className={`fixed top-0 left-0 right-0 z-50 px-6 md:px-12 transition-all duration-700 ${
+                    scrolled && !isOpen
+                        ? 'py-4'
+                        : 'py-6'
+                }`}
             >
-                <div className="flex items-center gap-3 relative z-50">
-                    <Link to="/" className="flex items-center gap-2 group">
-                        <img src="/logo.png" className="w-12 h-12 object-contain" alt="" />
-                        <span className="text-4xl font-cursive text-p-ink dark:text-p-cream tracking-wide transition-colors duration-500 mt-1 drop-shadow-sm group-hover:text-p-gold">
-                            {AGENCY_INFO.name}<span className="text-p-gold font-sans text-sm">.</span>
-                        </span>
-                    </Link>
-                </div>
-
-                {/* Desktop Menu */}
-                <div className="hidden md:flex items-center gap-12">
-                    <div className="flex gap-8 items-center">
-                        {NAV_LINKS.map((link) => (
-                            <div key={link.name}>
-                                {link.href.startsWith('/#') ? (
-                                    <a
-                                        href={link.href}
-                                        onClick={(e) => handleLinkClick(e, link.href)}
-                                        className="text-[11px] uppercase tracking-[0.2em] font-medium text-p-ink/60 dark:text-p-cream/60 hover:text-p-gold dark:hover:text-p-gold transition-colors duration-300 relative group cursor-pointer"
-                                    >
-                                        {link.name}
-                                        <span className="absolute -bottom-2 left-1/2 w-0 h-[1px] bg-p-gold transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
-                                    </a>
-                                ) : (
-                                    <Link
-                                        to={link.href}
-                                        className="text-[11px] uppercase tracking-[0.2em] font-medium text-p-ink/60 dark:text-p-cream/60 hover:text-p-gold dark:hover:text-p-gold transition-colors duration-300 relative group"
-                                    >
-                                        {link.name}
-                                        <span className="absolute -bottom-2 left-1/2 w-0 h-[1px] bg-p-gold transition-all duration-300 group-hover:w-full group-hover:left-0"></span>
-                                    </Link>
-                                )}
+                <div className={`absolute inset-0 transition-all duration-500 ${
+                    scrolled && !isOpen
+                        ? 'bg-p-paper/70 dark:bg-p-black/70 backdrop-blur-2xl border-b border-p-ink/5 dark:border-white/5'
+                        : 'bg-transparent'
+                }`} />
+                
+                <div className="relative z-10 flex justify-between items-center max-w-7xl mx-auto">
+                    <div className="flex items-center gap-3">
+                        <Link to="/" className="flex items-center gap-3 group">
+                            <div className="relative">
+                                <img src="/logo.png" className="w-10 h-10 md:w-12 md:h-12 object-contain relative z-10" alt="" />
+                                <div className="absolute inset-0 bg-p-gold/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                             </div>
-                        ))}
+                            <div className="flex flex-col">
+                                <span className="text-3xl md:text-4xl font-cursive text-p-ink dark:text-p-cream tracking-wide transition-colors duration-500 group-hover:text-p-gold">
+                                    {AGENCY_INFO.name}
+                                </span>
+                                <span className="text-[8px] font-mono text-p-gold/60 uppercase tracking-[0.3em] -mt-1 hidden md:block">
+                                    Digital Atelier
+                                </span>
+                            </div>
+                        </Link>
                     </div>
 
-                    <div className="w-[1px] h-4 bg-p-ink/10 dark:bg-white/10"></div>
+                    <div className="hidden lg:flex items-center gap-8">
+                        <div className="flex gap-1 items-center glass-gold px-2 py-1 rounded-full">
+                            {NAV_LINKS.map((link, index) => (
+                                <React.Fragment key={link.name}>
+                                    {link.href.startsWith('/#') ? (
+                                        <a
+                                            href={link.href}
+                                            onClick={(e) => handleLinkClick(e, link.href)}
+                                            className="text-[11px] uppercase tracking-[0.15em] font-medium text-p-ink/60 dark:text-p-cream/60 hover:text-p-gold dark:hover:text-p-gold transition-all duration-300 px-4 py-2 rounded-full hover:bg-p-gold/10 cursor-pointer"
+                                        >
+                                            {link.name}
+                                        </a>
+                                    ) : (
+                                        <Link
+                                            to={link.href}
+                                            className="text-[11px] uppercase tracking-[0.15em] font-medium text-p-ink/60 dark:text-p-cream/60 hover:text-p-gold dark:hover:text-p-gold transition-all duration-300 px-4 py-2 rounded-full hover:bg-p-gold/10"
+                                        >
+                                            {link.name}
+                                        </Link>
+                                    )}
+                                </React.Fragment>
+                            ))}
+                        </div>
 
-                    <button
-                        onClick={toggleTheme}
-                        className="text-p-ink dark:text-p-cream hover:text-p-gold transition-colors"
-                        aria-label="Toggle Theme"
-                    >
-                        {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
-                    </button>
-                </div>
+                        <div className="flex items-center gap-3">
+                            <motion.button
+                                onClick={toggleTheme}
+                                whileHover={{ scale: 1.1 }}
+                                whileTap={{ scale: 0.95 }}
+                                className="w-10 h-10 rounded-full glass flex items-center justify-center text-p-ink dark:text-p-cream hover:text-p-gold transition-colors"
+                                aria-label="Toggle Theme"
+                            >
+                                {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
+                            </motion.button>
+                            
+                            <Link to="/#contact" className="hidden xl:flex items-center gap-2 px-5 py-2.5 bg-p-gold text-p-black text-[10px] uppercase tracking-[0.15em] font-medium rounded-full hover:bg-p-gold-light transition-all duration-300 hover:shadow-lg hover:shadow-p-gold/20">
+                                <Sparkles size={12} />
+                                Start Project
+                            </Link>
+                        </div>
+                    </div>
 
-                {/* Mobile Toggle */}
-                <div className="flex md:hidden gap-6 items-center z-50">
-                    <button
-                        onClick={toggleTheme}
-                        className="text-p-ink dark:text-p-cream hover:text-p-gold transition-colors"
-                    >
-                        {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
-                    </button>
-                    <button
-                        className="text-p-ink dark:text-p-cream hover:text-p-gold transition-colors"
-                        onClick={() => setIsOpen(!isOpen)}
-                    >
-                        {isOpen ? <X size={24} /> : <Menu size={24} />}
-                    </button>
+                    <div className="flex lg:hidden gap-4 items-center z-50">
+                        <button
+                            onClick={toggleTheme}
+                            className="w-10 h-10 rounded-full glass flex items-center justify-center text-p-ink dark:text-p-cream hover:text-p-gold transition-colors"
+                        >
+                            {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
+                        </button>
+                        <button
+                            className="w-10 h-10 rounded-full glass flex items-center justify-center text-p-ink dark:text-p-cream hover:text-p-gold transition-colors"
+                            onClick={() => setIsOpen(!isOpen)}
+                        >
+                            {isOpen ? <X size={20} /> : <Menu size={20} />}
+                        </button>
+                    </div>
                 </div>
             </motion.nav>
 
-            {/* Full Screen Menu Overlay */}
             <AnimatePresence>
                 {isOpen && (
                     <motion.div
@@ -140,12 +156,14 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
                         exit="closed"
                         className="fixed top-0 left-0 w-full bg-p-paper dark:bg-p-black z-40 overflow-hidden flex flex-col justify-center items-center"
                     >
-                        {/* Background Art */}
-                        <div className="absolute inset-0 opacity-5 pointer-events-none flex items-center justify-center">
-                            <span className="text-[40vw] font-cursive text-p-ink dark:text-p-cream opacity-10">P</span>
+                        <div className="absolute inset-0 bg-grid-pattern opacity-10" />
+                        
+                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                            <div className="w-[60vw] h-[60vw] rounded-full border border-p-gold/5 animate-spin-slower" />
+                            <div className="absolute w-[40vw] h-[40vw] rounded-full border border-p-gold/10 animate-spin-slow" style={{ animationDirection: 'reverse' }} />
                         </div>
 
-                        <div className="flex flex-col gap-8 text-center relative z-10">
+                        <div className="flex flex-col gap-6 text-center relative z-10">
                             {NAV_LINKS.map((link, i) => (
                                 <div key={link.name} className="overflow-hidden">
                                     {link.href.startsWith('/#') ? (
@@ -154,7 +172,7 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
                                             variants={linkVariants}
                                             href={link.href}
                                             onClick={(e) => handleLinkClick(e, link.href)}
-                                            className="block text-5xl font-serif text-p-ink dark:text-p-cream hover:text-p-gold italic transition-colors duration-500 cursor-pointer"
+                                            className="block text-4xl md:text-6xl font-display font-bold text-p-ink dark:text-p-cream hover:text-p-gold transition-colors duration-300 cursor-pointer"
                                         >
                                             {link.name}
                                         </motion.a>
@@ -163,7 +181,7 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
                                             <motion.span
                                                 custom={i}
                                                 variants={linkVariants}
-                                                className="block text-5xl font-serif text-p-ink dark:text-p-cream hover:text-p-gold italic transition-colors duration-500"
+                                                className="block text-4xl md:text-6xl font-display font-bold text-p-ink dark:text-p-cream hover:text-p-gold transition-colors duration-300"
                                             >
                                                 {link.name}
                                             </motion.span>
@@ -172,25 +190,36 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
                                 </div>
                             ))}
 
-                            {/* Legal Links in Menu */}
                             <motion.div
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ delay: 0.5 }}
-                                className="mt-8 flex gap-6"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.8 }}
+                                className="mt-12 flex flex-col items-center gap-6"
                             >
-                                <Link to="/privacy" onClick={() => setIsOpen(false)} className="text-sm text-p-ink/60 dark:text-p-cream/60 hover:text-p-gold">Privacy</Link>
-                                <Link to="/terms" onClick={() => setIsOpen(false)} className="text-sm text-p-ink/60 dark:text-p-cream/60 hover:text-p-gold">Terms</Link>
+                                <Link 
+                                    to="/#contact" 
+                                    onClick={() => setIsOpen(false)}
+                                    className="inline-flex items-center gap-2 px-8 py-4 bg-p-gold text-p-black text-sm uppercase tracking-[0.15em] font-medium rounded-full hover:bg-p-gold-light transition-all"
+                                >
+                                    <Sparkles size={16} />
+                                    Start Your Project
+                                </Link>
+                                
+                                <div className="flex gap-6 mt-4">
+                                    <Link to="/privacy" onClick={() => setIsOpen(false)} className="text-xs text-p-ink/40 dark:text-p-cream/40 hover:text-p-gold font-mono uppercase tracking-wider">Privacy</Link>
+                                    <Link to="/terms" onClick={() => setIsOpen(false)} className="text-xs text-p-ink/40 dark:text-p-cream/40 hover:text-p-gold font-mono uppercase tracking-wider">Terms</Link>
+                                </div>
                             </motion.div>
                         </div>
 
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
-                            transition={{ delay: 0.5 }}
+                            transition={{ delay: 0.6 }}
                             className="absolute bottom-12 flex flex-col items-center gap-4"
                         >
-                            <p className="text-p-gold text-xs tracking-widest uppercase">Est. MMXIV — Mumbai</p>
+                            <p className="text-p-gold/60 text-[10px] tracking-[0.3em] uppercase font-mono">Est. MMXIV</p>
+                            <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-p-gold/30 to-transparent" />
                         </motion.div>
                     </motion.div>
                 )}

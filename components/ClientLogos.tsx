@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const LOGOS = [
   {
@@ -68,21 +69,33 @@ const LOGOS = [
 
 const ClientLogos: React.FC = () => {
   return (
-    <section className="py-20 bg-p-paper dark:bg-p-black border-y border-p-ink/5 dark:border-white/5 overflow-hidden relative transition-colors duration-700">
-        <div className="flex w-[200%] animate-scroll">
-             {/* Double the list for infinite scroll */}
-            {[...LOGOS, ...LOGOS, ...LOGOS, ...LOGOS].map((logo, i) => (
-                <div key={i} className="flex-1 flex items-center justify-center min-w-[200px] md:min-w-[250px] opacity-40 dark:opacity-30 hover:opacity-100 hover:text-p-gold transition-all duration-500">
-                    <div className="w-32 text-p-ink dark:text-p-cream">
+    <section className="py-16 bg-p-paper dark:bg-p-black border-y border-p-ink/5 dark:border-white/5 overflow-hidden relative transition-colors duration-700">
+        <div className="absolute inset-0 bg-grid-pattern opacity-10" />
+        
+        <motion.p
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="text-center text-[10px] text-p-ink/40 dark:text-p-cream/40 uppercase tracking-[0.3em] font-mono mb-10"
+        >
+            Trusted by Visionary Brands
+        </motion.p>
+        
+        <div className="flex w-[300%] animate-scroll">
+            {[...LOGOS, ...LOGOS, ...LOGOS, ...LOGOS, ...LOGOS, ...LOGOS].map((logo, i) => (
+                <div 
+                    key={i} 
+                    className="flex-1 flex items-center justify-center min-w-[160px] md:min-w-[200px] opacity-30 dark:opacity-20 hover:opacity-100 hover:text-p-gold transition-all duration-500 group"
+                >
+                    <div className="w-28 text-p-ink dark:text-p-cream group-hover:scale-110 transition-transform duration-300">
                         {logo.art}
                     </div>
                 </div>
             ))}
         </div>
         
-        {/* Fade Edges */}
-        <div className="absolute top-0 left-0 w-24 md:w-32 h-full bg-gradient-to-r from-p-paper dark:from-p-black to-transparent z-10"></div>
-        <div className="absolute top-0 right-0 w-24 md:w-32 h-full bg-gradient-to-l from-p-paper dark:from-p-black to-transparent z-10"></div>
+        <div className="absolute top-0 left-0 w-32 md:w-48 h-full bg-gradient-to-r from-p-paper dark:from-p-black to-transparent z-10" />
+        <div className="absolute top-0 right-0 w-32 md:w-48 h-full bg-gradient-to-l from-p-paper dark:from-p-black to-transparent z-10" />
     </section>
   );
 };
