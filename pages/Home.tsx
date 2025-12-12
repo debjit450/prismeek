@@ -139,19 +139,19 @@ const Home: React.FC = () => {
                     >
                         <Sparkles className="w-3 h-3 text-p-gold" />
                         <span className="text-p-gold text-[10px] md:text-xs tracking-[0.4em] uppercase font-mono">
-                            Est. MMXIV — Global
+                            Est. MMXXV — Global
                         </span>
                         <Sparkles className="w-3 h-3 text-p-gold" />
                     </motion.div>
 
-                    <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[9rem] font-display font-bold text-p-ink dark:text-p-cream leading-[0.9] tracking-tight mb-6 transition-colors duration-500">
+                    <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[8rem] font-display font-bold text-p-ink dark:text-p-cream leading-[0.9] tracking-tight mb-6 transition-colors duration-500">
                         <motion.span
                             initial={{ opacity: 0, y: 80, rotateX: -30 }}
                             animate={{ opacity: 1, y: 0, rotateX: 0 }}
                             transition={{ delay: 0.5, duration: 1, ease: [0.22, 1, 0.36, 1] }}
                             className="block"
                         >
-                            Digital
+                            Crafting Digital
                         </motion.span>
                         <motion.span
                             initial={{ opacity: 0, y: 80, rotateX: -30 }}
@@ -159,7 +159,7 @@ const Home: React.FC = () => {
                             transition={{ delay: 0.7, duration: 1, ease: [0.22, 1, 0.36, 1] }}
                             className="block bg-gradient-to-r from-p-gold-light via-p-gold to-p-gold-dim bg-clip-text text-transparent"
                         >
-                            Atelier
+                            Experiences
                         </motion.span>
                     </h1>
 
