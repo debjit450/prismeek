@@ -218,7 +218,7 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
                             transition={{ delay: 0.6 }}
                             className="absolute bottom-12 flex flex-col items-center gap-4"
                         >
-                            <p className="text-p-gold/60 text-[10px] tracking-[0.3em] uppercase font-mono">Est. MMXIV</p>
+                            <p className="text-p-gold/60 text-[10px] tracking-[0.3em] uppercase font-mono">Est. MMXXV</p>
                             <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-p-gold/30 to-transparent" />
                         </motion.div>
                     </motion.div>
