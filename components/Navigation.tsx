@@ -75,35 +75,32 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
                         <Link to="/" className="flex items-center gap-3 group">
                             <div className="relative">
                                 <img src="/logo.png" className="w-10 h-10 md:w-12 md:h-12 object-contain relative z-10" alt="" />
-                                <div className="absolute inset-0 bg-p-gold/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                <div className="absolute inset-0 bg-p-violet/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                             </div>
                             <div className="flex flex-col">
-                                <span className="text-3xl md:text-4xl font-logo text-p-ink dark:text-p-cream tracking-wider transition-colors duration-500 group-hover:text-p-gold">
+                                <span className="text-3xl md:text-4xl font-logo text-p-ink dark:text-p-cream tracking-tight transition-colors duration-500 group-hover:text-p-violet">
                                     {AGENCY_INFO.name}
-                                </span>
-                                <span className="text-[8px] font-mono text-p-gold/60 uppercase tracking-[0.3em] -mt-1 hidden md:block">
-                                    Digital Atelier
                                 </span>
                             </div>
                         </Link>
                     </div>
 
                     <div className="hidden lg:flex items-center gap-8">
-                        <div className="flex gap-1 items-center glass-gold px-2 py-1 rounded-full">
+                        <div className="flex gap-1 items-center bg-p-ink/5 dark:bg-white/5 backdrop-blur-xl px-2 py-1 rounded-full border border-p-ink/5 dark:border-white/10">
                             {NAV_LINKS.map((link, index) => (
                                 <React.Fragment key={link.name}>
                                     {link.href.startsWith('/#') ? (
                                         <a
                                             href={link.href}
                                             onClick={(e) => handleLinkClick(e, link.href)}
-                                            className="text-[11px] uppercase tracking-[0.15em] font-medium text-p-ink/60 dark:text-p-cream/60 hover:text-p-gold dark:hover:text-p-gold transition-all duration-300 px-4 py-2 rounded-full hover:bg-p-gold/10 cursor-pointer"
+                                            className="text-[11px] uppercase tracking-[0.15em] font-medium text-p-ink/60 dark:text-p-cream/60 hover:text-p-violet dark:hover:text-p-violet transition-all duration-300 px-4 py-2 rounded-full hover:bg-p-violet/10 cursor-pointer"
                                         >
                                             {link.name}
                                         </a>
                                     ) : (
                                         <Link
                                             to={link.href}
-                                            className="text-[11px] uppercase tracking-[0.15em] font-medium text-p-ink/60 dark:text-p-cream/60 hover:text-p-gold dark:hover:text-p-gold transition-all duration-300 px-4 py-2 rounded-full hover:bg-p-gold/10"
+                                            className="text-[11px] uppercase tracking-[0.15em] font-medium text-p-ink/60 dark:text-p-cream/60 hover:text-p-violet dark:hover:text-p-violet transition-all duration-300 px-4 py-2 rounded-full hover:bg-p-violet/10"
                                         >
                                             {link.name}
                                         </Link>
@@ -117,13 +114,13 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
                                 onClick={toggleTheme}
                                 whileHover={{ scale: 1.1 }}
                                 whileTap={{ scale: 0.95 }}
-                                className="w-10 h-10 rounded-full glass flex items-center justify-center text-p-ink dark:text-p-cream hover:text-p-gold transition-colors"
+                                className="w-10 h-10 rounded-full bg-p-ink/5 dark:bg-white/5 backdrop-blur-xl border border-p-ink/5 dark:border-white/10 flex items-center justify-center text-p-ink dark:text-p-cream hover:text-p-violet transition-colors"
                                 aria-label="Toggle Theme"
                             >
                                 {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
                             </motion.button>
                             
-                            <Link to="/#contact" className="hidden xl:flex items-center gap-2 px-5 py-2.5 bg-p-gold text-p-black text-[10px] uppercase tracking-[0.15em] font-medium rounded-full hover:bg-p-gold-light transition-all duration-300 hover:shadow-lg hover:shadow-p-gold/20">
+                            <Link to="/#contact" className="hidden xl:flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-p-violet to-purple-600 text-white text-[10px] uppercase tracking-[0.15em] font-medium rounded-full hover:opacity-90 transition-all duration-300 hover:shadow-lg hover:shadow-p-violet/30">
                                 <Sparkles size={12} />
                                 Start Project
                             </Link>
@@ -133,12 +130,12 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
                     <div className="flex lg:hidden gap-4 items-center z-50">
                         <button
                             onClick={toggleTheme}
-                            className="w-10 h-10 rounded-full glass flex items-center justify-center text-p-ink dark:text-p-cream hover:text-p-gold transition-colors"
+                            className="w-10 h-10 rounded-full bg-p-ink/5 dark:bg-white/5 backdrop-blur-xl border border-p-ink/5 dark:border-white/10 flex items-center justify-center text-p-ink dark:text-p-cream hover:text-p-violet transition-colors"
                         >
                             {theme === 'dark' ? <Sun size={18} /> : <Moon size={18} />}
                         </button>
                         <button
-                            className="w-10 h-10 rounded-full glass flex items-center justify-center text-p-ink dark:text-p-cream hover:text-p-gold transition-colors"
+                            className="w-10 h-10 rounded-full bg-p-ink/5 dark:bg-white/5 backdrop-blur-xl border border-p-ink/5 dark:border-white/10 flex items-center justify-center text-p-ink dark:text-p-cream hover:text-p-violet transition-colors"
                             onClick={() => setIsOpen(!isOpen)}
                         >
                             {isOpen ? <X size={20} /> : <Menu size={20} />}
@@ -156,12 +153,7 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
                         exit="closed"
                         className="fixed top-0 left-0 w-full bg-p-paper dark:bg-p-black z-40 overflow-hidden flex flex-col justify-center items-center"
                     >
-                        <div className="absolute inset-0 bg-grid-pattern opacity-10" />
-                        
-                        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                            <div className="w-[60vw] h-[60vw] rounded-full border border-p-gold/5 animate-spin-slower" />
-                            <div className="absolute w-[40vw] h-[40vw] rounded-full border border-p-gold/10 animate-spin-slow" style={{ animationDirection: 'reverse' }} />
-                        </div>
+                        <div className="absolute inset-0 bg-gradient-to-b from-p-violet/5 to-transparent" />
 
                         <div className="flex flex-col gap-6 text-center relative z-10">
                             {NAV_LINKS.map((link, i) => (
@@ -172,7 +164,7 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
                                             variants={linkVariants}
                                             href={link.href}
                                             onClick={(e) => handleLinkClick(e, link.href)}
-                                            className="block text-4xl md:text-6xl font-display font-bold text-p-ink dark:text-p-cream hover:text-p-gold transition-colors duration-300 cursor-pointer"
+                                            className="block text-4xl md:text-6xl font-display font-bold text-p-ink dark:text-p-cream hover:text-p-violet transition-colors duration-300 cursor-pointer"
                                         >
                                             {link.name}
                                         </motion.a>
@@ -181,7 +173,7 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
                                             <motion.span
                                                 custom={i}
                                                 variants={linkVariants}
-                                                className="block text-4xl md:text-6xl font-display font-bold text-p-ink dark:text-p-cream hover:text-p-gold transition-colors duration-300"
+                                                className="block text-4xl md:text-6xl font-display font-bold text-p-ink dark:text-p-cream hover:text-p-violet transition-colors duration-300"
                                             >
                                                 {link.name}
                                             </motion.span>
@@ -199,15 +191,15 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
                                 <Link 
                                     to="/#contact" 
                                     onClick={() => setIsOpen(false)}
-                                    className="inline-flex items-center gap-2 px-8 py-4 bg-p-gold text-p-black text-sm uppercase tracking-[0.15em] font-medium rounded-full hover:bg-p-gold-light transition-all"
+                                    className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-p-violet to-purple-600 text-white text-sm uppercase tracking-[0.15em] font-medium rounded-full hover:opacity-90 transition-all"
                                 >
                                     <Sparkles size={16} />
                                     Start Your Project
                                 </Link>
                                 
                                 <div className="flex gap-6 mt-4">
-                                    <Link to="/privacy" onClick={() => setIsOpen(false)} className="text-xs text-p-ink/40 dark:text-p-cream/40 hover:text-p-gold font-mono uppercase tracking-wider">Privacy</Link>
-                                    <Link to="/terms" onClick={() => setIsOpen(false)} className="text-xs text-p-ink/40 dark:text-p-cream/40 hover:text-p-gold font-mono uppercase tracking-wider">Terms</Link>
+                                    <Link to="/privacy" onClick={() => setIsOpen(false)} className="text-xs text-p-ink/40 dark:text-p-cream/40 hover:text-p-violet font-mono uppercase tracking-wider">Privacy</Link>
+                                    <Link to="/terms" onClick={() => setIsOpen(false)} className="text-xs text-p-ink/40 dark:text-p-cream/40 hover:text-p-violet font-mono uppercase tracking-wider">Terms</Link>
                                 </div>
                             </motion.div>
                         </div>
@@ -218,8 +210,8 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
                             transition={{ delay: 0.6 }}
                             className="absolute bottom-12 flex flex-col items-center gap-4"
                         >
-                            <p className="text-p-gold/60 text-[10px] tracking-[0.3em] uppercase font-mono">Est. MMXXV</p>
-                            <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-p-gold/30 to-transparent" />
+                            <p className="text-p-violet/60 text-[10px] tracking-[0.3em] uppercase font-mono">Est. MMXXV</p>
+                            <div className="w-16 h-[1px] bg-gradient-to-r from-transparent via-p-violet/30 to-transparent" />
                         </motion.div>
                     </motion.div>
                 )}

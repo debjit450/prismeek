@@ -20,7 +20,7 @@ const WorkPage: React.FC = () => {
     <div className="min-h-screen pt-32 pb-20 relative">
       <SEOHead 
         title="Portfolio & Case Studies - Luxury Web Design Projects Worldwide"
-        description="Explore Prismeek's portfolio of bespoke digital experiences for luxury brands across USA, UK, UAE, Dubai, Canada, Australia, and Europe. Case studies in hospitality, fintech, AI, and e-commerce."
+        description="Explore Prismeek's portfolio of custom digital experiences for luxury brands across USA, UK, UAE, Dubai, Canada, Australia, and Europe. Case studies in hospitality, fintech, AI, and e-commerce."
         keywords={[
           "luxury web design portfolio",
           "digital agency case studies",
@@ -76,13 +76,13 @@ const WorkPage: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <span className="text-p-gold text-xs tracking-[0.4em] uppercase block mb-6">Portfolio</span>
+          <span className="text-violet-400 text-xs tracking-[0.4em] uppercase block mb-6">Portfolio</span>
           <h1 className="text-6xl md:text-8xl font-serif text-p-ink dark:text-p-cream mb-8">
-            Our <span className="text-p-gold italic">Legacy</span>
+            Our <span className="text-violet-400 italic">Work</span>
           </h1>
           <p className="text-p-ink/60 dark:text-p-cream/60 text-xl max-w-3xl mx-auto">
             Each project is a testament to our commitment to excellence. 
-            Explore the digital estates we've crafted for visionary brands.
+            Explore the websites we've built for visionary brands.
           </p>
         </motion.div>
 
@@ -98,8 +98,8 @@ const WorkPage: React.FC = () => {
               onClick={() => setActiveCategory(category)}
               className={`px-6 py-2 text-xs uppercase tracking-widest transition-all duration-300 border ${
                 activeCategory === category
-                  ? 'bg-p-gold text-p-black border-p-gold'
-                  : 'border-p-ink/20 dark:border-white/10 text-p-ink/60 dark:text-p-cream/60 hover:border-p-gold hover:text-p-gold'
+                  ? 'bg-gradient-to-r from-violet-500 to-purple-600 text-white border-violet-500'
+                  : 'border-p-ink/20 dark:border-white/10 text-p-ink/60 dark:text-p-cream/60 hover:border-violet-500 hover:text-violet-400'
               }`}
             >
               {category}
@@ -150,7 +150,7 @@ const WorkPage: React.FC = () => {
                       transition={{ duration: 0.3 }}
                     >
                       <p className="text-white/70 text-sm mb-4">{item.description}</p>
-                      <div className="flex items-center gap-2 text-p-gold text-xs uppercase tracking-widest">
+                      <div className="flex items-center gap-2 text-violet-400 text-xs uppercase tracking-widest">
                         View Case Study
                         <ArrowRight className="w-4 h-4" />
                       </div>
@@ -159,10 +159,10 @@ const WorkPage: React.FC = () => {
                   
                   <div className="mt-6">
                     <div className="flex items-center justify-between mb-2">
-                      <span className="text-p-gold text-[10px] tracking-widest uppercase">{item.category}</span>
+                      <span className="text-violet-400 text-[10px] tracking-widest uppercase">{item.category}</span>
                       <span className="text-p-ink/30 dark:text-p-cream/30 text-xs">{item.year}</span>
                     </div>
-                    <h3 className="text-2xl font-serif text-p-ink dark:text-p-cream group-hover:text-p-gold transition-colors">
+                    <h3 className="text-2xl font-serif text-p-ink dark:text-p-cream group-hover:text-violet-400 transition-colors">
                       {item.client}
                     </h3>
                   </div>
@@ -173,7 +173,7 @@ const WorkPage: React.FC = () => {
                     href={item.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center bg-white/10 backdrop-blur-sm text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-p-gold hover:text-p-black"
+                    className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center bg-white/10 backdrop-blur-sm text-white opacity-0 group-hover:opacity-100 transition-opacity hover:bg-violet-500 hover:text-white"
                   >
                     <ExternalLink className="w-4 h-4" />
                   </a>
@@ -190,9 +190,9 @@ const WorkPage: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="mb-20"
         >
-          <span className="text-p-gold text-xs tracking-[0.4em] uppercase block mb-6 text-center">Industries</span>
+          <span className="text-violet-400 text-xs tracking-[0.4em] uppercase block mb-6 text-center">Industries</span>
           <h2 className="text-3xl md:text-5xl font-serif text-p-ink dark:text-p-cream mb-12 text-center">
-            Expertise Across <span className="text-p-gold italic">Sectors</span>
+            Expertise Across <span className="text-violet-400 italic">Sectors</span>
           </h2>
           <div className="flex flex-wrap justify-center gap-4">
             {INDUSTRIES.map((industry) => (
@@ -214,7 +214,7 @@ const WorkPage: React.FC = () => {
           className="text-center py-20 bg-white/50 dark:bg-white/[0.02] border border-p-ink/5 dark:border-white/5 backdrop-blur-sm"
         >
           <h2 className="text-3xl md:text-5xl font-serif text-p-ink dark:text-p-cream mb-6">
-            Your Vision, <span className="text-p-gold italic">Our Craft</span>
+            Your Vision, <span className="text-violet-400 italic">Our Craft</span>
           </h2>
           <p className="text-p-ink/60 dark:text-p-cream/60 text-lg max-w-2xl mx-auto mb-10">
             Every great project begins with a conversation. 
@@ -222,9 +222,9 @@ const WorkPage: React.FC = () => {
           </p>
           <Link
             to="/#contact"
-            className="inline-flex items-center gap-2 px-10 py-5 bg-p-gold text-p-black text-xs uppercase tracking-widest hover:bg-p-ink dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors duration-300"
+            className="inline-flex items-center gap-2 px-10 py-5 bg-gradient-to-r from-violet-500 to-purple-600 text-white text-xs uppercase tracking-widest hover:from-violet-600 hover:to-purple-700 transition-all duration-300"
           >
-            Begin Your Commission
+            Get Started
             <ArrowRight className="w-4 h-4" />
           </Link>
         </motion.div>

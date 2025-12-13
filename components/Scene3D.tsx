@@ -1,114 +1,126 @@
 import React, { useRef, useMemo, Suspense } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { Float, Environment } from '@react-three/drei';
+import { Float } from '@react-three/drei';
 import * as THREE from 'three';
 
-function GoldenRing({ position, radius = 2, thickness = 0.015 }: {
+function MorphingBlob({ 
+  position, 
+  size = 1, 
+  color,
+  opacity = 0.4,
+  speed = 0.3,
+}: {
   position: [number, number, number];
-  radius?: number;
-  thickness?: number;
-}) {
-  const ringRef = useRef<THREE.Mesh>(null);
-
-  useFrame((state) => {
-    if (ringRef.current) {
-      ringRef.current.rotation.x = Math.PI / 2.5 + Math.sin(state.clock.elapsedTime * 0.2) * 0.05;
-      ringRef.current.rotation.z = state.clock.elapsedTime * 0.05;
-    }
-  });
-
-  return (
-    <mesh ref={ringRef} position={position}>
-      <torusGeometry args={[radius, thickness, 64, 200]} />
-      <meshStandardMaterial
-        color="#C9A227"
-        metalness={0.95}
-        roughness={0.05}
-        emissive="#C9A227"
-        emissiveIntensity={0.1}
-      />
-    </mesh>
-  );
-}
-
-function FloatingSphere({ position, color, size = 0.3, speed = 1 }: {
-  position: [number, number, number];
-  color: string;
   size?: number;
+  color: string;
+  opacity?: number;
   speed?: number;
 }) {
   const meshRef = useRef<THREE.Mesh>(null);
-  const { mouse } = useThree();
+  const materialRef = useRef<THREE.ShaderMaterial>(null);
+  const { pointer } = useThree();
+  const initialPosition = useRef(position);
+
+  const blobShader = useMemo(() => ({
+    uniforms: {
+      uTime: { value: 0 },
+      uColor: { value: new THREE.Color(color) },
+      uOpacity: { value: opacity },
+    },
+    vertexShader: `
+      varying vec2 vUv;
+      varying vec3 vNormal;
+      uniform float uTime;
+      
+      void main() {
+        vUv = uv;
+        vNormal = normal;
+        
+        vec3 pos = position;
+        float noise = sin(pos.x * 1.5 + uTime * 0.8) * 0.15 + 
+                      sin(pos.y * 1.2 + uTime * 0.6) * 0.15 +
+                      sin(pos.z * 1.3 + uTime * 0.7) * 0.15;
+        pos += normal * noise;
+        
+        gl_Position = projectionMatrix * modelViewMatrix * vec4(pos, 1.0);
+      }
+    `,
+    fragmentShader: `
+      varying vec2 vUv;
+      varying vec3 vNormal;
+      uniform vec3 uColor;
+      uniform float uOpacity;
+      uniform float uTime;
+      
+      void main() {
+        float fresnel = pow(1.0 - abs(dot(normalize(vNormal), vec3(0.0, 0.0, 1.0))), 1.5);
+        vec3 finalColor = uColor + fresnel * 0.2;
+        float alpha = uOpacity * (0.6 + fresnel * 0.4);
+        gl_FragColor = vec4(finalColor, alpha);
+      }
+    `,
+  }), [color, opacity]);
 
   useFrame((state) => {
     if (meshRef.current) {
-      meshRef.current.position.y = position[1] + Math.sin(state.clock.elapsedTime * speed) * 0.3;
-      meshRef.current.position.x = position[0] + mouse.x * 0.15;
+      meshRef.current.position.x = initialPosition.current[0] + pointer.x * 0.15;
+      meshRef.current.position.y = initialPosition.current[1] + pointer.y * 0.1;
+    }
+    if (materialRef.current) {
+      materialRef.current.uniforms.uTime.value = state.clock.elapsedTime * speed;
     }
   });
 
   return (
-    <Float speed={1.5} rotationIntensity={0.2} floatIntensity={0.5}>
-      <mesh ref={meshRef} position={position}>
-        <sphereGeometry args={[size, 32, 32]} />
-        <meshStandardMaterial
-          color={color}
-          metalness={0.8}
-          roughness={0.2}
-          envMapIntensity={1.5}
+    <Float speed={0.8} rotationIntensity={0.1} floatIntensity={0.3}>
+      <mesh ref={meshRef} position={position} scale={size}>
+        <sphereGeometry args={[1, 64, 64]} />
+        <shaderMaterial
+          ref={materialRef}
+          attach="material"
+          {...blobShader}
+          transparent
+          side={THREE.DoubleSide}
+          depthWrite={false}
+          blending={THREE.NormalBlending}
         />
       </mesh>
     </Float>
   );
 }
 
-function SoftParticles() {
-  const particlesRef = useRef<THREE.Points>(null);
+function MinimalDots() {
+  const dotsRef = useRef<THREE.Points>(null);
 
-  const [positions, colors] = useMemo(() => {
-    const pos = new Float32Array(400 * 3);
-    const cols = new Float32Array(400 * 3);
+  const [positions] = useMemo(() => {
+    const count = 30;
+    const pos = new Float32Array(count * 3);
 
-    const palette = [
-      new THREE.Color('#C9A227'),
-      new THREE.Color('#8FA89A'),
-      new THREE.Color('#C4937A'),
-    ];
-
-    for (let i = 0; i < 400; i++) {
-      const angle = Math.random() * Math.PI * 2;
-      const radius = 8 + Math.random() * 12;
-      pos[i * 3] = Math.cos(angle) * radius;
-      pos[i * 3 + 1] = (Math.random() - 0.5) * 15;
-      pos[i * 3 + 2] = Math.sin(angle) * radius - 10;
-
-      const color = palette[Math.floor(Math.random() * palette.length)];
-      cols[i * 3] = color.r;
-      cols[i * 3 + 1] = color.g;
-      cols[i * 3 + 2] = color.b;
+    for (let i = 0; i < count; i++) {
+      pos[i * 3] = (Math.random() - 0.5) * 16;
+      pos[i * 3 + 1] = (Math.random() - 0.5) * 12;
+      pos[i * 3 + 2] = (Math.random() - 0.5) * 8 - 5;
     }
-    return [pos, cols];
+    return [pos];
   }, []);
 
   useFrame((state) => {
-    if (particlesRef.current) {
-      particlesRef.current.rotation.y = state.clock.elapsedTime * 0.01;
+    if (dotsRef.current) {
+      dotsRef.current.rotation.y = state.clock.elapsedTime * 0.01;
     }
   });
 
   return (
-    <points ref={particlesRef}>
+    <points ref={dotsRef}>
       <bufferGeometry>
-        <bufferAttribute attach="attributes-position" count={400} array={positions} itemSize={3} />
-        <bufferAttribute attach="attributes-color" count={400} array={colors} itemSize={3} />
+        <bufferAttribute attach="attributes-position" count={30} array={positions} itemSize={3} />
       </bufferGeometry>
       <pointsMaterial
-        size={0.04}
-        vertexColors
+        size={0.03}
+        color="#7C3AED"
         transparent
-        opacity={0.6}
+        opacity={0.3}
         sizeAttenuation
-        blending={THREE.AdditiveBlending}
       />
     </points>
   );
@@ -116,29 +128,43 @@ function SoftParticles() {
 
 export function HeroScene3D() {
   return (
-    <div className="absolute inset-0 z-0 opacity-60 dark:opacity-80">
+    <div className="absolute inset-0 z-0 opacity-80">
       <Canvas
-        camera={{ position: [0, 0, 12], fov: 40 }}
+        camera={{ position: [0, 0, 10], fov: 45 }}
         dpr={[1, 2]}
         gl={{ antialias: true, alpha: true }}
       >
         <Suspense fallback={null}>
-          <ambientLight intensity={0.4} />
-          <directionalLight position={[10, 10, 5]} intensity={0.8} color="#fff" />
-          <pointLight position={[-5, 5, 5]} intensity={0.3} color="#C9A227" />
-          <pointLight position={[5, -5, 5]} intensity={0.2} color="#8FA89A" />
+          <ambientLight intensity={0.5} />
 
-          <SoftParticles />
+          <MinimalDots />
 
-          <GoldenRing position={[0, 0, -5]} radius={3.5} />
-          <GoldenRing position={[0, 0, -8]} radius={5} thickness={0.01} />
+          {/* Large purple blob - top right */}
+          <MorphingBlob 
+            position={[3, 2, -3]} 
+            size={3.5} 
+            color="#7C3AED"
+            opacity={0.35}
+            speed={0.25}
+          />
 
-          <FloatingSphere position={[-4, 2, -4]} color="#C9A227" size={0.25} speed={0.8} />
-          <FloatingSphere position={[4.5, -1.5, -5]} color="#8FA89A" size={0.2} speed={1.2} />
-          <FloatingSphere position={[-3, -2.5, -3]} color="#C4937A" size={0.18} speed={0.6} />
-          <FloatingSphere position={[3, 3, -6]} color="#8B7189" size={0.15} speed={1} />
+          {/* Pink/coral blob - bottom left */}
+          <MorphingBlob 
+            position={[-3.5, -1.5, -4]} 
+            size={2.8} 
+            color="#F43F5E"
+            opacity={0.3}
+            speed={0.3}
+          />
 
-          <Environment preset="night" />
+          {/* Cyan blob - center */}
+          <MorphingBlob 
+            position={[0.5, 0, -5]} 
+            size={2.2} 
+            color="#06B6D4"
+            opacity={0.25}
+            speed={0.35}
+          />
         </Suspense>
       </Canvas>
     </div>
@@ -147,31 +173,40 @@ export function HeroScene3D() {
 
 export function BackgroundScene3D() {
   return (
-    <div className="fixed inset-0 z-0 pointer-events-none opacity-30 dark:opacity-50">
+    <div className="fixed inset-0 z-0 pointer-events-none opacity-40">
       <Canvas
-        camera={{ position: [0, 0, 15], fov: 45 }}
+        camera={{ position: [0, 0, 12], fov: 50 }}
         dpr={[1, 1.5]}
         gl={{ antialias: true, alpha: true }}
       >
         <Suspense fallback={null}>
-          <ambientLight intensity={0.2} />
-          <pointLight position={[10, 10, 10]} intensity={0.3} color="#C9A227" />
+          <ambientLight intensity={0.3} />
 
-          <SoftParticles />
+          <MinimalDots />
 
-          <Float speed={0.3} rotationIntensity={0.1} floatIntensity={0.3}>
-            <mesh position={[-8, 4, -12]} scale={0.2}>
-              <sphereGeometry args={[1, 24, 24]} />
-              <meshStandardMaterial color="#C9A227" metalness={0.9} roughness={0.1} />
-            </mesh>
-          </Float>
+          <MorphingBlob 
+            position={[-5, 3, -8]} 
+            size={2} 
+            color="#7C3AED"
+            opacity={0.25}
+            speed={0.2}
+          />
 
-          <Float speed={0.4} rotationIntensity={0.15} floatIntensity={0.4}>
-            <mesh position={[8, -4, -14]} scale={0.15}>
-              <sphereGeometry args={[1, 24, 24]} />
-              <meshStandardMaterial color="#8FA89A" metalness={0.8} roughness={0.2} />
-            </mesh>
-          </Float>
+          <MorphingBlob 
+            position={[5, -2, -10]} 
+            size={1.8} 
+            color="#F43F5E"
+            opacity={0.2}
+            speed={0.25}
+          />
+
+          <MorphingBlob 
+            position={[0, -4, -6]} 
+            size={1.5} 
+            color="#06B6D4"
+            opacity={0.2}
+            speed={0.22}
+          />
         </Suspense>
       </Canvas>
     </div>

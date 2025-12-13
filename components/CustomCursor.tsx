@@ -97,7 +97,7 @@ const CustomCursor: React.FC = () => {
           }`}>
             {!isHovering && (
               <div className="absolute inset-0 flex items-center justify-center">
-                <div className="w-1 h-1 bg-p-gold rounded-full" />
+                <div className="w-1 h-1 bg-violet-500 rounded-full" />
               </div>
             )}
           </div>
@@ -112,7 +112,7 @@ const CustomCursor: React.FC = () => {
         }}
       >
         <motion.div
-          className="w-10 h-10 -translate-x-1/2 -translate-y-1/2 rounded-full border border-p-gold/40"
+          className="w-10 h-10 -translate-x-1/2 -translate-y-1/2 rounded-full border border-violet-500/40"
           animate={{
             scale: isClicking ? 0.5 : isHovering ? 2.5 : 1,
             opacity: isVisible ? 0.6 : 0,

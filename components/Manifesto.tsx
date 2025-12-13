@@ -21,10 +21,10 @@ const Manifesto: React.FC = () => {
           style={{ y: y1 }} 
           className="absolute top-0 left-0 w-full h-full flex items-center justify-center pointer-events-none select-none"
         >
-            <h1 className="text-[20vw] md:text-[25vw] leading-none font-display font-bold text-p-ink/[0.03] dark:text-p-cream/[0.02] whitespace-nowrap">PURITY</h1>
+            <h1 className="text-[20vw] md:text-[25vw] leading-none font-display font-bold text-p-ink/[0.03] dark:text-p-cream/[0.02] whitespace-nowrap">SIMPLE</h1>
         </motion.div>
 
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-p-gold/10 via-transparent to-transparent pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-radial from-violet-500/10 via-transparent to-transparent pointer-events-none" />
 
         <div className="max-w-5xl mx-auto relative z-10">
             <motion.div
@@ -36,15 +36,15 @@ const Manifesto: React.FC = () => {
             >
                 <div className="flex flex-col items-center mb-16">
                      <motion.div
-                        className="w-[1px] h-16 bg-gradient-to-b from-transparent via-p-gold to-transparent mb-6"
+                        className="w-[1px] h-16 bg-gradient-to-b from-transparent via-violet-500 to-transparent mb-6"
                         initial={{ scaleY: 0 }}
                         whileInView={{ scaleY: 1 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                      />
-                     <span className="inline-flex items-center gap-3 px-4 py-2 glass-gold rounded-full">
-                        <Sparkles className="w-3 h-3 text-p-gold" />
-                        <span className="text-p-gold text-[10px] tracking-[0.4em] uppercase font-mono">The Philosophy</span>
+                     <span className="inline-flex items-center gap-3 px-4 py-2 bg-violet-500/10 border border-violet-500/20 rounded-full">
+                        <Sparkles className="w-3 h-3 text-violet-400" />
+                        <span className="text-violet-400 text-[10px] tracking-[0.4em] uppercase font-mono">How We Work</span>
                      </span>
                 </div>
                 
@@ -52,10 +52,10 @@ const Manifesto: React.FC = () => {
                     style={{ opacity }}
                     className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif text-p-ink dark:text-p-cream leading-[1.2] mb-20 transition-colors duration-500"
                 >
-                    <span className="opacity-40">Luxury is the </span>
-                    <span className="bg-gradient-to-r from-p-gold-light via-p-gold to-p-gold-dim bg-clip-text text-transparent italic">absence</span>
-                    <span className="opacity-40"> of the unnecessary. We craft digital silence in a world of </span>
-                    <span className="text-p-ink dark:text-white font-medium">noise</span>
+                    <span className="opacity-40">Good design is </span>
+                    <span className="bg-gradient-to-r from-violet-400 via-violet-500 to-purple-600 bg-clip-text text-transparent italic">invisible</span>
+                    <span className="opacity-40">. We build websites that just </span>
+                    <span className="text-p-ink dark:text-white font-medium">work</span>
                     <span className="opacity-40">.</span>
                 </motion.h2>
 
@@ -68,14 +68,14 @@ const Manifesto: React.FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="p-8 glass rounded-2xl group hover:bg-p-gold/5 transition-all duration-500"
+                        className="p-8 glass rounded-2xl group hover:bg-violet-500/5 transition-all duration-500"
                     >
-                        <h3 className="text-xl font-display font-semibold text-p-ink dark:text-p-cream mb-4 flex items-center gap-3 group-hover:text-p-gold transition-colors">
-                            <span className="w-2 h-2 bg-p-gold rounded-full" />
-                            Bespoke Only
+                        <h3 className="text-xl font-display font-semibold text-p-ink dark:text-p-cream mb-4 flex items-center gap-3 group-hover:text-violet-400 transition-colors">
+                            <span className="w-2 h-2 bg-violet-500 rounded-full" />
+                            Built for You
                         </h3>
                         <p className="text-p-ink/60 dark:text-p-cream/60 font-light leading-relaxed text-sm">
-                            We reject the industrialization of design. Every pixel, every line of code is hand-crafted for the specific needs of our clientele. We do not use templates; we build legacies from the ground up.
+                            No templates, no shortcuts. Every project is custom-built for your specific needs. We take the time to understand your business and create something that truly fits.
                         </p>
                     </motion.div>
                     <motion.div 
@@ -83,14 +83,14 @@ const Manifesto: React.FC = () => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.4 }}
-                        className="p-8 glass rounded-2xl group hover:bg-p-gold/5 transition-all duration-500"
+                        className="p-8 glass rounded-2xl group hover:bg-violet-500/5 transition-all duration-500"
                     >
-                        <h3 className="text-xl font-display font-semibold text-p-ink dark:text-p-cream mb-4 flex items-center gap-3 group-hover:text-p-gold transition-colors">
-                            <span className="w-2 h-2 bg-p-gold rounded-full" />
-                            Timelessness
+                        <h3 className="text-xl font-display font-semibold text-p-ink dark:text-p-cream mb-4 flex items-center gap-3 group-hover:text-violet-400 transition-colors">
+                            <span className="w-2 h-2 bg-violet-500 rounded-full" />
+                            Built to Last
                         </h3>
                         <p className="text-p-ink/60 dark:text-p-cream/60 font-light leading-relaxed text-sm">
-                            Trends fade. Style endures. Our aesthetic is rooted in classical proportions and modern typography, ensuring your digital presence remains relevant for decades, not days.
+                            Trends come and go. We focus on clean, timeless design that will look great for years. Your website should be an investment, not something you need to redo every year.
                         </p>
                     </motion.div>
                 </motion.div>

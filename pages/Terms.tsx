@@ -37,7 +37,7 @@ const Terms: React.FC = () => {
         </div>
         
         <div className="mt-20 pt-10 border-t border-p-ink/10 dark:border-white/10">
-            <Link to="/" className="text-p-gold hover:underline text-sm uppercase tracking-widest">Return Home</Link>
+            <Link to="/" className="text-violet-400 hover:underline text-sm uppercase tracking-widest">Return Home</Link>
         </div>
       </div>
     </div>

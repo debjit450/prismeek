@@ -10,7 +10,7 @@ const Work: React.FC = () => {
   return (
     <section id="work" className="py-24 md:py-40 bg-p-paper dark:bg-p-black relative overflow-hidden transition-colors duration-700" ref={containerRef}>
       <div className="absolute inset-0 bg-grid-pattern opacity-20" />
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-p-gold/[0.02] to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-violet-500/[0.02] to-transparent" />
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <motion.div
@@ -20,9 +20,9 @@ const Work: React.FC = () => {
             className="flex flex-col lg:flex-row justify-between items-start lg:items-end mb-20 pb-10 border-b border-p-ink/10 dark:border-white/10 gap-8"
         >
             <div>
-                <span className="inline-flex items-center gap-3 px-4 py-2 glass-gold rounded-full mb-6">
-                    <Sparkles className="w-3 h-3 text-p-gold" />
-                    <span className="text-p-gold text-[10px] tracking-[0.4em] uppercase font-mono">Our Legacy</span>
+                <span className="inline-flex items-center gap-3 px-4 py-2 bg-violet-500/10 border border-violet-500/20 rounded-full mb-6">
+                    <Sparkles className="w-3 h-3 text-violet-400" />
+                    <span className="text-violet-400 text-[10px] tracking-[0.4em] uppercase font-mono">Our Legacy</span>
                 </span>
                 <h2 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold text-p-ink dark:text-p-cream transition-colors duration-500">
                     Selected <span className="text-p-ink/30 dark:text-white/30">Works</span>
@@ -47,7 +47,7 @@ const Work: React.FC = () => {
         >
              <Link 
                 to="/work"
-                className="group inline-flex items-center gap-3 px-10 py-4 glass-gold text-p-gold text-[10px] uppercase tracking-[0.2em] font-mono rounded-full hover:bg-p-gold hover:text-p-black transition-all duration-500"
+                className="group inline-flex items-center gap-3 px-10 py-4 bg-violet-500/10 border border-violet-500/20 text-violet-400 text-[10px] uppercase tracking-[0.2em] font-mono rounded-full hover:bg-gradient-to-r hover:from-violet-500 hover:to-purple-600 hover:text-white hover:border-transparent transition-all duration-500"
              >
                 View Full Archive
                 <ArrowUpRight size={14} className="group-hover:-translate-y-1 group-hover:translate-x-1 transition-transform"/>
@@ -87,7 +87,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({ item, index }) => {
                 className="w-full lg:w-3/5 relative"
             >
                 <Link to={`/work/${item.slug}`} className="block relative overflow-hidden rounded-2xl">
-                    <div className="absolute inset-0 bg-gradient-to-br from-p-gold/20 to-p-amethyst/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-10 mix-blend-overlay" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-violet-500/20 to-p-amethyst/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 z-10 mix-blend-overlay" />
                     
                     <motion.div
                         whileHover={{ scale: 1.05 }}
@@ -113,7 +113,7 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({ item, index }) => {
                         href={item.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="absolute bottom-6 right-6 z-30 w-12 h-12 rounded-full glass flex items-center justify-center text-p-cream hover:bg-p-gold hover:text-p-black transition-all duration-300 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0"
+                        className="absolute bottom-6 right-6 z-30 w-12 h-12 rounded-full glass flex items-center justify-center text-p-cream hover:bg-gradient-to-r hover:from-violet-500 hover:to-purple-600 hover:text-white transition-all duration-300 opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0"
                     >
                         <ExternalLink size={18} />
                     </a>
@@ -125,19 +125,19 @@ const PortfolioItem: React.FC<PortfolioItemProps> = ({ item, index }) => {
                 className="w-full lg:w-2/5 relative"
             >
                  <div className="flex items-center gap-4 mb-6">
-                    <span className="text-p-gold text-[10px] font-mono px-3 py-1 glass-gold rounded-full">0{index + 1}</span>
-                    <span className="h-px w-12 bg-gradient-to-r from-p-gold/50 to-transparent"></span>
-                    <span className="text-p-gold/60 text-[10px] font-mono">{item.year}</span>
+                    <span className="text-violet-400 text-[10px] font-mono px-3 py-1 bg-violet-500/10 border border-violet-500/20 rounded-full">0{index + 1}</span>
+                    <span className="h-px w-12 bg-gradient-to-r from-violet-500/50 to-transparent"></span>
+                    <span className="text-violet-500/60 text-[10px] font-mono">{item.year}</span>
                  </div>
                  
-                 <h3 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-p-ink dark:text-p-cream mb-4 transition-colors duration-500 group-hover:text-p-gold">
+                 <h3 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-p-ink dark:text-p-cream mb-4 transition-colors duration-500 group-hover:text-violet-400">
                     {item.client}
                  </h3>
-                 <p className="text-[10px] text-p-gold uppercase tracking-[0.3em] mb-8 font-mono">{item.category}</p>
-                 <p className="text-p-ink/60 dark:text-p-cream/60 font-light leading-relaxed mb-10 pl-6 border-l-2 border-p-gold/30 transition-colors duration-500 text-sm">
+                 <p className="text-[10px] text-violet-400 uppercase tracking-[0.3em] mb-8 font-mono">{item.category}</p>
+                 <p className="text-p-ink/60 dark:text-p-cream/60 font-light leading-relaxed mb-10 pl-6 border-l-2 border-violet-500/30 transition-colors duration-500 text-sm">
                     {item.description}
                  </p>
-                 <Link to={`/work/${item.slug}`} className="group/btn inline-flex items-center gap-3 text-p-ink dark:text-p-cream hover:text-p-gold transition-colors text-[10px] uppercase tracking-[0.2em] font-mono">
+                 <Link to={`/work/${item.slug}`} className="group/btn inline-flex items-center gap-3 text-p-ink dark:text-p-cream hover:text-violet-400 transition-colors text-[10px] uppercase tracking-[0.2em] font-mono">
                     <span>Explore Project</span>
                     <ArrowUpRight size={14} className="group-hover/btn:-translate-y-1 group-hover/btn:translate-x-1 transition-transform" />
                  </Link>

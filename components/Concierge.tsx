@@ -98,7 +98,7 @@ const Concierge: React.FC = () => {
   return (
     <>
       <motion.button
-        className="fixed bottom-8 right-8 z-50 flex items-center justify-center w-14 h-14 bg-p-ink dark:bg-p-cream text-p-cream dark:text-p-black rounded-full shadow-2xl hover:bg-p-gold dark:hover:bg-p-gold transition-colors duration-500 border border-p-gold/50"
+        className="fixed bottom-8 right-8 z-50 flex items-center justify-center w-14 h-14 bg-p-ink dark:bg-p-cream text-p-cream dark:text-p-black rounded-full shadow-2xl hover:bg-gradient-to-r hover:from-violet-500 hover:to-purple-600 dark:hover:bg-gradient-to-r dark:hover:from-violet-500 dark:hover:to-purple-600 transition-colors duration-500 border border-violet-500/50"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
@@ -116,7 +116,7 @@ const Concierge: React.FC = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 50, scale: 0.95 }}
             transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-            className="fixed bottom-24 right-4 md:right-8 w-[90vw] md:w-[380px] h-[550px] bg-p-paper dark:bg-[#0F0F0F] border border-p-ink/10 dark:border-p-gold/20 shadow-2xl z-50 flex flex-col font-sans"
+            className="fixed bottom-24 right-4 md:right-8 w-[90vw] md:w-[380px] h-[550px] bg-p-paper dark:bg-[#0F0F0F] border border-p-ink/10 dark:border-violet-500/20 shadow-2xl z-50 flex flex-col font-sans"
           >
             {/* Elegant Header */}
             <div className="p-5 border-b border-p-ink/5 dark:border-white/5 flex justify-between items-center bg-p-stone dark:bg-p-charcoal transition-colors">
@@ -142,13 +142,13 @@ const Concierge: React.FC = () => {
                   <div
                     className={`max-w-[85%] p-4 text-sm leading-relaxed font-light ${
                       msg.sender === MessageSender.USER
-                        ? 'bg-p-gold/10 text-p-gold border border-p-gold/20'
-                        : 'text-p-ink/90 dark:text-p-cream/90 border-l border-p-gold/50 pl-4'
+                        ? 'bg-violet-500/10 text-violet-400 border border-violet-500/20'
+                        : 'text-p-ink/90 dark:text-p-cream/90 border-l border-violet-500/50 pl-4'
                     }`}
                   >
-                   {msg.sender === MessageSender.AI && <span className="text-[10px] text-p-gold uppercase tracking-widest block mb-1">Prismeek AI</span>}
+                   {msg.sender === MessageSender.AI && <span className="text-[10px] text-violet-400 uppercase tracking-widest block mb-1">Prismeek AI</span>}
                    {msg.text}
-                   {msg.isStreaming && <span className="inline-block w-1 h-3 ml-2 bg-p-gold animate-pulse"/>}
+                   {msg.isStreaming && <span className="inline-block w-1 h-3 ml-2 bg-violet-500 animate-pulse"/>}
                   </div>
                 </div>
               ))}
@@ -164,13 +164,13 @@ const Concierge: React.FC = () => {
                   onChange={(e) => setInputValue(e.target.value)}
                   onKeyDown={handleKeyDown}
                   placeholder="Type your message..."
-                  className="w-full bg-transparent border-b border-p-ink/10 dark:border-white/10 py-3 pr-10 text-p-ink dark:text-p-cream placeholder:text-p-ink/30 dark:placeholder:text-white/10 focus:outline-none focus:border-p-gold transition-colors text-sm font-light"
+                  className="w-full bg-transparent border-b border-p-ink/10 dark:border-white/10 py-3 pr-10 text-p-ink dark:text-p-cream placeholder:text-p-ink/30 dark:placeholder:text-white/10 focus:outline-none focus:border-violet-500 transition-colors text-sm font-light"
                   disabled={isTyping}
                 />
                 <button
                   onClick={handleSend}
                   disabled={!inputValue.trim() || isTyping}
-                  className="absolute right-0 text-p-gold hover:text-p-ink dark:hover:text-white disabled:opacity-30 transition-colors"
+                  className="absolute right-0 text-violet-400 hover:text-p-ink dark:hover:text-white disabled:opacity-30 transition-colors"
                 >
                   {isTyping ? <Loader2 size={16} className="animate-spin" /> : <Send size={16} />}
                 </button>

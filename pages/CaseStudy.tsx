@@ -19,7 +19,7 @@ const CaseStudy: React.FC = () => {
         <div className="min-h-screen flex items-center justify-center bg-p-paper dark:bg-p-black text-p-ink dark:text-p-cream">
             <div className="text-center">
                 <h1 className="text-4xl font-serif mb-4">Project Not Found</h1>
-                <Link to="/" className="text-p-gold hover:underline">Return Home</Link>
+                <Link to="/" className="text-violet-400 hover:underline">Return Home</Link>
             </div>
         </div>
     );
@@ -36,7 +36,7 @@ const CaseStudy: React.FC = () => {
           structuredData={seoData.structuredData}
         />
         <div className="max-w-7xl mx-auto">
-            <Link to="/#work" className="inline-flex items-center gap-2 text-p-ink/50 dark:text-p-cream/50 hover:text-p-gold transition-colors mb-12 text-xs uppercase tracking-widest">
+            <Link to="/#work" className="inline-flex items-center gap-2 text-p-ink/50 dark:text-p-cream/50 hover:text-violet-400 transition-colors mb-12 text-xs uppercase tracking-widest">
                 <ArrowLeft size={14} /> Back to Archive
             </Link>
 
@@ -49,14 +49,14 @@ const CaseStudy: React.FC = () => {
             >
                 <div className="flex flex-col md:flex-row gap-12 items-end justify-between border-b border-p-ink/10 dark:border-white/10 pb-12">
                     <div className="max-w-3xl">
-                        <span className="text-p-gold text-xs tracking-[0.4em] uppercase block mb-6">{project.category} — {project.year}</span>
+                        <span className="text-violet-400 text-xs tracking-[0.4em] uppercase block mb-6">{project.category} — {project.year}</span>
                         <h1 className="text-6xl md:text-8xl font-serif text-p-ink dark:text-p-cream leading-[0.9] mb-8">{project.client}</h1>
                         <p className="text-xl md:text-2xl text-p-ink/70 dark:text-p-cream/70 font-light leading-relaxed max-w-2xl">
                             {project.description}
                         </p>
                     </div>
                     <a href={project.link} className="flex flex-col gap-4 min-w-[200px]">
-                         <button className="px-8 py-4 bg-p-gold text-p-black text-xs uppercase tracking-[0.2em] hover:bg-p-ink dark:hover:bg-white hover:text-white dark:hover:text-black transition-all duration-500 font-medium">
+                         <button className="px-8 py-4 bg-gradient-to-r from-violet-500 to-purple-600 text-white text-xs uppercase tracking-[0.2em] hover:from-violet-600 hover:to-purple-700 transition-all duration-500 font-medium">
                             Live Preview
                          </button>
                     </a>
@@ -77,13 +77,13 @@ const CaseStudy: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 mb-32">
                 <div className="lg:col-span-4 space-y-12">
                      <div>
-                        <h3 className="text-lg font-serif text-p-ink dark:text-p-cream mb-4 border-b border-p-gold/30 pb-2 inline-block">The Challenge</h3>
+                        <h3 className="text-lg font-serif text-p-ink dark:text-p-cream mb-4 border-b border-violet-500/30 pb-2 inline-block">The Challenge</h3>
                         <p className="text-p-ink/70 dark:text-p-cream/70 text-sm leading-relaxed font-light">
                             {project.details?.challenge}
                         </p>
                      </div>
                      <div>
-                        <h3 className="text-lg font-serif text-p-ink dark:text-p-cream mb-4 border-b border-p-gold/30 pb-2 inline-block">Our Approach</h3>
+                        <h3 className="text-lg font-serif text-p-ink dark:text-p-cream mb-4 border-b border-violet-500/30 pb-2 inline-block">Our Approach</h3>
                         <p className="text-p-ink/70 dark:text-p-cream/70 text-sm leading-relaxed font-light">
                             {project.details?.solution}
                         </p>
@@ -119,7 +119,7 @@ const CaseStudy: React.FC = () => {
                      
                      <div className="mt-20 p-12 bg-p-stone/30 dark:bg-white/5 border border-p-ink/5 dark:border-white/5 backdrop-blur-sm">
                          <div className="flex items-start gap-6">
-                            <Trophy className="text-p-gold w-12 h-12 flex-shrink-0" />
+                            <Trophy className="text-violet-400 w-12 h-12 flex-shrink-0" />
                             <div>
                                 <h3 className="text-2xl font-serif text-p-ink dark:text-p-cream mb-4">The Outcome</h3>
                                 <p className="text-p-ink/80 dark:text-p-cream/80 font-light leading-relaxed">
@@ -133,7 +133,7 @@ const CaseStudy: React.FC = () => {
             
             <div className="text-center pt-20 border-t border-p-ink/10 dark:border-white/10">
                  <h2 className="text-3xl font-serif text-p-ink dark:text-p-cream mb-8">Ready to build your legacy?</h2>
-                 <Link to="/#contact" className="inline-block px-12 py-4 bg-p-gold text-p-black text-xs uppercase tracking-[0.2em] hover:bg-p-ink dark:hover:bg-white hover:text-white dark:hover:text-black transition-all duration-500">
+                 <Link to="/#contact" className="inline-block px-12 py-4 bg-gradient-to-r from-violet-500 to-purple-600 text-white text-xs uppercase tracking-[0.2em] hover:from-violet-600 hover:to-purple-700 transition-all duration-500">
                     Start a Project
                  </Link>
             </div>

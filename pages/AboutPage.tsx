@@ -32,15 +32,15 @@ const team = [
 ];
 
 const stats = [
-  { number: "10+", label: "Years of Excellence", icon: Award },
+  { number: "10+", label: "Years of Experience", icon: Award },
   { number: "150+", label: "Projects Delivered", icon: Sparkles },
   { number: "40+", label: "Global Clients", icon: Globe },
-  { number: "12", label: "Artisan Team", icon: Users }
+  { number: "12", label: "Team Members", icon: Users }
 ];
 
 const values = [
   {
-    title: "Craftsmanship Over Speed",
+    title: "Quality Over Speed",
     description: "We don't rush. Every project receives the attention it deserves, because excellence cannot be expedited."
   },
   {
@@ -62,7 +62,7 @@ const AboutPage: React.FC = () => {
     <div className="min-h-screen pt-32 pb-20 relative">
       <SEOHead 
         title="About Prismeek - Luxury Digital Agency Team & Story"
-        description="Meet the artisans behind Prismeek, a boutique digital atelier in Bengaluru serving luxury brands in USA, UK, UAE, Dubai, Canada, Australia, Qatar & Europe with bespoke web design and AI solutions."
+        description="Meet the team behind Prismeek, a boutique digital agency in Bengaluru serving luxury brands in USA, UK, UAE, Dubai, Canada, Australia, Qatar & Europe with custom web design and AI solutions."
         keywords={[
           "about prismeek",
           "digital agency team",
@@ -97,13 +97,13 @@ const AboutPage: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-24"
         >
-          <span className="text-p-gold text-xs tracking-[0.4em] uppercase block mb-6">Our Story</span>
+          <span className="text-violet-400 text-xs tracking-[0.4em] uppercase block mb-6">Our Story</span>
           <h1 className="text-6xl md:text-8xl font-serif text-p-ink dark:text-p-cream mb-8">
-            The <span className="text-p-gold italic">Atelier</span>
+            About <span className="text-violet-400 italic">Us</span>
           </h1>
           <p className="text-p-ink/60 dark:text-p-cream/60 text-xl max-w-3xl mx-auto leading-relaxed">
-            Born from a belief that digital experiences deserve the same care as haute couture, 
-            Prismeek is where technology meets artistry.
+            Born from a belief that digital experiences deserve exceptional care, 
+            Prismeek is where technology meets creativity.
           </p>
         </motion.div>
 
@@ -119,7 +119,7 @@ const AboutPage: React.FC = () => {
               key={stat.label}
               className="text-center p-8 bg-white/50 dark:bg-white/[0.02] border border-p-ink/5 dark:border-white/5 backdrop-blur-sm"
             >
-              <stat.icon className="w-6 h-6 text-p-gold mx-auto mb-4" />
+              <stat.icon className="w-6 h-6 text-violet-400 mx-auto mb-4" />
               <p className="text-4xl md:text-5xl font-serif text-p-ink dark:text-p-cream mb-2">{stat.number}</p>
               <p className="text-p-ink/50 dark:text-p-cream/50 text-xs uppercase tracking-widest">{stat.label}</p>
             </div>
@@ -135,22 +135,22 @@ const AboutPage: React.FC = () => {
         >
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
-              <span className="text-p-gold text-xs tracking-[0.4em] uppercase block mb-6">Philosophy</span>
+              <span className="text-violet-400 text-xs tracking-[0.4em] uppercase block mb-6">Philosophy</span>
               <h2 className="text-4xl md:text-6xl font-serif text-p-ink dark:text-p-cream mb-8">
-                Digital Estates,<br /><span className="text-p-gold italic">Not Websites</span>
+                Premium Websites,<br /><span className="text-violet-400 italic">Not Templates</span>
               </h2>
               <div className="space-y-6 text-p-ink/70 dark:text-p-cream/70 text-lg leading-relaxed">
                 <p>
-                  In an era of templates and quick fixes, we choose the path of the artisan. 
-                  Each project in our atelier is treated as a commission—unique, considered, and crafted to endure.
+                  In an era of templates and quick fixes, we choose a different path. 
+                  Each project is treated as unique—considered, and built to last.
                 </p>
                 <p>
-                  We believe that digital presence is not merely a business necessity but an expression of 
-                  brand identity. Like a bespoke suit or a heritage timepiece, a digital estate should 
-                  reflect the soul of its owner.
+                  We believe that your online presence is not merely a business necessity but an expression of 
+                  brand identity. Like a tailored suit or a fine timepiece, your website should 
+                  reflect who you are.
                 </p>
                 <p>
-                  Our clients don't come to us for websites. They come to us to build legacies.
+                  Our clients don't come to us for websites. They come to us to build lasting brands.
                 </p>
               </div>
             </div>
@@ -162,7 +162,7 @@ const AboutPage: React.FC = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-8 -left-8 w-64 h-64 bg-p-gold/10 blur-3xl pointer-events-none" />
+              <div className="absolute -bottom-8 -left-8 w-64 h-64 bg-violet-500/10 blur-3xl pointer-events-none" />
             </div>
           </div>
         </motion.div>
@@ -174,9 +174,9 @@ const AboutPage: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="mb-32"
         >
-          <span className="text-p-gold text-xs tracking-[0.4em] uppercase block mb-6 text-center">Values</span>
+          <span className="text-violet-400 text-xs tracking-[0.4em] uppercase block mb-6 text-center">Values</span>
           <h2 className="text-4xl md:text-6xl font-serif text-p-ink dark:text-p-cream mb-16 text-center">
-            What We <span className="text-p-gold italic">Believe</span>
+            What We <span className="text-violet-400 italic">Believe</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {values.map((value, index) => (
@@ -201,9 +201,9 @@ const AboutPage: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <span className="text-p-gold text-xs tracking-[0.4em] uppercase block mb-6 text-center">The Artisans</span>
+          <span className="text-violet-400 text-xs tracking-[0.4em] uppercase block mb-6 text-center">The Team</span>
           <h2 className="text-4xl md:text-6xl font-serif text-p-ink dark:text-p-cream mb-16 text-center">
-            Our <span className="text-p-gold italic">Team</span>
+            Our <span className="text-violet-400 italic">Team</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {team.map((member, index) => (
@@ -224,7 +224,7 @@ const AboutPage: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-p-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
                 <h3 className="text-xl font-serif text-p-ink dark:text-p-cream mb-1">{member.name}</h3>
-                <p className="text-p-gold text-xs uppercase tracking-widest mb-3">{member.role}</p>
+                <p className="text-violet-400 text-xs uppercase tracking-widest mb-3">{member.role}</p>
                 <p className="text-p-ink/50 dark:text-p-cream/50 text-sm leading-relaxed">{member.bio}</p>
               </motion.div>
             ))}

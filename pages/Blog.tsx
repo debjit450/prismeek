@@ -53,9 +53,9 @@ const Blog: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <span className="text-p-gold text-xs tracking-[0.4em] uppercase block mb-6">The Journal</span>
+          <span className="text-violet-400 text-xs tracking-[0.4em] uppercase block mb-6">The Journal</span>
           <h1 className="text-6xl md:text-8xl font-serif text-p-ink dark:text-p-cream mb-8">
-            Insights & <span className="text-p-gold italic">Perspectives</span>
+            Insights & <span className="text-violet-400 italic">Perspectives</span>
           </h1>
           <p className="text-p-ink/60 dark:text-p-cream/60 text-lg max-w-2xl mx-auto">
             Explorations in digital craftsmanship, luxury branding, and the art of creating exceptional experiences.
@@ -74,8 +74,8 @@ const Blog: React.FC = () => {
               onClick={() => setActiveCategory(category)}
               className={`px-6 py-2 text-xs uppercase tracking-widest transition-all duration-300 border ${
                 activeCategory === category
-                  ? 'bg-p-gold text-p-black border-p-gold'
-                  : 'border-p-ink/20 dark:border-white/10 text-p-ink/60 dark:text-p-cream/60 hover:border-p-gold hover:text-p-gold'
+                  ? 'bg-gradient-to-r from-violet-500 to-purple-600 text-white border-violet-500'
+                  : 'border-p-ink/20 dark:border-white/10 text-p-ink/60 dark:text-p-cream/60 hover:border-violet-500 hover:text-violet-400'
               }`}
             >
               {category}
@@ -99,10 +99,10 @@ const Blog: React.FC = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-p-black/80 via-p-black/20 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
-                  <span className="text-p-gold text-xs tracking-widest uppercase mb-4 block">
+                  <span className="text-violet-400 text-xs tracking-widest uppercase mb-4 block">
                     Featured — {filteredPosts[0].category}
                   </span>
-                  <h2 className="text-3xl md:text-5xl font-serif text-white mb-4 group-hover:text-p-gold transition-colors">
+                  <h2 className="text-3xl md:text-5xl font-serif text-white mb-4 group-hover:text-violet-400 transition-colors">
                     {filteredPosts[0].title}
                   </h2>
                   <p className="text-white/70 text-lg max-w-2xl mb-6 hidden md:block">
@@ -147,11 +147,11 @@ const Blog: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-p-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                 </div>
                 
-                <span className="text-p-gold text-[10px] tracking-widest uppercase mb-3 block">
+                <span className="text-violet-400 text-[10px] tracking-widest uppercase mb-3 block">
                   {post.category}
                 </span>
                 
-                <h3 className="text-xl font-serif text-p-ink dark:text-p-cream mb-3 group-hover:text-p-gold transition-colors leading-tight">
+                <h3 className="text-xl font-serif text-p-ink dark:text-p-cream mb-3 group-hover:text-violet-400 transition-colors leading-tight">
                   {post.title}
                 </h3>
                 
@@ -161,7 +161,7 @@ const Blog: React.FC = () => {
                 
                 <div className="flex items-center justify-between text-p-ink/40 dark:text-p-cream/40 text-xs">
                   <span>{post.readTime}</span>
-                  <span className="flex items-center gap-2 text-p-gold opacity-0 group-hover:opacity-100 transition-opacity">
+                  <span className="flex items-center gap-2 text-violet-400 opacity-0 group-hover:opacity-100 transition-opacity">
                     Read <ArrowRight className="w-3 h-3" />
                   </span>
                 </div>

@@ -18,7 +18,7 @@ const FORMCARRY_URL = "https://formcarry.com/s/6phPvCLSNPL";
 const Home: React.FC = () => {
     const containerRef = useRef<HTMLDivElement>(null);
     const heroRef = useRef<HTMLDivElement>(null);
-    
+
     const { scrollYProgress } = useScroll({
         target: containerRef,
         offset: ["start start", "end end"]
@@ -88,15 +88,15 @@ const Home: React.FC = () => {
 
     return (
         <div ref={containerRef}>
-            <SEOHead 
-              title={PAGE_SEO_CONFIG.home.title}
-              description={PAGE_SEO_CONFIG.home.description}
-              keywords={PAGE_SEO_CONFIG.home.keywords}
+            <SEOHead
+                title={PAGE_SEO_CONFIG.home.title}
+                description={PAGE_SEO_CONFIG.home.description}
+                keywords={PAGE_SEO_CONFIG.home.keywords}
             />
-            
+
             <section ref={heroRef} id="hero" className="relative min-h-screen w-full flex items-center justify-center overflow-hidden pt-24">
                 <div className="absolute inset-0 bg-grid-pattern opacity-30 dark:opacity-20" />
-                
+
                 <motion.div
                     className="absolute inset-0 z-0"
                     initial={{ opacity: 0 }}
@@ -104,44 +104,26 @@ const Home: React.FC = () => {
                     transition={{ duration: 1.5 }}
                 >
                     <div className="absolute inset-0 bg-gradient-to-b from-p-paper via-p-paper to-p-stone/50 dark:from-p-black dark:via-p-charcoal dark:to-p-black transition-colors duration-700" />
-                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-gradient-radial from-p-gold/10 via-transparent to-transparent" />
+                    <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[1000px] bg-gradient-radial from-violet-500/10 via-transparent to-transparent" />
                 </motion.div>
 
                 <HeroScene3D />
-
-                <div className="absolute inset-0 flex items-center justify-center opacity-10 dark:opacity-15 pointer-events-none overflow-hidden">
-                    <motion.div
-                        className="w-[70vw] h-[70vw] max-w-[800px] max-h-[800px] border border-p-gold/30 rounded-full"
-                        animate={{ rotate: 360 }}
-                        transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-                    />
-                    <motion.div
-                        className="absolute w-[50vw] h-[50vw] max-w-[600px] max-h-[600px] border border-p-gold/20 rounded-full"
-                        animate={{ rotate: -360 }}
-                        transition={{ duration: 45, repeat: Infinity, ease: "linear" }}
-                    />
-                    <motion.div
-                        className="absolute w-[30vw] h-[30vw] max-w-[400px] max-h-[400px] border border-p-gold/10 rounded-full"
-                        animate={{ rotate: 360 }}
-                        transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                    />
-                </div>
 
                 <motion.div
                     style={{ y: smoothHeroY, opacity: heroOpacity, scale: heroScale }}
                     className="relative z-10 text-center px-6 max-w-6xl mx-auto flex flex-col items-center"
                 >
-                    <motion.div 
+                    <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ delay: 0.3, duration: 0.8 }}
-                        className="inline-flex items-center gap-3 mb-8 px-5 py-2 glass-gold rounded-full"
+                        className="inline-flex items-center gap-3 mb-8 px-5 py-2 bg-violet-500/10 border border-violet-500/20 backdrop-blur-sm rounded-full"
                     >
-                        <Sparkles className="w-3 h-3 text-p-gold" />
-                        <span className="text-p-gold text-[10px] md:text-xs tracking-[0.4em] uppercase font-mono">
-                            Est. MMXXV — Global
+                        <Sparkles className="w-3 h-3 text-violet-400" />
+                        <span className="text-violet-400 text-[10px] md:text-xs tracking-[0.4em] uppercase font-mono">
+                            Dgital Agency · India
                         </span>
-                        <Sparkles className="w-3 h-3 text-p-gold" />
+                        <Sparkles className="w-3 h-3 text-violet-400" />
                     </motion.div>
 
                     <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[8rem] font-display font-bold text-p-ink dark:text-p-cream leading-[0.9] tracking-tight mb-6 transition-colors duration-500">
@@ -151,15 +133,15 @@ const Home: React.FC = () => {
                             transition={{ delay: 0.5, duration: 1, ease: [0.22, 1, 0.36, 1] }}
                             className="block"
                         >
-                            Crafting Digital
+                            We Build
                         </motion.span>
                         <motion.span
                             initial={{ opacity: 0, y: 80, rotateX: -30 }}
                             animate={{ opacity: 1, y: 0, rotateX: 0 }}
                             transition={{ delay: 0.7, duration: 1, ease: [0.22, 1, 0.36, 1] }}
-                            className="block bg-gradient-to-r from-p-gold-light via-p-gold to-p-gold-dim bg-clip-text text-transparent"
+                            className="block bg-gradient-to-r from-violet-400 via-purple-500 to-violet-600 bg-clip-text text-transparent"
                         >
-                            Experiences
+                            Great Websites
                         </motion.span>
                     </h1>
 
@@ -169,7 +151,7 @@ const Home: React.FC = () => {
                         transition={{ delay: 1, duration: 0.8 }}
                         className="text-p-ink/60 dark:text-p-cream/60 text-base sm:text-lg md:text-xl font-light max-w-xl mx-auto leading-relaxed mt-4 transition-colors duration-500"
                     >
-                        Crafting bespoke digital estates for brands that command <span className="text-p-gold">heritage status</span>.
+                        Websites, apps, and AI solutions that help your business <span className="text-violet-400">grow online</span>.
                     </motion.p>
 
                     <motion.div
@@ -178,18 +160,18 @@ const Home: React.FC = () => {
                         transition={{ delay: 1.3, duration: 0.8 }}
                         className="flex flex-col sm:flex-row items-center gap-4 mt-12"
                     >
-                        <a 
-                            href="#contact" 
-                            className="group inline-flex items-center gap-3 px-8 py-4 bg-p-gold text-p-black text-xs uppercase tracking-[0.2em] font-medium rounded-full hover:bg-p-gold-light transition-all duration-300 hover:shadow-xl hover:shadow-p-gold/20 hover:-translate-y-1"
+                        <a
+                            href="#contact"
+                            className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-violet-500 to-purple-600 text-white text-xs uppercase tracking-[0.2em] font-medium rounded-full hover:from-violet-400 hover:to-purple-500 transition-all duration-300 hover:shadow-xl hover:shadow-violet-500/20 hover:-translate-y-1"
                         >
                             <Sparkles size={14} />
-                            Start Your Legacy
+                            Get Free Quote
                         </a>
-                        <a 
-                            href="#work" 
-                            className="group inline-flex items-center gap-3 px-8 py-4 glass text-p-ink dark:text-p-cream text-xs uppercase tracking-[0.2em] font-medium rounded-full hover:bg-p-gold/10 transition-all duration-300"
+                        <a
+                            href="#work"
+                            className="group inline-flex items-center gap-3 px-8 py-4 glass border border-violet-500/20 text-p-ink dark:text-p-cream text-xs uppercase tracking-[0.2em] font-medium rounded-full hover:bg-violet-500/10 transition-all duration-300"
                         >
-                            View Work
+                            See Our Work
                             <motion.span
                                 animate={{ x: [0, 5, 0] }}
                                 transition={{ duration: 1.5, repeat: Infinity }}
@@ -210,7 +192,7 @@ const Home: React.FC = () => {
                             animate={{ y: [0, 8, 0] }}
                             transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
                         >
-                            <ArrowDown className="w-4 h-4 text-p-gold/50" />
+                            <ArrowDown className="w-4 h-4 text-violet-400/50" />
                         </motion.div>
                     </motion.div>
                 </motion.div>
@@ -234,8 +216,8 @@ const Home: React.FC = () => {
 
             <section className="py-32 md:py-48 bg-p-stone/20 dark:bg-p-charcoal/50 relative overflow-hidden transition-colors duration-700">
                 <div className="absolute inset-0 bg-grid-pattern opacity-20" />
-                <div className="absolute inset-0 bg-gradient-radial from-p-gold/5 via-transparent to-transparent" />
-                
+                <div className="absolute inset-0 bg-gradient-radial from-violet-500/5 via-transparent to-transparent" />
+
                 <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
                     <motion.div
                         initial={{ opacity: 0, scale: 0.8 }}
@@ -243,14 +225,14 @@ const Home: React.FC = () => {
                         viewport={{ once: true }}
                         transition={{ duration: 0.8 }}
                     >
-                        <Star className="w-8 h-8 text-p-gold mx-auto mb-10 animate-pulse" />
+                        <Star className="w-8 h-8 text-violet-400 mx-auto mb-10 animate-pulse" />
                         <blockquote className="text-2xl sm:text-3xl md:text-5xl font-serif text-p-ink dark:text-p-cream leading-tight italic transition-colors duration-500">
                             "Simplicity is the ultimate sophistication."
                         </blockquote>
                         <div className="mt-10 flex items-center justify-center gap-4">
-                            <div className="w-12 h-[1px] bg-gradient-to-r from-transparent to-p-gold/50" />
-                            <p className="text-xs uppercase tracking-[0.3em] text-p-gold font-mono">Leonardo da Vinci</p>
-                            <div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-p-gold/50" />
+                            <div className="w-12 h-[1px] bg-gradient-to-r from-transparent to-violet-500/50" />
+                            <p className="text-xs uppercase tracking-[0.3em] text-violet-400 font-mono">Leonardo da Vinci</p>
+                            <div className="w-12 h-[1px] bg-gradient-to-l from-transparent to-violet-500/50" />
                         </div>
                     </motion.div>
                 </div>
@@ -258,9 +240,9 @@ const Home: React.FC = () => {
 
             <section id="contact" className="py-24 md:py-40 px-6 bg-p-paper dark:bg-p-black relative overflow-hidden transition-colors duration-700">
                 <div className="absolute inset-0 bg-grid-pattern opacity-20" />
-                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-radial from-p-gold/5 via-transparent to-transparent" />
-                <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-radial from-p-amethyst/5 via-transparent to-transparent" />
-                
+                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-radial from-violet-500/5 via-transparent to-transparent" />
+                <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-gradient-radial from-purple-500/5 via-transparent to-transparent" />
+
                 <div className="max-w-7xl mx-auto relative z-10">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -269,17 +251,17 @@ const Home: React.FC = () => {
                         transition={{ duration: 0.8 }}
                         className="text-center mb-16"
                     >
-                        <span className="inline-flex items-center gap-3 px-5 py-2 glass-gold rounded-full mb-6">
-                            <Sparkles className="w-3 h-3 text-p-gold" />
-                            <span className="text-p-gold text-[10px] tracking-[0.4em] uppercase font-mono">Inquiries</span>
+                        <span className="inline-flex items-center gap-3 px-5 py-2 bg-violet-500/10 border border-violet-500/20 backdrop-blur-sm rounded-full mb-6">
+                            <Sparkles className="w-3 h-3 text-violet-400" />
+                            <span className="text-violet-400 text-[10px] tracking-[0.4em] uppercase font-mono">Contact Us</span>
                         </span>
                         <h2 className="text-4xl sm:text-5xl md:text-7xl font-display font-bold text-p-ink dark:text-p-cream transition-colors duration-500">
-                            Begin Your <span className="bg-gradient-to-r from-p-gold-light via-p-gold to-p-gold-dim bg-clip-text text-transparent">Legacy</span>
+                            Let's <span className="bg-gradient-to-r from-violet-400 via-purple-500 to-violet-600 bg-clip-text text-transparent">Talk</span>
                         </h2>
                     </motion.div>
-                    
+
                     <div className="flex flex-col lg:flex-row gap-16 lg:gap-24">
-                        <motion.div 
+                        <motion.div
                             initial={{ opacity: 0, x: -30 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
@@ -287,26 +269,26 @@ const Home: React.FC = () => {
                             className="lg:w-5/12"
                         >
                             <p className="text-p-ink/60 dark:text-p-cream/60 text-lg font-light mb-12 leading-relaxed transition-colors duration-500">
-                                We accept a limited number of commissions per year to maintain our standards of excellence.
+                                Ready to start your project? Get in touch and we'll get back to you within 24 hours.
                             </p>
 
                             <div className="space-y-8">
-                                <div className="group p-6 glass rounded-2xl hover:bg-p-gold/5 transition-all duration-300">
-                                    <p className="text-[10px] text-p-gold uppercase tracking-[0.3em] mb-3 font-mono">Private Line / WhatsApp</p>
-                                    <a href={AGENCY_INFO.whatsappLink} className="text-xl md:text-2xl font-display font-semibold text-p-ink dark:text-p-cream hover:text-p-gold transition-colors">
+                                <div className="group p-6 glass rounded-2xl hover:bg-violet-500/5 transition-all duration-300">
+                                    <p className="text-[10px] text-violet-400 uppercase tracking-[0.3em] mb-3 font-mono">Call or WhatsApp</p>
+                                    <a href={AGENCY_INFO.whatsappLink} className="text-xl md:text-2xl font-display font-semibold text-p-ink dark:text-p-cream hover:text-violet-400 transition-colors">
                                         {AGENCY_INFO.phoneDisplay}
                                     </a>
                                 </div>
-                                <div className="group p-6 glass rounded-2xl hover:bg-p-gold/5 transition-all duration-300">
-                                    <p className="text-[10px] text-p-gold uppercase tracking-[0.3em] mb-3 font-mono">Electronic Mail</p>
-                                    <a href={`mailto:${AGENCY_INFO.email}`} className="text-xl md:text-2xl font-display font-semibold text-p-ink dark:text-p-cream hover:text-p-gold transition-colors break-all">
+                                <div className="group p-6 glass rounded-2xl hover:bg-violet-500/5 transition-all duration-300">
+                                    <p className="text-[10px] text-violet-400 uppercase tracking-[0.3em] mb-3 font-mono">Email</p>
+                                    <a href={`mailto:${AGENCY_INFO.email}`} className="text-xl md:text-2xl font-display font-semibold text-p-ink dark:text-p-cream hover:text-violet-400 transition-colors break-all">
                                         {AGENCY_INFO.email}
                                     </a>
                                 </div>
                             </div>
                         </motion.div>
 
-                        <motion.div 
+                        <motion.div
                             initial={{ opacity: 0, x: 30 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
@@ -320,16 +302,16 @@ const Home: React.FC = () => {
                                         animate={{ opacity: 1, scale: 1 }}
                                         className="h-full flex flex-col items-center justify-center text-center py-16"
                                     >
-                                        <div className="w-20 h-20 rounded-full bg-p-gold/20 flex items-center justify-center mb-6">
-                                            <CheckCircle2 className="w-10 h-10 text-p-gold" />
+                                        <div className="w-20 h-20 rounded-full bg-violet-500/20 flex items-center justify-center mb-6">
+                                            <CheckCircle2 className="w-10 h-10 text-violet-400" />
                                         </div>
-                                        <h3 className="text-2xl font-display font-bold text-p-ink dark:text-p-cream mb-4">Inquiry Received</h3>
+                                        <h3 className="text-2xl font-display font-bold text-p-ink dark:text-p-cream mb-4">Message Sent!</h3>
                                         <p className="text-p-ink/60 dark:text-p-cream/60 max-w-xs mx-auto mb-8">
-                                            Thank you for your interest. Our team will review your requirements and respond within 24 hours.
+                                            Thanks for reaching out! We'll get back to you within 24 hours.
                                         </p>
                                         <button
                                             onClick={() => { setFormStatus('idle'); setErrorMessage(null); }}
-                                            className="text-p-gold text-xs uppercase tracking-[0.15em] hover:text-p-ink dark:hover:text-white transition-colors font-mono"
+                                            className="text-violet-400 text-xs uppercase tracking-[0.15em] hover:text-p-ink dark:hover:text-white transition-colors font-mono"
                                         >
                                             Send another message
                                         </button>
@@ -338,50 +320,50 @@ const Home: React.FC = () => {
                                     <form className="space-y-8" onSubmit={handleSubmit}>
                                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                             <div className="group">
-                                                <label className="text-[10px] text-p-gold uppercase tracking-[0.2em] mb-3 block font-mono">Name *</label>
+                                                <label className="text-[10px] text-violet-400 uppercase tracking-[0.2em] mb-3 block font-mono">Name *</label>
                                                 <input
                                                     type="text"
                                                     name="name"
                                                     required
                                                     value={formData.name}
                                                     onChange={handleInputChange}
-                                                    className="w-full bg-white/5 dark:bg-white/[0.02] border border-p-ink/10 dark:border-white/10 rounded-xl px-5 py-4 text-p-ink dark:text-p-cream focus:outline-none focus:border-p-gold focus:ring-1 focus:ring-p-gold/30 transition-all placeholder:text-p-ink/30 dark:placeholder:text-p-cream/30"
+                                                    className="w-full bg-white/5 dark:bg-white/[0.02] border border-p-ink/10 dark:border-white/10 rounded-xl px-5 py-4 text-p-ink dark:text-p-cream focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500/30 transition-all placeholder:text-p-ink/30 dark:placeholder:text-p-cream/30"
                                                     placeholder="Your name"
                                                 />
                                             </div>
                                             <div className="group">
-                                                <label className="text-[10px] text-p-gold uppercase tracking-[0.2em] mb-3 block font-mono">Company</label>
+                                                <label className="text-[10px] text-violet-400 uppercase tracking-[0.2em] mb-3 block font-mono">Company</label>
                                                 <input
                                                     type="text"
                                                     name="company"
                                                     value={formData.company}
                                                     onChange={handleInputChange}
-                                                    className="w-full bg-white/5 dark:bg-white/[0.02] border border-p-ink/10 dark:border-white/10 rounded-xl px-5 py-4 text-p-ink dark:text-p-cream focus:outline-none focus:border-p-gold focus:ring-1 focus:ring-p-gold/30 transition-all placeholder:text-p-ink/30 dark:placeholder:text-p-cream/30"
+                                                    className="w-full bg-white/5 dark:bg-white/[0.02] border border-p-ink/10 dark:border-white/10 rounded-xl px-5 py-4 text-p-ink dark:text-p-cream focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500/30 transition-all placeholder:text-p-ink/30 dark:placeholder:text-p-cream/30"
                                                     placeholder="Your company"
                                                 />
                                             </div>
                                         </div>
                                         <div className="group">
-                                            <label className="text-[10px] text-p-gold uppercase tracking-[0.2em] mb-3 block font-mono">Email Address *</label>
+                                            <label className="text-[10px] text-violet-400 uppercase tracking-[0.2em] mb-3 block font-mono">Email Address *</label>
                                             <input
                                                 type="email"
                                                 name="email"
                                                 required
                                                 value={formData.email}
                                                 onChange={handleInputChange}
-                                                className="w-full bg-white/5 dark:bg-white/[0.02] border border-p-ink/10 dark:border-white/10 rounded-xl px-5 py-4 text-p-ink dark:text-p-cream focus:outline-none focus:border-p-gold focus:ring-1 focus:ring-p-gold/30 transition-all placeholder:text-p-ink/30 dark:placeholder:text-p-cream/30"
+                                                className="w-full bg-white/5 dark:bg-white/[0.02] border border-p-ink/10 dark:border-white/10 rounded-xl px-5 py-4 text-p-ink dark:text-p-cream focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500/30 transition-all placeholder:text-p-ink/30 dark:placeholder:text-p-cream/30"
                                                 placeholder="your@email.com"
                                             />
                                         </div>
                                         <div className="group">
-                                            <label className="text-[10px] text-p-gold uppercase tracking-[0.2em] mb-3 block font-mono">Project Details *</label>
+                                            <label className="text-[10px] text-violet-400 uppercase tracking-[0.2em] mb-3 block font-mono">Project Details *</label>
                                             <textarea
                                                 rows={4}
                                                 name="details"
                                                 required
                                                 value={formData.details}
                                                 onChange={handleInputChange}
-                                                className="w-full bg-white/5 dark:bg-white/[0.02] border border-p-ink/10 dark:border-white/10 rounded-xl px-5 py-4 text-p-ink dark:text-p-cream focus:outline-none focus:border-p-gold focus:ring-1 focus:ring-p-gold/30 transition-all resize-none placeholder:text-p-ink/30 dark:placeholder:text-p-cream/30"
+                                                className="w-full bg-white/5 dark:bg-white/[0.02] border border-p-ink/10 dark:border-white/10 rounded-xl px-5 py-4 text-p-ink dark:text-p-cream focus:outline-none focus:border-violet-500 focus:ring-1 focus:ring-violet-500/30 transition-all resize-none placeholder:text-p-ink/30 dark:placeholder:text-p-cream/30"
                                                 placeholder="Tell us about your vision..."
                                             ></textarea>
                                         </div>
@@ -395,7 +377,7 @@ const Home: React.FC = () => {
                                         <button
                                             type="submit"
                                             disabled={formStatus === 'loading'}
-                                            className="w-full py-5 bg-p-gold text-p-black text-xs uppercase tracking-[0.2em] font-medium rounded-xl hover:bg-p-gold-light transition-all duration-300 disabled:opacity-50 disabled:cursor-wait flex items-center justify-center gap-3 hover:shadow-xl hover:shadow-p-gold/20"
+                                            className="w-full py-5 bg-gradient-to-r from-violet-500 to-purple-600 text-white text-xs uppercase tracking-[0.2em] font-medium rounded-xl hover:from-violet-400 hover:to-purple-500 transition-all duration-300 disabled:opacity-50 disabled:cursor-wait flex items-center justify-center gap-3 hover:shadow-xl hover:shadow-violet-500/20"
                                         >
                                             {formStatus === 'loading' ? (
                                                 <>

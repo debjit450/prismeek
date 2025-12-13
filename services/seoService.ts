@@ -11,7 +11,7 @@ interface SEOMetadata {
 
 interface PageContent {
   pageName: string;
-  pageType: 'home' | 'service' | 'portfolio' | 'about' | 'contact' | 'case-study' | 'legal';
+  pageType: 'home' | 'service' | 'portfolio' | 'about' | 'contact' | 'case-study' | 'legal' | 'blog';
   content: string;
   industry?: string;
   targetAudience?: string;
@@ -51,6 +51,10 @@ export class SEOService {
       "publisher": {
         "@type": "Organization",
         "@id": "https://prismeek.com/#organization"
+      },
+      "inLanguage": "en",
+      "isPartOf": {
+        "@id": "https://prismeek.com/#website"
       }
     };
 
@@ -66,7 +70,14 @@ export class SEOService {
         return {
           ...baseData,
           "@type": "Service",
-          "provider": {"@id": "https://prismeek.com/#organization"}
+          "provider": {"@id": "https://prismeek.com/#organization"},
+          "areaServed": ["India", "United States", "United Kingdom", "Canada", "Australia", "UAE", "Worldwide"]
+        };
+      case 'blog':
+        return {
+          ...baseData,
+          "@type": "Blog",
+          "blogPost": []
         };
       default:
         return baseData;
@@ -76,19 +87,29 @@ export class SEOService {
   private getDefaultMetadata(pageContent: PageContent): SEOMetadata {
     const defaults: Record<string, Partial<SEOMetadata>> = {
       home: {
-        title: "PRISMEEK | India's Premier Luxury Digital Agency & AI Solutions",
-        description: "Bespoke digital atelier in India specializing in luxury web design, AI integration, and premium branding for forward-thinking enterprises.",
-        keywords: ["luxury web design india", "premium digital agency", "ai development india", "bespoke website design"]
+        title: "Best Web Design Company India 2025 | Prismeek - Website Developer Bangalore Mumbai Delhi",
+        description: "Award-winning web design company India. Stunning websites, mobile apps, AI chatbots. Affordable pricing from ₹60,000. Expert developers in Bangalore, Mumbai, Delhi. Serving Dubai, USA, UK globally.",
+        keywords: ["best web design company india", "website design bangalore", "mobile app developer mumbai", "ai chatbot development", "web design delhi"]
       },
       service: {
-        title: `${pageContent.pageName} | Prismeek Premium Services`,
-        description: `Expert ${pageContent.pageName.toLowerCase()} services for luxury brands. Prismeek delivers world-class digital solutions.`,
-        keywords: [pageContent.pageName.toLowerCase(), "luxury agency", "premium services", "india"]
+        title: `${pageContent.pageName} Services India | Best ${pageContent.pageName} Company`,
+        description: `Professional ${pageContent.pageName.toLowerCase()} services in India. Prismeek delivers world-class solutions for startups & enterprises. Bangalore, Mumbai, Delhi & worldwide.`,
+        keywords: [pageContent.pageName.toLowerCase(), "india", "bangalore", "mumbai", "services"]
       },
       'case-study': {
-        title: `${pageContent.pageName} Case Study | Prismeek Portfolio`,
+        title: `${pageContent.pageName} Case Study | Award-Winning Web Design Portfolio`,
         description: `Discover how Prismeek transformed ${pageContent.pageName} with bespoke digital solutions. View our premium portfolio.`,
         keywords: ["case study", pageContent.pageName.toLowerCase(), "portfolio", "success story"]
+      },
+      about: {
+        title: "About Prismeek | Top Web Design Agency India",
+        description: "Learn about Prismeek, India's leading web design & development agency. Founded by Debjit Dey, we create stunning websites, apps & AI solutions.",
+        keywords: ["about prismeek", "web design agency india", "digital agency bangalore"]
+      },
+      blog: {
+        title: "Web Design & Development Blog | Prismeek Journal",
+        description: "Read the latest web design tips, development trends, AI insights & digital marketing strategies from Prismeek's expert team.",
+        keywords: ["web design blog", "development tips", "tech blog india"]
       }
     };
 
@@ -109,34 +130,78 @@ export class SEOService {
   private getDefaultKeywordClusters(industry: string): Record<string, string[]> {
     return {
       primary: [
-        "luxury web design india",
-        "premium digital agency mumbai",
-        "bespoke website development",
-        "high-end branding agency"
+        "best web design company india 2025",
+        "website design bangalore",
+        "website developer mumbai",
+        "web design delhi",
+        "mobile app development india",
+        "ai chatbot development company"
       ],
       services: [
-        "ai chatbot development",
-        "react native app development",
+        "react development india",
+        "next.js development company",
+        "node.js developer bangalore",
         "three.js website india",
-        "fintech ui ux design"
+        "ui ux design agency",
+        "saas development company",
+        "ecommerce website development",
+        "progressive web app development",
+        "custom software development"
       ],
       industry: [
-        `${industry} website design`,
-        `${industry} digital solutions`,
+        `${industry} website design india`,
         `${industry} app development`,
-        `${industry} branding agency`
+        `${industry} digital solutions`,
+        `${industry} software company`,
+        `best ${industry} website`
       ],
       location: [
-        "web design agency mumbai",
-        "digital agency bangalore",
-        "software development india",
-        "tech agency new delhi"
+        "web design company bangalore",
+        "website developer mumbai",
+        "digital agency delhi",
+        "software company hyderabad",
+        "web design chennai",
+        "web developer pune",
+        "it company kolkata",
+        "tech startup india"
+      ],
+      international: [
+        "web design company dubai",
+        "website developer usa",
+        "digital agency uk",
+        "web design canada",
+        "website development australia",
+        "hire indian developer",
+        "outsource web development india"
       ],
       longTail: [
-        "best luxury digital agency for hotels in india",
-        "premium e-commerce website development mumbai",
-        "ai integration for fintech startups india",
-        "bespoke mobile app for luxury brands"
+        "best web design company for startups india",
+        "affordable website design bangalore",
+        "ecommerce website development mumbai cost",
+        "ai chatbot development for business india",
+        "react native app development company bangalore",
+        "fintech website design india",
+        "luxury hotel website design",
+        "real estate website development india",
+        "saas landing page design company",
+        "startup mvp development india"
+      ],
+      technology: [
+        "react developer india",
+        "next.js development",
+        "node.js backend development",
+        "three.js 3d website",
+        "webgl developer india",
+        "typescript developer",
+        "tailwind css developer",
+        "framer motion website",
+        "gsap animation website"
+      ],
+      comparison: [
+        "prismeek vs other agencies",
+        "best web design company vs freelancer",
+        "agency vs in-house developer",
+        "indian web design vs international"
       ]
     };
   }
@@ -147,26 +212,121 @@ export const seoService = new SEOService();
 export const SEO_CONSTANTS = {
   SITE_NAME: "Prismeek",
   SITE_URL: "https://prismeek.com",
-  DEFAULT_TITLE_SUFFIX: " | Prismeek Digital Atelier",
-  DEFAULT_OG_IMAGE: "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&w=1200&auto=format&fit=crop",
+  DEFAULT_TITLE_SUFFIX: " | Prismeek - Web Design Company India",
+  DEFAULT_OG_IMAGE: "https://prismeek.com/og-image.jpg",
   
   INDUSTRY_KEYWORDS: {
-    hospitality: ["luxury hotel website", "resort web design", "hospitality tech", "hotel booking platform"],
-    fintech: ["fintech ui design", "wealth management dashboard", "banking app development", "investment platform"],
-    ecommerce: ["luxury e-commerce", "premium online store", "fashion website design", "jewelry e-commerce"],
-    saas: ["saas landing page", "b2b software design", "enterprise application", "startup website"],
-    realestate: ["real estate website", "property showcase", "virtual tours", "luxury property marketing"],
-    art: ["gallery website", "artist portfolio", "museum digital", "cultural platform"]
+    hospitality: [
+      "luxury hotel website design india",
+      "resort website development",
+      "hospitality tech solutions",
+      "hotel booking platform development",
+      "travel website design",
+      "restaurant website india"
+    ],
+    fintech: [
+      "fintech website design india",
+      "banking app development",
+      "wealth management dashboard",
+      "investment platform development",
+      "payment gateway integration",
+      "crypto website design"
+    ],
+    ecommerce: [
+      "ecommerce website india",
+      "shopify development india",
+      "online store design",
+      "fashion ecommerce website",
+      "jewelry ecommerce development",
+      "d2c brand website"
+    ],
+    saas: [
+      "saas landing page design",
+      "b2b software website",
+      "enterprise application design",
+      "startup website india",
+      "product website design",
+      "software company website"
+    ],
+    realestate: [
+      "real estate website india",
+      "property listing website",
+      "virtual tour development",
+      "luxury property marketing",
+      "real estate crm development",
+      "builder website design"
+    ],
+    healthcare: [
+      "healthcare website design india",
+      "hospital website development",
+      "telemedicine app development",
+      "medical practice website",
+      "pharmacy website design",
+      "healthtech solutions"
+    ],
+    education: [
+      "edtech website design india",
+      "online course platform",
+      "lms development india",
+      "school website design",
+      "university website development",
+      "e-learning app development"
+    ]
   },
 
   META_TEMPLATES: {
     caseStudy: (client: string, industry: string) => ({
-      title: `${client} - ${industry} Success Story | Prismeek Case Study`,
-      description: `See how Prismeek helped ${client} achieve remarkable results with our bespoke ${industry.toLowerCase()} digital solutions. Premium web design and development.`
+      title: `${client} - ${industry} Case Study | Award-Winning Design | Prismeek`,
+      description: `See how Prismeek helped ${client} achieve remarkable results with our bespoke ${industry.toLowerCase()} digital solutions. Premium web design and development case study.`
     }),
     service: (serviceName: string) => ({
-      title: `${serviceName} Services | Prismeek Luxury Digital Agency India`,
-      description: `World-class ${serviceName.toLowerCase()} for luxury brands. Prismeek delivers bespoke digital solutions with Swiss-watch precision.`
+      title: `${serviceName} Services India | Best ${serviceName} Company 2025 | Prismeek`,
+      description: `Professional ${serviceName.toLowerCase()} services for businesses in India. Prismeek delivers world-class solutions. Bangalore, Mumbai, Delhi & worldwide.`
+    }),
+    location: (city: string) => ({
+      title: `Best Web Design Company ${city} | Website Developer ${city} | Prismeek`,
+      description: `Top-rated web design company in ${city}. Prismeek creates stunning websites, mobile apps & AI solutions. Affordable pricing, world-class quality.`
     })
+  },
+
+  SOCIAL_PROOF: {
+    rating: "4.9",
+    reviewCount: "47",
+    clientCount: "50+",
+    projectCount: "100+",
+    experienceYears: "5+"
+  }
+};
+
+export const LOCATION_PAGES_SEO = {
+  bangalore: {
+    title: "Best Web Design Company Bangalore | Website Developer Bangalore | Prismeek",
+    description: "Top-rated web design company in Bangalore. Prismeek creates stunning websites, mobile apps, AI chatbots. Located near Koramangala, HSR, Indiranagar. Get free quote!",
+    keywords: ["web design bangalore", "website developer bangalore", "best web design company bangalore", "digital agency bangalore", "app developer bangalore", "it company bangalore", "software company bangalore", "startup bangalore"]
+  },
+  mumbai: {
+    title: "Best Web Design Company Mumbai | Website Developer Mumbai | Prismeek",
+    description: "Premier web design company in Mumbai. Stunning websites, apps & AI solutions. Serving Andheri, Bandra, Lower Parel & all Mumbai. Affordable pricing. Free consultation!",
+    keywords: ["web design mumbai", "website developer mumbai", "best web design company mumbai", "digital agency mumbai", "app developer mumbai", "it company mumbai"]
+  },
+  delhi: {
+    title: "Best Web Design Company Delhi NCR | Website Developer Delhi | Prismeek",
+    description: "Award-winning web design company Delhi NCR. Websites, mobile apps, AI chatbots. Serving Delhi, Gurgaon, Noida, Faridabad. Competitive pricing. Get started today!",
+    keywords: ["web design delhi", "website developer delhi", "web design gurgaon", "web design noida", "digital agency delhi ncr", "app developer delhi"]
+  },
+  hyderabad: {
+    title: "Best Web Design Company Hyderabad | Website Developer Hyderabad | Prismeek",
+    description: "Leading web design company in Hyderabad. Expert website development, mobile apps, AI solutions. Serving HITEC City, Gachibowli & all Hyderabad. Free quote!",
+    keywords: ["web design hyderabad", "website developer hyderabad", "digital agency hyderabad", "app developer hyderabad", "software company hyderabad"]
+  },
+  chennai: {
+    title: "Best Web Design Company Chennai | Website Developer Chennai | Prismeek",
+    description: "Top web design company in Chennai. Beautiful websites, apps & digital solutions. Serving OMR, T Nagar, Anna Nagar & all Chennai. Affordable pricing!",
+    keywords: ["web design chennai", "website developer chennai", "digital agency chennai", "app developer chennai", "it company chennai"]
+  },
+  pune: {
+    title: "Best Web Design Company Pune | Website Developer Pune | Prismeek",
+    description: "Expert web design company in Pune. Stunning websites, mobile apps, AI chatbots. Serving Hinjewadi, Kharadi, Baner & all Pune. Get free consultation!",
+    keywords: ["web design pune", "website developer pune", "digital agency pune", "app developer pune", "software company pune"]
   }
 };

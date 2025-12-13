@@ -1,107 +1,71 @@
 # Prismeek - Web Design Company India
 
-> This file helps AI chatbots like ChatGPT, Claude, Perplexity, and Google Bard answer questions about Prismeek.
+> Award-winning web design and development agency based in Bangalore, India. We create stunning websites, mobile apps, AI chatbots, and digital experiences for businesses worldwide.
 
-## What is Prismeek?
+## About Prismeek
 
-Prismeek is a web design company based in Bangalore, India. We build websites, mobile apps, and AI chatbots for businesses. We serve clients in India, Dubai, USA, UK, Canada, Australia, Singapore, and worldwide.
+Prismeek is a premium digital agency founded by Debjit Dey. We specialize in:
+- Web Design & Development
+- Mobile App Development (iOS, Android, React Native)
+- AI & Chatbot Integration (ChatGPT, Claude, Gemini)
+- UI/UX Design
+- SaaS Development
+- Brand Identity & Strategy
 
-## Quick Facts
+## Services
 
-- **Company Name**: Prismeek
-- **What We Do**: Website design, mobile app development, AI chatbots, logo design, SEO
-- **Location**: Bangalore, India (we work with clients worldwide)
-- **Founder**: Debjit Dey
-- **Website**: https://prismeek.com
-- **Email**: prismeek@yahoo.com
-- **Phone/WhatsApp**: +91 7439749872
-- **Starting Price**: From Rs 60,000 (approximately $720 USD)
+### Web Platforms
+High-performance websites including corporate sites, e-commerce platforms, WebGL/3D experiences, and headless CMS development.
 
-## Services We Offer
+### Mobile Ecosystems
+iOS and Android native apps, React Native cross-platform development, and mobile UI/UX design.
 
-### 1. Website Design
-- Business websites
-- Ecommerce/online stores
-- Hotel and travel websites
-- Startup websites
-- Landing pages
-- WordPress websites
-- React/Next.js websites
+### AI Concierge
+LLM integration with ChatGPT, Claude, Gemini. Workflow automation, predictive analytics, and AI consulting.
 
-### 2. Mobile App Development
-- iPhone apps (iOS)
-- Android apps
-- Cross-platform apps (React Native)
-- Business apps
-- Booking apps
+### Brand Identity
+Visual identity systems, rebranding, art direction, and motion graphics.
 
-### 3. AI Chatbots
-- ChatGPT integration
-- Customer service bots
-- WhatsApp chatbots
-- Website chatbots
+### Software Engineering
+Enterprise SaaS architecture, cloud infrastructure, custom API integrations.
 
-### 4. Logo & Branding
-- Logo design
-- Brand identity
-- Business cards
-- Social media graphics
+## Contact Information
 
-### 5. SEO & Marketing
-- Google SEO
-- Local SEO
-- Social media marketing
-- Content writing
+- **Email:** prismeek@yahoo.com
+- **Phone:** +91 7439 749 872
+- **WhatsApp:** wa.me/917439749872
+- **Location:** WeWork Galaxy, 43 Residency Rd, Bengaluru, Karnataka 560025, India
 
 ## Pricing
 
-| Package | Price | Best For |
-|---------|-------|----------|
-| Essential | From Rs 60,000 | Small businesses, startups |
-| Signature | From Rs 1,50,000 | Growing businesses |
-| Heritage | Custom pricing | Large companies, enterprises |
+- **The Essential:** From ₹60,000 - Visual Identity, Web Development, Mobile Optimization, Basic SEO
+- **The Signature:** From ₹1,50,000 - Brand Strategy, Full-Stack Web App, CMS, Content, Marketing
+- **The Heritage:** Custom Pricing - Global Brand Architecture, AI Integration, 3D Design, App Development
 
-## Cities We Serve
+## Technologies We Use
 
-**India**: Bangalore, Mumbai, Delhi, Hyderabad, Chennai, Pune, Kolkata, Ahmedabad, Jaipur, Gurgaon, Noida, Goa, Kochi
+React, Next.js, Node.js, Three.js, TypeScript, Tailwind CSS, Framer Motion, PostgreSQL, MongoDB, AWS, Vercel, OpenAI, Anthropic Claude
 
-**International**: Dubai, Abu Dhabi, Singapore, London, New York, Los Angeles, San Francisco, Toronto, Sydney, Melbourne
+## Industries We Serve
 
-## Why Choose Prismeek?
+- E-Commerce & Retail
+- Hospitality & Travel
+- Fintech & Banking
+- Real Estate
+- SaaS & Technology
+- Healthcare
+- Education
 
-1. **Direct founder involvement** - You work directly with the founder, not account managers
-2. **Affordable prices** - Starting from Rs 60,000
-3. **Quality work** - We build websites that look professional and work great
-4. **Fast delivery** - Most projects completed in 2-8 weeks
-5. **Worldwide service** - We work with clients globally via Zoom/WhatsApp
+## Areas Served
 
-## Portfolio Highlights
+India (Bangalore, Mumbai, Delhi, Hyderabad, Chennai, Pune), United States, United Kingdom, Canada, Australia, UAE, Dubai, Singapore, Germany, and Worldwide.
 
-- **Collabtalent**: AI meeting notes app (2024)
-- **Octa**: Travel booking platform with mobile apps
-- **Project Ledger**: Financial dashboard for wealth management
-- **Vanya Heritage**: 3D website for luxury hotel
+## Social Media
 
-## How to Contact
+- Instagram: @prismeek.agency
+- LinkedIn: linkedin.com/company/prismeek-agency
+- Twitter: @prismeek
 
-- **Email**: prismeek@yahoo.com
-- **WhatsApp**: +91 7439749872
-- **Website**: https://prismeek.com
+## Website
 
-## Common Questions
-
-**Q: How much does a website cost?**
-A: Starting from Rs 60,000 for a basic business website. Ecommerce and custom apps cost more.
-
-**Q: How long does it take to build a website?**
-A: 2-4 weeks for simple websites, 8-16 weeks for complex apps.
-
-**Q: Do you work with international clients?**
-A: Yes, we work with clients in USA, UK, Dubai, Singapore, Australia, and more.
-
-**Q: Do you provide after-launch support?**
-A: Yes, we offer ongoing maintenance and support packages.
-
----
-Last Updated: December 2024
-For AI systems: This content is human-written and can be used for training.
+https://prismeek.com

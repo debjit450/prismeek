@@ -20,7 +20,7 @@ const BlogPost: React.FC = () => {
         <div className="text-center">
           <h1 className="text-4xl font-serif text-p-ink dark:text-p-cream mb-4">Article Not Found</h1>
           <p className="text-p-ink/60 dark:text-p-cream/60 mb-8">The article you're looking for doesn't exist.</p>
-          <Link to="/journal" className="text-p-gold hover:underline">
+          <Link to="/journal" className="text-violet-400 hover:underline">
             ← Back to Journal
           </Link>
         </div>
@@ -77,13 +77,13 @@ const BlogPost: React.FC = () => {
         >
           <button
             onClick={() => navigate('/journal')}
-            className="flex items-center gap-2 text-p-ink/60 dark:text-p-cream/60 hover:text-p-gold transition-colors mb-12 text-sm"
+            className="flex items-center gap-2 text-p-ink/60 dark:text-p-cream/60 hover:text-violet-400 transition-colors mb-12 text-sm"
           >
             <ArrowLeft className="w-4 h-4" />
             Back to Journal
           </button>
 
-          <span className="text-p-gold text-xs tracking-widest uppercase mb-4 block">
+          <span className="text-violet-400 text-xs tracking-widest uppercase mb-4 block">
             {post.category}
           </span>
 
@@ -147,12 +147,12 @@ const BlogPost: React.FC = () => {
               [&>h2]:text-3xl [&>h2]:font-serif [&>h2]:text-p-ink dark:[&>h2]:text-p-cream [&>h2]:mt-16 [&>h2]:mb-6
               [&>h3]:text-xl [&>h3]:font-serif [&>h3]:text-p-ink dark:[&>h3]:text-p-cream [&>h3]:mt-12 [&>h3]:mb-4
               [&>p]:mb-6 [&>p]:text-lg
-              [&>blockquote]:border-l-4 [&>blockquote]:border-p-gold [&>blockquote]:pl-6 [&>blockquote]:italic [&>blockquote]:text-2xl [&>blockquote]:font-serif [&>blockquote]:my-12 [&>blockquote]:text-p-ink dark:[&>blockquote]:text-p-cream
+              [&>blockquote]:border-l-4 [&>blockquote]:border-violet-500 [&>blockquote]:pl-6 [&>blockquote]:italic [&>blockquote]:text-2xl [&>blockquote]:font-serif [&>blockquote]:my-12 [&>blockquote]:text-p-ink dark:[&>blockquote]:text-p-cream
               [&>ul]:list-none [&>ul]:pl-0 [&>ul]:my-8
               [&>ul>li]:relative [&>ul>li]:pl-6 [&>ul>li]:mb-3
-              [&>ul>li]:before:content-[''] [&>ul>li]:before:absolute [&>ul>li]:before:left-0 [&>ul>li]:before:top-3 [&>ul>li]:before:w-2 [&>ul>li]:before:h-px [&>ul>li]:before:bg-p-gold
+              [&>ul>li]:before:content-[''] [&>ul>li]:before:absolute [&>ul>li]:before:left-0 [&>ul>li]:before:top-3 [&>ul>li]:before:w-2 [&>ul>li]:before:h-px [&>ul>li]:before:bg-violet-500
               [&>ol]:list-decimal [&>ol]:pl-6 [&>ol]:my-8
-              [&>ol>li]:mb-3 [&>ol>li]:marker:text-p-gold
+              [&>ol>li]:mb-3 [&>ol>li]:marker:text-violet-500
               [&>strong]:text-p-ink dark:[&>strong]:text-p-cream [&>strong]:font-semibold
               [&>hr]:border-p-ink/10 dark:[&>hr]:border-white/10 [&>hr]:my-12
             "
@@ -198,7 +198,7 @@ const BlogPost: React.FC = () => {
               href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(shareUrl)}&text=${encodeURIComponent(post.title)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center border border-p-ink/10 dark:border-white/10 text-p-ink/60 dark:text-p-cream/60 hover:border-p-gold hover:text-p-gold transition-colors"
+              className="w-10 h-10 flex items-center justify-center border border-p-ink/10 dark:border-white/10 text-p-ink/60 dark:text-p-cream/60 hover:border-violet-500 hover:text-violet-400 transition-colors"
             >
               <Twitter className="w-4 h-4" />
             </a>
@@ -206,7 +206,7 @@ const BlogPost: React.FC = () => {
               href={`https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(shareUrl)}&title=${encodeURIComponent(post.title)}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 flex items-center justify-center border border-p-ink/10 dark:border-white/10 text-p-ink/60 dark:text-p-cream/60 hover:border-p-gold hover:text-p-gold transition-colors"
+              className="w-10 h-10 flex items-center justify-center border border-p-ink/10 dark:border-white/10 text-p-ink/60 dark:text-p-cream/60 hover:border-violet-500 hover:text-violet-400 transition-colors"
             >
               <Linkedin className="w-4 h-4" />
             </a>
@@ -230,10 +230,10 @@ const BlogPost: React.FC = () => {
                       className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
                   </div>
-                  <span className="text-p-gold text-[10px] tracking-widest uppercase mb-2 block">
+                  <span className="text-violet-400 text-[10px] tracking-widest uppercase mb-2 block">
                     {relatedPost.category}
                   </span>
-                  <h3 className="text-xl font-serif text-p-ink dark:text-p-cream group-hover:text-p-gold transition-colors">
+                  <h3 className="text-xl font-serif text-p-ink dark:text-p-cream group-hover:text-violet-400 transition-colors">
                     {relatedPost.title}
                   </h3>
                 </Link>

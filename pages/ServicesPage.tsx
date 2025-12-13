@@ -121,7 +121,7 @@ const ServicesPage: React.FC = () => {
     <div className="min-h-screen pt-32 pb-20 relative">
       <SEOHead 
         title="Premium Digital Services - Web, Mobile, AI & Branding | Prismeek"
-        description="Explore Prismeek's comprehensive suite of luxury digital services: bespoke web development, AI integration, mobile apps, brand identity, 3D experiences, and growth strategy. Serving clients in USA, UK, UAE, Dubai, India & worldwide."
+        description="Explore Prismeek's comprehensive suite of luxury digital services: custom web development, AI integration, mobile apps, brand identity, 3D experiences, and growth strategy. Serving clients in USA, UK, UAE, Dubai, India & worldwide."
         keywords={[
           "web development", "brand identity", "3D web design", "mobile apps", "digital marketing", "luxury services",
           ...internationalServiceKeywords,
@@ -161,12 +161,12 @@ const ServicesPage: React.FC = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-24"
         >
-          <span className="text-p-gold text-xs tracking-[0.4em] uppercase block mb-6">Our Expertise</span>
+          <span className="text-violet-400 text-xs tracking-[0.4em] uppercase block mb-6">Our Expertise</span>
           <h1 className="text-6xl md:text-8xl font-serif text-p-ink dark:text-p-cream mb-8">
-            The <span className="text-p-gold italic">Atelier</span>
+            What We <span className="text-violet-400 italic">Do</span>
           </h1>
           <p className="text-p-ink/60 dark:text-p-cream/60 text-xl max-w-3xl mx-auto">
-            Each discipline, mastered. Each service, tailored. We bring together the finest digital crafts 
+            Each discipline, mastered. Each service, tailored to your needs. We bring together the best digital skills 
             to create experiences that command attention.
           </p>
         </motion.div>
@@ -178,8 +178,8 @@ const ServicesPage: React.FC = () => {
               onClick={() => setActiveService(service.id)}
               className={`px-6 py-3 text-xs uppercase tracking-widest transition-all duration-300 border flex items-center gap-2 ${
                 activeService === service.id
-                  ? 'bg-p-gold text-p-black border-p-gold'
-                  : 'border-p-ink/20 dark:border-white/10 text-p-ink/60 dark:text-p-cream/60 hover:border-p-gold hover:text-p-gold'
+                  ? 'bg-gradient-to-r from-violet-500 to-purple-600 text-white border-violet-500'
+                  : 'border-p-ink/20 dark:border-white/10 text-p-ink/60 dark:text-p-cream/60 hover:border-violet-500 hover:text-violet-400'
               }`}
             >
               <service.icon className="w-4 h-4" />
@@ -199,8 +199,8 @@ const ServicesPage: React.FC = () => {
           >
             <div>
               <div className="inline-flex items-center gap-3 mb-6">
-                <currentService.icon className="w-8 h-8 text-p-gold" />
-                <span className="text-p-gold text-xs tracking-widest uppercase">{currentService.tagline}</span>
+                <currentService.icon className="w-8 h-8 text-violet-400" />
+                <span className="text-violet-400 text-xs tracking-widest uppercase">{currentService.tagline}</span>
               </div>
               
               <h2 className="text-4xl md:text-6xl font-serif text-p-ink dark:text-p-cream mb-8">
@@ -220,7 +220,7 @@ const ServicesPage: React.FC = () => {
                     transition={{ delay: index * 0.1, duration: 0.4 }}
                     className="flex items-center gap-3 text-p-ink/60 dark:text-p-cream/60"
                   >
-                    <Check className="w-4 h-4 text-p-gold flex-shrink-0" />
+                    <Check className="w-4 h-4 text-violet-400 flex-shrink-0" />
                     {feature}
                   </motion.li>
                 ))}
@@ -228,7 +228,7 @@ const ServicesPage: React.FC = () => {
               
               <Link
                 to="/#contact"
-                className="inline-flex items-center gap-2 px-8 py-4 bg-p-gold text-p-black text-xs uppercase tracking-widest hover:bg-p-ink dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors duration-300"
+                className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-violet-500 to-purple-600 text-white text-xs uppercase tracking-widest hover:from-violet-600 hover:to-purple-700 transition-all duration-300"
               >
                 Discuss Your Project
                 <ArrowRight className="w-4 h-4" />
@@ -243,7 +243,7 @@ const ServicesPage: React.FC = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-              <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-p-gold/10 blur-3xl pointer-events-none" />
+              <div className="absolute -bottom-8 -right-8 w-64 h-64 bg-violet-500/10 blur-3xl pointer-events-none" />
             </div>
           </motion.div>
         </AnimatePresence>
@@ -256,17 +256,17 @@ const ServicesPage: React.FC = () => {
           className="text-center py-20 bg-white/50 dark:bg-white/[0.02] border border-p-ink/5 dark:border-white/5 backdrop-blur-sm"
         >
           <h2 className="text-3xl md:text-5xl font-serif text-p-ink dark:text-p-cream mb-6">
-            Ready to Begin Your <span className="text-p-gold italic">Legacy?</span>
+            Ready to <span className="text-violet-400 italic">Get Started?</span>
           </h2>
           <p className="text-p-ink/60 dark:text-p-cream/60 text-lg max-w-2xl mx-auto mb-10">
-            We accept a limited number of commissions per year to maintain our standards of excellence. 
+            We accept a limited number of projects per year to maintain our standards of excellence. 
             Let's discuss how we can elevate your brand.
           </p>
           <Link
             to="/#contact"
-            className="inline-flex items-center gap-2 px-10 py-5 bg-p-gold text-p-black text-xs uppercase tracking-widest hover:bg-p-ink dark:hover:bg-white hover:text-white dark:hover:text-black transition-colors duration-300"
+            className="inline-flex items-center gap-2 px-10 py-5 bg-gradient-to-r from-violet-500 to-purple-600 text-white text-xs uppercase tracking-widest hover:from-violet-600 hover:to-purple-700 transition-all duration-300"
           >
-            Start the Conversation
+            Get a Free Quote
             <ArrowRight className="w-4 h-4" />
           </Link>
         </motion.div>

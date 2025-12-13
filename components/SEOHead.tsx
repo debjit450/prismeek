@@ -107,27 +107,33 @@ export const generateCaseStudySEO = (slug: string) => {
   if (!project) return {};
 
   const internationalKeywords = [
+    `${project.category.toLowerCase()} web design india`,
+    `${project.category.toLowerCase()} website development bangalore`,
+    `${project.category.toLowerCase()} app development mumbai`,
+    `${project.category.toLowerCase()} digital agency delhi`,
+    `${project.category.toLowerCase()} software company hyderabad`,
     `${project.category.toLowerCase()} web design dubai`,
-    `${project.category.toLowerCase()} website development uae`,
-    `${project.category.toLowerCase()} digital agency usa`,
-    `${project.category.toLowerCase()} web design uk`,
-    `${project.category.toLowerCase()} website canada`,
-    `${project.category.toLowerCase()} digital solutions australia`,
-    `${project.category.toLowerCase()} web development qatar`,
-    `${project.category.toLowerCase()} digital agency europe`
+    `${project.category.toLowerCase()} website usa`,
+    `${project.category.toLowerCase()} digital agency uk`,
+    `${project.category.toLowerCase()} development canada`,
+    `${project.category.toLowerCase()} web design australia`,
+    `best ${project.category.toLowerCase()} website design`,
+    `top ${project.category.toLowerCase()} app developer`,
   ];
 
   return {
-    title: `${project.client} - ${project.category} Case Study | Premium Web Design`,
-    description: `${project.description} See how Prismeek delivered world-class ${project.category.toLowerCase()} solutions. Serving clients in USA, UK, UAE, Dubai, Canada, Australia & worldwide.`,
+    title: `${project.client} - ${project.category} Case Study | Award-Winning Design`,
+    description: `${project.description} See how Prismeek delivered world-class ${project.category.toLowerCase()} solutions. Expert ${project.category.toLowerCase()} web design & app development. Serving India, USA, UK, UAE & worldwide.`,
     keywords: [
       project.client.toLowerCase(),
       project.category.toLowerCase(),
       'case study',
       'portfolio',
       'prismeek',
-      'luxury web design',
-      'premium digital agency',
+      'web design case study',
+      'app development portfolio',
+      'ui ux design example',
+      'successful website project',
       ...(project.details?.stack || []).map(s => s.toLowerCase()),
       ...internationalKeywords
     ],
@@ -140,9 +146,9 @@ export const generateCaseStudySEO = (slug: string) => {
       "description": project.description,
       "url": `https://prismeek.com/work/${project.slug}`,
       "datePublished": project.year,
-      "dateModified": project.year,
+      "dateModified": "2025-01-13",
       "image": project.image,
-      "author": { "@id": "https://prismeek.com/#organization" },
+      "author": { "@id": "https://prismeek.com/#founder" },
       "publisher": { "@id": "https://prismeek.com/#organization" },
       "mainEntityOfPage": {
         "@type": "WebPage",
@@ -163,35 +169,67 @@ export const generateCaseStudySEO = (slug: string) => {
       "isAccessibleForFree": true,
       "provider": {
         "@id": "https://prismeek.com/#organization",
-        "areaServed": ["India", "United States", "United Kingdom", "Canada", "Australia", "United Arab Emirates", "Qatar", "Germany", "France", "Singapore", "Worldwide"]
+        "areaServed": ["India", "United States", "United Kingdom", "Canada", "Australia", "United Arab Emirates", "Germany", "Singapore", "Worldwide"]
       }
     }
   };
 };
 
-export const generateContactSEO = () => ({
-  title: "Contact Prismeek - Get a Quote for Your Digital Project",
-  description: "Contact Prismeek for luxury web design, AI integration, and mobile app development. Serving clients in USA, UK, UAE, Dubai, Canada, Australia, Qatar, Europe & worldwide. Get a free consultation.",
+export const generateServiceSEO = (serviceName: string, serviceDescription: string) => ({
+  title: `${serviceName} Services India | Best ${serviceName} Company 2025`,
+  description: `Professional ${serviceName.toLowerCase()} services in India. Prismeek offers expert ${serviceDescription.toLowerCase()}. Affordable pricing, world-class quality. Serving Bangalore, Mumbai, Delhi, Dubai, USA, UK & globally.`,
   keywords: [
-    "contact digital agency",
+    `${serviceName.toLowerCase()} india`,
+    `${serviceName.toLowerCase()} company bangalore`,
+    `${serviceName.toLowerCase()} services mumbai`,
+    `best ${serviceName.toLowerCase()} company india`,
+    `${serviceName.toLowerCase()} agency delhi`,
+    `affordable ${serviceName.toLowerCase()}`,
+    `${serviceName.toLowerCase()} for startups`,
+    `enterprise ${serviceName.toLowerCase()}`,
+    `${serviceName.toLowerCase()} dubai`,
+    `${serviceName.toLowerCase()} usa`,
+    `${serviceName.toLowerCase()} uk`,
+  ],
+  structuredData: {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": serviceName,
+    "description": serviceDescription,
+    "provider": { "@id": "https://prismeek.com/#organization" },
+    "areaServed": ["India", "United States", "United Kingdom", "Canada", "Australia", "United Arab Emirates", "Worldwide"],
+    "serviceType": serviceName
+  }
+});
+
+export const generateContactSEO = () => ({
+  title: "Contact Prismeek - Get Free Quote for Your Project",
+  description: "Contact Prismeek for web design, mobile app development, AI integration & more. Free consultation available. Serving India (Bangalore, Mumbai, Delhi), USA, UK, UAE, Dubai, Canada, Australia & worldwide. Quick response guaranteed!",
+  keywords: [
+    "contact web design company india",
+    "get website quote bangalore",
+    "hire web developer mumbai",
+    "website development inquiry delhi",
+    "digital agency contact india",
+    "free website consultation",
+    "web design quote online",
+    "hire app developer india",
+    "ai chatbot development quote",
+    "saas development inquiry",
+    "startup website quote",
+    "ecommerce website cost",
+    "hire react developer india",
+    "hire next.js developer",
+    "custom software quote",
     "web design quote dubai",
-    "website development inquiry uae",
-    "hire web developer usa",
-    "digital agency contact uk",
-    "web design consultation canada",
-    "luxury website quote australia",
-    "digital agency qatar",
-    "european web design agency contact",
-    "hire ai developer india",
-    "mobile app development quote",
-    "get website quote",
-    "free consultation web design"
+    "hire developer usa",
+    "web agency contact uk"
   ],
   structuredData: {
     "@context": "https://schema.org",
     "@type": "ContactPage",
     "name": "Contact Prismeek",
-    "description": "Get in touch with Prismeek for your luxury digital project",
+    "description": "Get in touch with Prismeek for your digital project",
     "url": "https://prismeek.com/#contact",
     "mainEntity": {
       "@type": "Organization",
@@ -201,8 +239,14 @@ export const generateContactSEO = () => ({
         "telephone": "+917439749872",
         "email": "prismeek@yahoo.com",
         "contactType": "sales",
-        "areaServed": ["IN", "US", "GB", "CA", "AU", "AE", "QA", "SG", "DE", "FR", "NL", "CH"],
-        "availableLanguage": ["English", "Hindi"]
+        "areaServed": ["IN", "US", "GB", "CA", "AU", "AE", "SG", "DE", "FR"],
+        "availableLanguage": ["English", "Hindi"],
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "10:00",
+          "closes": "19:00"
+        }
       }
     }
   }
@@ -210,28 +254,116 @@ export const generateContactSEO = () => ({
 
 export const PAGE_SEO_CONFIG = {
   home: {
-    title: "Best Web Design Company India | Website Developer Bangalore Mumbai Delhi",
-    description: "Prismeek builds websites, mobile apps, and AI chatbots for businesses. Affordable web design starting Rs 60000. Serving Bangalore, Mumbai, Delhi, Dubai, USA, UK.",
+    title: "Best Web Design Company India 2025 | Website Developer Bangalore Mumbai Delhi",
+    description: "Award-winning web design company India. Prismeek creates stunning websites, mobile apps, AI chatbots & SaaS products. Affordable pricing from ₹60,000. Expert developers in Bangalore, Mumbai, Delhi, Hyderabad, Chennai. Serving Dubai, USA, UK, Canada, Australia. Book free consultation!",
     keywords: [
-      "web design india",
+      "best web design company india 2025",
       "website design bangalore",
-      "mobile app developer india",
-      "ai chatbot",
-      "website design cost",
-      "ecommerce website",
+      "website developer mumbai",
+      "mobile app development india",
+      "ai chatbot development company",
+      "website design cost india",
+      "ecommerce website development",
       "web design mumbai",
-      "web design delhi"
+      "web design delhi",
+      "website developer near me",
+      "react developer india",
+      "next.js development company",
+      "node.js developer bangalore",
+      "ui ux design agency india",
+      "saas development company",
+      "startup website design",
+      "fintech app development",
+      "three.js developer india",
+      "luxury web design",
+      "premium digital agency",
+      "web development hyderabad",
+      "website design chennai",
+      "web developer pune",
+      "software development company india",
+      "it company bangalore",
+      "digital transformation agency",
+      "custom software development",
+      "progressive web app development",
+      "shopify developer india",
+      "wordpress developer india",
+      "responsive web design",
+      "seo company india"
+    ]
+  },
+  about: {
+    title: "About Prismeek | Top Web Design Agency India - Our Story",
+    description: "Learn about Prismeek, India's leading web design & development agency. Founded by Debjit Dey, we create stunning websites, apps & AI solutions. Based in Bangalore, serving clients worldwide.",
+    keywords: [
+      "about prismeek",
+      "web design agency india",
+      "digital agency bangalore",
+      "best web designers india",
+      "debjit dey developer",
+      "indian web design company",
+      "software company bangalore",
+      "tech startup india",
+      "creative agency mumbai"
+    ]
+  },
+  services: {
+    title: "Web Design & Development Services India | App Development | AI Integration",
+    description: "Professional web design, mobile app development, AI chatbot integration, UI/UX design & SaaS development services. Affordable pricing for startups & enterprises. Expert team in Bangalore, Mumbai, Delhi.",
+    keywords: [
+      "web design services india",
+      "mobile app development services",
+      "ai chatbot development",
+      "ui ux design services",
+      "saas development services",
+      "ecommerce development india",
+      "react development services",
+      "node.js development",
+      "three.js development",
+      "custom software development",
+      "digital marketing services",
+      "seo services india",
+      "branding services india"
+    ]
+  },
+  work: {
+    title: "Our Portfolio | Best Web Design Projects India | Case Studies",
+    description: "View Prismeek's portfolio of stunning websites, mobile apps & digital products. See our work for clients in fintech, hospitality, ecommerce, SaaS & more. Award-winning designs.",
+    keywords: [
+      "web design portfolio india",
+      "best website designs",
+      "mobile app portfolio",
+      "ui ux design examples",
+      "case studies web design",
+      "fintech website design",
+      "hospitality website examples",
+      "ecommerce website portfolio",
+      "saas landing page examples",
+      "award winning websites india"
+    ]
+  },
+  blog: {
+    title: "Web Design & Development Blog | Tips, Trends & Insights | Prismeek Journal",
+    description: "Read the latest web design tips, development trends, AI insights & digital marketing strategies. Expert articles from Prismeek's team of designers and developers.",
+    keywords: [
+      "web design blog",
+      "web development tips",
+      "ui ux design trends",
+      "ai development insights",
+      "digital marketing blog",
+      "startup tips india",
+      "tech blog india",
+      "design inspiration"
     ]
   },
   privacy: {
-    title: "Privacy Policy - Prismeek",
-    description: "Read our privacy policy. We protect your data and respect your privacy.",
-    keywords: ["privacy policy", "data protection", "prismeek privacy"]
+    title: "Privacy Policy - Prismeek | Data Protection",
+    description: "Read Prismeek's privacy policy. We protect your data and respect your privacy. Learn how we handle your information.",
+    keywords: ["privacy policy", "data protection", "prismeek privacy", "gdpr compliance"]
   },
   terms: {
-    title: "Terms of Service - Prismeek",
-    description: "Terms and conditions for using Prismeek web design services.",
-    keywords: ["terms of service", "terms and conditions", "prismeek terms"]
+    title: "Terms of Service - Prismeek | Web Design Terms",
+    description: "Terms and conditions for using Prismeek web design, app development and digital services. Read before engaging our services.",
+    keywords: ["terms of service", "terms and conditions", "prismeek terms", "web design contract"]
   }
 };
 

@@ -85,7 +85,7 @@ const ClientLogos: React.FC = () => {
             {[...LOGOS, ...LOGOS, ...LOGOS, ...LOGOS, ...LOGOS, ...LOGOS].map((logo, i) => (
                 <div 
                     key={i} 
-                    className="flex-1 flex items-center justify-center min-w-[160px] md:min-w-[200px] opacity-30 dark:opacity-20 hover:opacity-100 hover:text-p-gold transition-all duration-500 group"
+                    className="flex-1 flex items-center justify-center min-w-[160px] md:min-w-[200px] opacity-30 dark:opacity-20 hover:opacity-100 hover:text-violet-400 transition-all duration-500 group"
                 >
                     <div className="w-28 text-p-ink dark:text-p-cream group-hover:scale-110 transition-transform duration-300">
                         {logo.art}
