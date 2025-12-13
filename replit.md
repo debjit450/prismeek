@@ -56,7 +56,7 @@ Files for AI chatbot discoverability:
 - `/.well-known/ai-plugin.json` - OpenAI plugin format
 
 ### Meta Tags
-- Geographic targeting (India/Mumbai)
+- Geographic targeting (India/Bengaluru, Karnataka)
 - Dublin Core metadata
 - Open Graph and Twitter cards
 - AI training permissions
@@ -109,6 +109,18 @@ npm run build  # Production build
   - Built dynamic SEO component system
   - Added AI-powered SEO service with Gemini
   - Enhanced meta tags with geographic and Dublin Core data
+
+- December 2024: International SEO & Page-Level Optimization
+  - Updated headquarters address to Bengaluru, Karnataka (WeWork Galaxy)
+  - Added international targeting for 16+ countries (USA, UK, UAE, Qatar, Canada, Australia, Singapore, Germany, France, etc.)
+  - Enhanced ServicesPage with CollectionPage schema and international service keywords
+  - Added Blog schema with BlogPosting structured data for all articles
+  - Added BlogPost pages with full Article/BlogPosting schema (ISO 8601 timeRequired)
+  - Enhanced WorkPage with CollectionPage schema for portfolio
+  - Updated AboutPage with AboutPage schema and international keywords
+  - Created comprehensive seoConfig.ts with FAQ, LocalBusiness, and Offer schemas
+  - Updated sitemap.xml with all pages including blog posts and case studies
+  - Added generateCaseStudySEO and generateContactSEO helper functions
 
 ## Design System
 - **Colors**: Gold (#C8AA6E) as primary accent, deep blacks and warm creams
