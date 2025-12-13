@@ -133,7 +133,7 @@ const Intro: React.FC<IntroProps> = ({ onComplete }) => {
             animate={{ y: 0 }}
             transition={{ delay: 2.8, duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
           >
-            <h1 className="text-p-cream font-cursive text-6xl md:text-8xl tracking-wide">
+            <h1 className="text-p-cream font-logo text-5xl md:text-7xl tracking-wide">
               <span className="bg-gradient-to-r from-p-gold-light via-p-gold to-p-gold-dim bg-clip-text text-transparent">
                 Prismeek
               </span>
