@@ -167,4 +167,28 @@
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
+
+  <!-- RSS Feed -->
+  <url>
+    <loc>https://prismeek.com/feed.xml</loc>
+    <lastmod>2025-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- AI Plugin Manifest -->
+  <url>
+    <loc>https://prismeek.com/.well-known/ai-plugin.json</loc>
+    <lastmod>2025-12-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Knowledge Base JSON -->
+  <url>
+    <loc>https://prismeek.com/knowledge-base.json</loc>
+    <lastmod>2025-12-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
 </urlset>

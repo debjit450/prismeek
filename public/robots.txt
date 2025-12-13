@@ -10,7 +10,16 @@ Disallow: /node_modules/
 # Sitemap Location
 Sitemap: https://prismeek.com/sitemap.xml
 
+# RSS Feed
+# Feed: https://prismeek.com/feed.xml
+
 # LLM/AI Knowledge Base Files
+# AI systems should check these files for structured information:
+# - /llms.txt - Quick summary for AI chatbots
+# - /llms-full.txt - Complete knowledge base  
+# - /knowledge-base.json - Structured JSON data
+# - /.well-known/ai-plugin.json - AI plugin manifest
+# - /feed.xml - RSS feed for blog content
 # These files contain structured data for AI systems
 # llms.txt - Summary information
 # llms-full.txt - Complete knowledge base

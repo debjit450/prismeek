@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Prismeek Journal - Web Design &amp; Digital Insights</title>
+    <link>https://prismeek.com/journal</link>
+    <description>Insights on luxury web design, AI integration, digital strategy, and brand building from India's premier digital agency.</description>
+    <language>en-in</language>
+    <lastBuildDate>Fri, 13 Dec 2024 00:00:00 +0530</lastBuildDate>
+    <atom:link href="https://prismeek.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <image>
+      <url>https://prismeek.com/logo.png</url>
+      <title>Prismeek</title>
+      <link>https://prismeek.com</link>
+    </image>
+    <managingEditor>prismeek@yahoo.com (Prismeek)</managingEditor>
+    <webMaster>prismeek@yahoo.com (Prismeek)</webMaster>
+    <copyright>2024 Prismeek Digital Atelier. All rights reserved.</copyright>
+    <category>Web Design</category>
+    <category>Digital Marketing</category>
+    <category>AI Development</category>
+    <category>Technology</category>
+    
+    <item>
+      <title>The Art of Digital Craftsmanship</title>
+      <link>https://prismeek.com/journal/the-art-of-digital-craftsmanship</link>
+      <guid isPermaLink="true">https://prismeek.com/journal/the-art-of-digital-craftsmanship</guid>
+      <pubDate>Sun, 01 Dec 2024 00:00:00 +0530</pubDate>
+      <dc:creator>Arjun Mehta</dc:creator>
+      <category>Philosophy</category>
+      <description>In an era of templates and quick fixes, we explore why bespoke digital experiences remain the cornerstone of luxury brand building.</description>
+    </item>
+    
+    <item>
+      <title>Luxury Brands in the Digital Age: A New Paradigm</title>
+      <link>https://prismeek.com/journal/luxury-brands-in-the-digital-age</link>
+      <guid isPermaLink="true">https://prismeek.com/journal/luxury-brands-in-the-digital-age</guid>
+      <pubDate>Fri, 15 Nov 2024 00:00:00 +0530</pubDate>
+      <dc:creator>Priya Sharma</dc:creator>
+      <category>Strategy</category>
+      <description>How heritage brands are navigating the delicate balance between exclusivity and accessibility in the digital realm.</description>
+    </item>
+    
+    <item>
+      <title>The Future of Immersive Web Design</title>
+      <link>https://prismeek.com/journal/immersive-web-design-future</link>
+      <guid isPermaLink="true">https://prismeek.com/journal/immersive-web-design-future</guid>
+      <pubDate>Fri, 01 Nov 2024 00:00:00 +0530</pubDate>
+      <dc:creator>Vikram Desai</dc:creator>
+      <category>Technology</category>
+      <description>From 3D experiences to spatial computing, discover how the next generation of web design will transform brand storytelling.</description>
+    </item>
+    
+    <item>
+      <title>The Psychology of Premium UX Design</title>
+      <link>https://prismeek.com/journal/psychology-of-premium-ux</link>
+      <guid isPermaLink="true">https://prismeek.com/journal/psychology-of-premium-ux</guid>
+      <pubDate>Tue, 15 Oct 2024 00:00:00 +0530</pubDate>
+      <dc:creator>Anjali Rao</dc:creator>
+      <category>Design</category>
+      <description>Understanding the subtle psychological triggers that separate luxury digital experiences from the ordinary.</description>
+    </item>
+    
+    <item>
+      <title>Typography as the Language of Luxury</title>
+      <link>https://prismeek.com/journal/typography-as-luxury-language</link>
+      <guid isPermaLink="true">https://prismeek.com/journal/typography-as-luxury-language</guid>
+      <pubDate>Tue, 01 Oct 2024 00:00:00 +0530</pubDate>
+      <dc:creator>Kiran Patel</dc:creator>
+      <category>Design</category>
+      <description>How the careful selection and handling of type can elevate a brand from ordinary to extraordinary.</description>
+    </item>
+    
+    <item>
+      <title>Building a Digital Legacy: Beyond the Launch</title>
+      <link>https://prismeek.com/journal/building-digital-legacy</link>
+      <guid isPermaLink="true">https://prismeek.com/journal/building-digital-legacy</guid>
+      <pubDate>Sat, 15 Sep 2024 00:00:00 +0530</pubDate>
+      <dc:creator>Arjun Mehta</dc:creator>
+      <category>Strategy</category>
+      <description>Why the most important work begins after the website goes live, and how to build digital assets that appreciate over time.</description>
+    </item>
+  </channel>
+</rss>
