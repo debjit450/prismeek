@@ -78,7 +78,7 @@ const Navigation: React.FC<NavigationProps> = ({ theme, toggleTheme }) => {
                                 <div className="absolute inset-0 bg-p-gold/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                             </div>
                             <div className="flex flex-col">
-                                <span className="text-3xl md:text-4xl font-cursive text-p-ink dark:text-p-cream tracking-wide transition-colors duration-500 group-hover:text-p-gold">
+                                <span className="text-3xl md:text-4xl font-logo text-p-ink dark:text-p-cream tracking-wider transition-colors duration-500 group-hover:text-p-gold uppercase">
                                     {AGENCY_INFO.name}
                                 </span>
                                 <span className="text-[8px] font-mono text-p-gold/60 uppercase tracking-[0.3em] -mt-1 hidden md:block">

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;0,6..96,600;0,6..96,700;0,6..96,800;0,6..96,900;1,6..96,400;1,6..96,500;1,6..96,600&family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=JetBrains+Mono:wght@300;400;500&display=swap');
 
 :root {
   --gradient-primary: linear-gradient(135deg, #C8AA6E 0%, #D4B87A 25%, #E8D4A8 50%, #C8AA6E 75%, #8C7548 100%);
@@ -42,9 +42,17 @@ body {
 }
 
 .font-cursive {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-weight: 400;
+  font-family: 'Bodoni Moda', 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.font-logo {
+  font-family: 'Bodoni Moda', serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.08em;
 }
 
 .font-mono {

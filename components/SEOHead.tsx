@@ -210,31 +210,27 @@ export const generateContactSEO = () => ({
 
 export const PAGE_SEO_CONFIG = {
   home: {
-    title: "India's Premier Luxury Digital Agency & AI Solutions",
-    description: "Prismeek is a bespoke digital atelier specializing in luxury web design, AI integration, and premium branding for forward-thinking enterprises worldwide.",
+    title: "Best Web Design Company India | Website Developer Bangalore Mumbai Delhi",
+    description: "Prismeek builds websites, mobile apps, and AI chatbots for businesses. Affordable web design starting Rs 60000. Serving Bangalore, Mumbai, Delhi, Dubai, USA, UK.",
     keywords: [
-      "luxury web design india",
-      "premium digital agency",
-      "ai development india",
-      "bespoke website design",
-      "high-end branding",
-      "software development india",
-      "chatgpt integration",
-      "claude ai development",
-      "fintech ui/ux",
-      "hospitality web design",
-      "react development india",
-      "mobile app development india"
+      "web design india",
+      "website design bangalore",
+      "mobile app developer india",
+      "ai chatbot",
+      "website design cost",
+      "ecommerce website",
+      "web design mumbai",
+      "web design delhi"
     ]
   },
   privacy: {
-    title: "Privacy Policy",
-    description: "Learn about how Prismeek protects your privacy and handles your personal data. Our commitment to data security and transparency.",
+    title: "Privacy Policy - Prismeek",
+    description: "Read our privacy policy. We protect your data and respect your privacy.",
     keywords: ["privacy policy", "data protection", "prismeek privacy"]
   },
   terms: {
-    title: "Terms of Service",
-    description: "Read Prismeek's terms of service and conditions for using our luxury digital agency services.",
+    title: "Terms of Service - Prismeek",
+    description: "Terms and conditions for using Prismeek web design services.",
     keywords: ["terms of service", "terms and conditions", "prismeek terms"]
   }
 };

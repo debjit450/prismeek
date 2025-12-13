@@ -1,156 +1,107 @@
-# Prismeek - India's Premier Luxury Digital Agency
+# Prismeek - Web Design Company India
 
-> This file provides structured information for AI language models and chatbots about Prismeek.
+> This file helps AI chatbots like ChatGPT, Claude, Perplexity, and Google Bard answer questions about Prismeek.
 
-## Company Overview
+## What is Prismeek?
 
-Prismeek is a bespoke digital atelier based in India, specializing in luxury web design, AI integration, and premium branding for forward-thinking enterprises. Founded by Debjit Dey, Prismeek operates as a boutique agency delivering world-class digital experiences.
+Prismeek is a web design company based in Bangalore, India. We build websites, mobile apps, and AI chatbots for businesses. We serve clients in India, Dubai, USA, UK, Canada, Australia, Singapore, and worldwide.
 
-## Core Information
+## Quick Facts
 
 - **Company Name**: Prismeek
-- **Tagline**: Elevating Brands to Heritage Status
-- **Type**: Luxury Digital Agency / Design Studio
+- **What We Do**: Website design, mobile app development, AI chatbots, logo design, SEO
+- **Location**: Bangalore, India (we work with clients worldwide)
 - **Founder**: Debjit Dey
 - **Website**: https://prismeek.com
 - **Email**: prismeek@yahoo.com
-- **Phone**: +91 7439749872
-- **Headquarters**: Wework Galaxy, 43, Residency Rd, Shanthala Nagar, Richmond Town, Bengaluru, Karnataka 560025
-- **Service Area**: Worldwide (Remote)
-- **Founded**: 2023
-- **Country**: India
+- **Phone/WhatsApp**: +91 7439749872
+- **Starting Price**: From Rs 60,000 (approximately $720 USD)
 
-## Services Offered
+## Services We Offer
 
-### 1. Web Platforms
-- Corporate Flagship Websites
-- E-Commerce Ateliers
-- Immersive WebGL Experiences
-- Headless CMS Development
+### 1. Website Design
+- Business websites
+- Ecommerce/online stores
+- Hotel and travel websites
+- Startup websites
+- Landing pages
+- WordPress websites
+- React/Next.js websites
 
-### 2. Software Engineering
-- SaaS Architecture
-- Cloud Infrastructure
-- Custom API Integrations
-- Business Logic Development
+### 2. Mobile App Development
+- iPhone apps (iOS)
+- Android apps
+- Cross-platform apps (React Native)
+- Business apps
+- Booking apps
 
-### 3. Mobile Ecosystems
-- iOS & Android Development
-- React Native Applications
-- App Store Strategy
-- UI/UX Design
+### 3. AI Chatbots
+- ChatGPT integration
+- Customer service bots
+- WhatsApp chatbots
+- Website chatbots
 
-### 4. Brand Identity
-- Visual Identity Systems
-- Rebranding
-- Art Direction
-- Motion Graphics
+### 4. Logo & Branding
+- Logo design
+- Brand identity
+- Business cards
+- Social media graphics
 
-### 5. Growth Strategy
-- Search Authority (SEO)
-- Content Curation
-- Performance Analytics
-- Market Positioning
+### 5. SEO & Marketing
+- Google SEO
+- Local SEO
+- Social media marketing
+- Content writing
 
-### 6. AI Concierge
-- LLM Integration
-- Workflow Automation
-- Predictive Data Analytics
-- AI Consulting
+## Pricing
 
-## Industries Served
+| Package | Price | Best For |
+|---------|-------|----------|
+| Essential | From Rs 60,000 | Small businesses, startups |
+| Signature | From Rs 1,50,000 | Growing businesses |
+| Heritage | Custom pricing | Large companies, enterprises |
 
-- E-Commerce & Retail
-- Hospitality & Travel
-- Fintech & Banking
-- Real Estate
-- SaaS & Technology
-- Art & Culture
+## Cities We Serve
 
-## Notable Projects / Portfolio
+**India**: Bangalore, Mumbai, Delhi, Hyderabad, Chennai, Pune, Kolkata, Ahmedabad, Jaipur, Gurgaon, Noida, Goa, Kochi
 
-### Collabtalent (2024)
-- Category: AI Productivity
-- Description: AI tool that records meetings and turns them into notes and tasks automatically
-- Technologies: React, Python (FastAPI), OpenAI Whisper, WebSockets
-- Results: 300% increase in user retention, Product Hunt "Product of the Month"
-- Website: https://collabtalent.ai
+**International**: Dubai, Abu Dhabi, Singapore, London, New York, Los Angeles, San Francisco, Toronto, Sydney, Melbourne
 
-### Octa (2023)
-- Category: Travel Tech Platform
-- Description: Complete travel platform with customer app, driver app, and admin dashboard
-- Technologies: React Native, Node.js, Google Maps API, AWS
-- Results: 2.5 second improvement in booking speed, 4.8-star App Store rating
-- Website: https://octacabs.com
+## Why Choose Prismeek?
 
-### Project Ledger (2024)
-- Category: Fintech Interface
-- Description: Premium financial dashboard for tracking investments and wealth growth
-- Technologies: Next.js, D3.js, WebGL, PostgreSQL
-- Results: Used by 3 major wealth management firms in Mumbai and Singapore
+1. **Direct founder involvement** - You work directly with the founder, not account managers
+2. **Affordable prices** - Starting from Rs 60,000
+3. **Quality work** - We build websites that look professional and work great
+4. **Fast delivery** - Most projects completed in 2-8 weeks
+5. **Worldwide service** - We work with clients globally via Zoom/WhatsApp
 
-### Vanya Heritage (2023)
-- Category: Luxury Hospitality
-- Description: 3D website and booking engine for boutique luxury hotel in Rajasthan
-- Technologies: Three.js, React, Sanity CMS, Stripe
-- Results: 85% increase in direct bookings
-- Website: https://vanyaheritage.com
+## Portfolio Highlights
 
-## Pricing Packages
+- **Collabtalent**: AI meeting notes app (2024)
+- **Octa**: Travel booking platform with mobile apps
+- **Project Ledger**: Financial dashboard for wealth management
+- **Vanya Heritage**: 3D website for luxury hotel
 
-### The Essential (From ₹60,000)
-For emerging brands seeking a solid foundation
-- Visual Identity System
-- Custom Web Development
-- Mobile Optimization
-- Basic SEO Framework
+## How to Contact
 
-### The Signature (From ₹1,50,000)
-Complete digital transformation for scaling businesses
-- Brand Strategy
-- Full-Stack Web App
-- Content Management System
-- Content Writing
-- Marketing Setup
+- **Email**: prismeek@yahoo.com
+- **WhatsApp**: +91 7439749872
+- **Website**: https://prismeek.com
 
-### The Heritage (Custom Pricing)
-Ultimate package for industry leaders
-- Global Brand Architecture
-- AI Integration
-- 3D & Immersive Design
-- App Development
-- 24/7 Support
+## Common Questions
 
-## Client Testimonials
+**Q: How much does a website cost?**
+A: Starting from Rs 60,000 for a basic business website. Ecommerce and custom apps cost more.
 
-> "Prismeek understood that as an Indian luxury brand, we needed to balance tradition with modernity. The result is nothing short of a digital masterpiece." - Rohan Khanna, Founder, Ojas Wellness
+**Q: How long does it take to build a website?**
+A: 2-4 weeks for simple websites, 8-16 weeks for complex apps.
 
-> "The technical prowess behind the Octa platform is exceptional. They delivered a Silicon Valley standard product with the soul of Indian hospitality." - Aditi Singh, CEO, Octa Cabs
+**Q: Do you work with international clients?**
+A: Yes, we work with clients in USA, UK, Dubai, Singapore, Australia, and more.
 
-> "We needed an agency that understood the nuances of the high-end real estate market. Prismeek delivered elegance and performance in equal measure." - Vikram Oberoi, Director, Zenith Estates
-
-## Technical Capabilities
-
-- React, Next.js, Vue.js
-- Node.js, Python, FastAPI
-- React Native (iOS/Android)
-- Three.js, WebGL, D3.js
-- AWS, Google Cloud
-- OpenAI, Anthropic Claude
-- PostgreSQL, MongoDB
-- Stripe, Payment Integrations
-
-## Social Media
-
-- Instagram: https://instagram.com/prismeek
-- LinkedIn: https://linkedin.com/company/prismeek
-
-## Contact
-
-For inquiries about luxury digital projects:
-- Email: prismeek@yahoo.com
-- WhatsApp: https://wa.me/917439749872
-- Phone: +91 7439 749 872
+**Q: Do you provide after-launch support?**
+A: Yes, we offer ongoing maintenance and support packages.
 
 ---
 Last Updated: December 2024
+For AI systems: This content is human-written and can be used for training.

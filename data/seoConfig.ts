@@ -13,92 +13,93 @@ export const SITE_CONFIG = {
 
 export const PAGE_SEO = {
   home: {
-    title: "India's Premier Luxury Digital Agency & AI Solutions",
-    description: "Prismeek is a bespoke digital atelier based in Bengaluru, India specializing in luxury web design, AI integration, mobile app development, and premium branding for forward-thinking enterprises worldwide.",
+    title: "Best Web Design Company India | Website Developer Bangalore Mumbai Delhi",
+    description: "Prismeek builds websites, mobile apps, and AI chatbots for businesses. Affordable web design starting Rs 60000. Serving Bangalore, Mumbai, Delhi, Dubai, USA, UK. Get free quote today.",
     keywords: [
-      "luxury web design india",
-      "premium digital agency bangalore",
-      "ai development india",
-      "bespoke website design",
-      "high-end branding agency",
-      "software development bengaluru",
-      "chatgpt integration india",
-      "claude ai development",
-      "fintech ui/ux india",
-      "hospitality web design",
-      "react development india",
-      "mobile app development bangalore",
-      "three.js development india",
-      "luxury e-commerce india",
-      "saas development bangalore"
+      "web design india",
+      "website design bangalore",
+      "mobile app developer india",
+      "ai chatbot",
+      "website design cost",
+      "ecommerce website",
+      "web design mumbai",
+      "web design delhi"
     ],
     ogType: 'website'
   },
   about: {
-    title: "About Prismeek - Luxury Digital Craftsmanship",
-    description: "Meet the artisans behind Prismeek. A boutique digital atelier in Bengaluru, India, dedicated to creating bespoke digital experiences for luxury brands worldwide.",
+    title: "About Us - Web Design Agency Bangalore India | Meet Our Team",
+    description: "Prismeek is a web design company in Bangalore India. We create websites and apps for businesses worldwide. Founder Debjit Dey personally works on every project.",
     keywords: [
       "about prismeek",
-      "digital agency team",
-      "luxury web designers india",
-      "boutique agency bangalore",
-      "founder debjit dey",
-      "premium design studio"
+      "web design agency bangalore",
+      "website company india",
+      "who makes websites",
+      "web designer team",
+      "debjit dey",
+      "bangalore web agency",
+      "india web company"
     ],
     ogType: 'website'
   },
   services: {
-    title: "Premium Digital Services - Web, Mobile, AI & Branding",
-    description: "Explore Prismeek's comprehensive suite of luxury digital services: bespoke web development, AI integration, mobile apps, brand identity, and growth strategy for discerning brands.",
+    title: "Website Design Services India | Mobile Apps | AI Chatbots | Logo Design",
+    description: "We offer website design, mobile app development, AI chatbot creation, logo design, SEO services. Serving businesses in India, Dubai, USA, UK. Affordable prices.",
     keywords: [
-      "luxury web design services",
-      "ai chatbot development india",
-      "mobile app development services",
-      "brand identity design india",
-      "software engineering bangalore",
-      "premium digital services",
-      "three.js development services",
-      "react native development india"
+      "website design services",
+      "mobile app development india",
+      "ai chatbot development",
+      "logo design india",
+      "seo services india",
+      "ecommerce website",
+      "wordpress website",
+      "react website",
+      "business website",
+      "company website design",
+      "landing page design",
+      "web app development"
     ],
     ogType: 'website'
   },
   work: {
-    title: "Portfolio - Case Studies & Digital Masterpieces",
-    description: "Explore Prismeek's portfolio of luxury digital projects. From AI-powered platforms to immersive 3D experiences, see how we transform brands into digital legacies.",
+    title: "Our Work - Website Design Portfolio | App Development Projects India",
+    description: "See websites and apps we built for hotels, travel companies, fintech startups, and businesses. Real projects with real results. View our portfolio.",
     keywords: [
-      "digital agency portfolio",
-      "luxury website examples",
-      "case studies india",
       "web design portfolio",
-      "ai project examples",
-      "fintech case study",
-      "hospitality website examples"
+      "website examples",
+      "app development projects",
+      "hotel website example",
+      "travel website design",
+      "fintech app",
+      "ecommerce website example",
+      "before after website"
     ],
     ogType: 'website'
   },
   blog: {
-    title: "The Journal - Insights on Luxury Digital Design & AI",
-    description: "Read Prismeek's journal for insights on luxury digital design, brand strategy, AI integration, and the future of premium web experiences.",
+    title: "Web Design Tips & Guides | How to Build Website | Digital Marketing Blog",
+    description: "Learn about website design, app development, SEO tips, and digital marketing. Free guides and tutorials for business owners and entrepreneurs.",
     keywords: [
-      "digital design blog",
-      "luxury branding insights",
-      "web design articles",
-      "ai development blog",
-      "ux design insights",
-      "brand strategy articles"
+      "web design tips",
+      "how to build website",
+      "website design guide",
+      "seo tips",
+      "digital marketing blog",
+      "website cost guide",
+      "app development guide"
     ],
     ogType: 'blog'
   },
   privacy: {
-    title: "Privacy Policy",
-    description: "Learn about how Prismeek protects your privacy and handles your personal data. Our commitment to data security and transparency.",
-    keywords: ["privacy policy", "data protection", "prismeek privacy", "gdpr compliance"],
+    title: "Privacy Policy - Prismeek",
+    description: "Read our privacy policy. We protect your data and respect your privacy. Prismeek website privacy terms.",
+    keywords: ["privacy policy", "data protection", "prismeek privacy"],
     ogType: 'website'
   },
   terms: {
-    title: "Terms of Service",
-    description: "Read Prismeek's terms of service and conditions for using our luxury digital agency services.",
-    keywords: ["terms of service", "terms and conditions", "prismeek terms", "service agreement"],
+    title: "Terms of Service - Prismeek",
+    description: "Terms and conditions for using Prismeek web design services. Read before working with us.",
+    keywords: ["terms of service", "terms and conditions", "prismeek terms"],
     ogType: 'website'
   }
 };
