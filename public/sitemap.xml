@@ -6,165 +6,165 @@
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   
-  <!-- Homepage - Web Design India -->
+  <!-- Homepage - Best Web Design Company India 2025 -->
   <url>
     <loc>https://prismeek.com/</loc>
-    <lastmod>2024-12-13</lastmod>
+    <lastmod>2025-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   
-  <!-- About Page -->
+  <!-- About Page - Digital Agency Story -->
   <url>
     <loc>https://prismeek.com/about</loc>
-    <lastmod>2024-12-13</lastmod>
+    <lastmod>2025-12-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   
-  <!-- Services Page -->
+  <!-- Services Hub Page - All Digital Services -->
   <url>
     <loc>https://prismeek.com/services</loc>
-    <lastmod>2024-12-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <lastmod>2025-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.95</priority>
   </url>
   
-  <!-- Portfolio/Work Page -->
+  <!-- Portfolio/Work Page - Case Studies -->
   <url>
     <loc>https://prismeek.com/work</loc>
-    <lastmod>2024-12-13</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2025-12-13</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   
-  <!-- Blog/Journal Page -->
+  <!-- Blog/Journal Page - SEO Content Hub -->
   <url>
     <loc>https://prismeek.com/journal</loc>
-    <lastmod>2024-12-13</lastmod>
+    <lastmod>2025-12-13</lastmod>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.85</priority>
   </url>
   
   <!-- Case Studies / Portfolio Items -->
   <url>
     <loc>https://prismeek.com/work/collabtalent</loc>
-    <lastmod>2024-12-01</lastmod>
+    <lastmod>2025-12-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://images.unsplash.com/photo-1664575602276-acd073f104c1?q=80&amp;w=1200&amp;auto=format&amp;fit=crop</image:loc>
-      <image:title>Collabtalent - AI Meeting Notes App</image:title>
-      <image:caption>AI tool that records meetings and creates notes automatically</image:caption>
+      <image:title>Collabtalent - AI Meeting Notes App Case Study</image:title>
+      <image:caption>AI-powered meeting transcription and task automation tool built by Prismeek</image:caption>
     </image:image>
   </url>
   
   <url>
     <loc>https://prismeek.com/work/octa</loc>
-    <lastmod>2024-12-01</lastmod>
+    <lastmod>2025-12-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://images.unsplash.com/photo-1695309342594-9ea5e3dae2cd?q=80&amp;w=735&amp;auto=format&amp;fit=crop</image:loc>
-      <image:title>Octa - Travel Booking App</image:title>
-      <image:caption>Mobile app for travel and cab booking</image:caption>
+      <image:title>Octa - Travel Booking Mobile App Case Study</image:title>
+      <image:caption>Full-stack travel platform with React Native apps and admin dashboard</image:caption>
     </image:image>
   </url>
   
   <url>
     <loc>https://prismeek.com/work/project-ledger</loc>
-    <lastmod>2024-12-01</lastmod>
+    <lastmod>2025-12-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://images.unsplash.com/photo-1584291527908-033f4d6542c8?q=80&amp;w=1025&amp;auto=format&amp;fit=crop</image:loc>
-      <image:title>Project Ledger - Finance Dashboard</image:title>
-      <image:caption>Investment tracking dashboard for wealth management</image:caption>
+      <image:title>Project Ledger - Fintech Dashboard Case Study</image:title>
+      <image:caption>Premium wealth management dashboard with real-time investment tracking</image:caption>
     </image:image>
   </url>
   
   <url>
     <loc>https://prismeek.com/work/vanya-heritage</loc>
-    <lastmod>2024-12-01</lastmod>
+    <lastmod>2025-12-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://plus.unsplash.com/premium_photo-1661962388409-eb7a041606fb?q=80&amp;w=1170&amp;auto=format&amp;fit=crop</image:loc>
-      <image:title>Vanya Heritage - Hotel Website</image:title>
-      <image:caption>3D website for luxury hotel in Rajasthan India</image:caption>
+      <image:title>Vanya Heritage - Luxury Hotel 3D Website Case Study</image:title>
+      <image:caption>Immersive Three.js website for boutique luxury hotel in Rajasthan</image:caption>
     </image:image>
   </url>
   
-  <!-- Blog Posts -->
+  <!-- Blog Posts - Content Cluster -->
   <url>
     <loc>https://prismeek.com/journal/the-art-of-digital-craftsmanship</loc>
-    <lastmod>2024-12-01</lastmod>
+    <lastmod>2025-12-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://prismeek.com/journal/luxury-brands-in-the-digital-age</loc>
-    <lastmod>2024-11-15</lastmod>
+    <lastmod>2025-11-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://prismeek.com/journal/immersive-web-design-future</loc>
-    <lastmod>2024-11-01</lastmod>
+    <lastmod>2025-11-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://prismeek.com/journal/psychology-of-premium-ux</loc>
-    <lastmod>2024-10-15</lastmod>
+    <lastmod>2025-10-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://prismeek.com/journal/typography-as-luxury-language</loc>
-    <lastmod>2024-10-01</lastmod>
+    <lastmod>2025-10-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
   <url>
     <loc>https://prismeek.com/journal/building-digital-legacy</loc>
-    <lastmod>2024-09-15</lastmod>
+    <lastmod>2025-10-01</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   
-  <!-- Legal Pages -->
+  <!-- Legal Pages - Low Priority -->
   <url>
     <loc>https://prismeek.com/privacy</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://prismeek.com/terms</loc>
-    <lastmod>2024-01-01</lastmod>
+    <lastmod>2025-01-01</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <priority>0.2</priority>
   </url>
   
   <!-- AI/LLM Information Files -->
   <url>
     <loc>https://prismeek.com/llms.txt</loc>
-    <lastmod>2024-12-13</lastmod>
+    <lastmod>2025-12-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
   
   <url>
     <loc>https://prismeek.com/llms-full.txt</loc>
-    <lastmod>2024-12-13</lastmod>
+    <lastmod>2025-12-13</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.4</priority>
   </url>
 </urlset>

@@ -1,0 +1,233 @@
+1. Search intent alignment (this is #1 in SEO)
+
+If intent mismatches, you will never rank — even with perfect optimization.
+
+You must match:
+
+Informational vs transactional vs navigational
+
+Freshness intent (news vs evergreen)
+
+Format intent (list, guide, comparison, tool, short answer)
+
+Example:
+
+Query: “best laptops under 60k”
+Ranking pages = lists + tables
+A long essay = dead
+
+Google ranks intent-matching pages, not “best written” pages.
+
+2. Topical authority (SEO’s silent killer feature)
+
+Google doesn’t rank pages in isolation anymore.
+
+You need:
+
+A content cluster
+
+Internal linking between related pages
+
+Clear topical depth
+
+Instead of:
+
+1 article on “React performance”
+
+You need:
+
+React performance
+
+React memoization
+
+useCallback vs useMemo
+
+React re-render causes
+
+React profiling tools
+
+This tells Google: you own this topic.
+
+3. Internal linking (most underused SEO weapon)
+
+Internal links do 3 things:
+
+Pass authority
+
+Define hierarchy
+
+Help discovery
+
+Best practices:
+
+Link from high-traffic pages → important pages
+
+Use descriptive anchor text (not “click here”)
+
+Build hub → spoke structure
+
+A well-linked site with zero backlinks can still rank.
+
+4. Crawlability & index control
+
+If Google can’t crawl or understand your site properly, SEO stops.
+
+You must manage:
+
+Robots.txt (no accidental blocking)
+
+XML sitemaps (clean, updated)
+
+Canonical URLs
+
+No orphan pages
+
+Pagination handling
+
+Also:
+
+Don’t index thin pages
+
+Don’t index filter junk
+
+Don’t index duplicates
+
+Fewer, stronger pages > many weak ones.
+
+5. On-page SEO beyond keywords
+
+Modern on-page SEO is semantic, not keyword stuffing.
+
+You need:
+
+Entities (people, places, brands, concepts)
+
+Related terms (LSI is outdated wording, but concept matters)
+
+Natural language coverage
+
+Google understands:
+
+“Apple” = company, products, CEO, ecosystem
+
+If your page covers the entity graph, rankings jump.
+
+6. Title & SERP optimization (CTR SEO)
+
+Your ranking is influenced by how many people click you.
+
+A good title:
+
+Matches intent
+
+Creates contrast
+
+Sets expectation clearly
+
+Bad:
+
+“Complete Guide to SEO”
+
+Good:
+
+“SEO in 2025: What Actually Ranks After Helpful Content Update”
+
+Meta descriptions don’t rank directly, but CTR does.
+
+7. Core Web Vitals (SEO-only angle)
+
+This is still SEO.
+
+Focus on:
+
+LCP (largest content element)
+
+CLS (layout stability)
+
+INP (interaction latency)
+
+These are ranking tie-breakers, but at scale, they matter.
+
+Especially when:
+
+Content quality is similar
+
+Competition is high
+
+8. Backlinks quality & relevance
+
+SEO reality:
+
+Relevance > DR
+
+Editorial > paid
+
+Fewer strong links > many weak ones
+
+Google evaluates:
+
+Topic relevance
+
+Placement (in-content > footer)
+
+Anchor context
+
+Linking site history
+
+One solid link can beat 50 junk ones.
+
+9. Freshness & update signals
+
+For many queries, updated content outranks better content.
+
+SEO freshness signals:
+
+Updated timestamps
+
+Content changes (not just date change)
+
+New internal links
+
+New sections added
+
+This matters heavily for:
+
+Tech
+
+News
+
+Comparisons
+
+Pricing
+
+“Best” queries
+
+10. Indexation efficiency (advanced SEO)
+
+Google has a crawl budget, even for small sites.
+
+Optimize by:
+
+Removing low-value pages
+
+No-indexing utility pages
+
+Consolidating similar articles
+
+Merging thin content
+
+This pushes crawl attention to important pages.
+
+SEO-only mental model
+
+If you want to rank, ask:
+
+Does this page match search intent?
+
+Is this the best page on my site for this topic?
+
+Is my site the best site for this topic cluster?
+
+Can Google crawl, understand, and trust it easily?
+
+If yes → rankings follow.
