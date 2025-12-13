@@ -86,6 +86,16 @@ npm run build  # Production build
 - `GEMINI_API_KEY` - Google Gemini API key for AI features
 
 ## Recent Changes
+- December 2024: Advanced SEO Overhaul & Logo Font Update
+  - Changed logo font to premium Bodoni Moda typeface
+  - Overhauled SEO with simple, commonly searched terms (removed jargon)
+  - Updated title to "Best Web Design Company India | Website Developer Bangalore Mumbai Delhi Dubai"
+  - Reduced keywords to 8 high-intent terms per page (no stuffing)
+  - Enhanced robots.txt with 40+ AI/search crawlers
+  - Rewrote llms.txt and llms-full.txt with simple language for AI chatbots
+  - Updated sitemap.xml with all pages
+  - Consolidated geo-tagging to valid format
+
 - December 2024: Comprehensive UI/UX Overhaul
   - Enhanced typography with premium fonts (Orbitron for display, Space Grotesk for body, Playfair Display for cursive/serif)
   - Upgraded 3D Scene with holographic materials, particle effects, and complex geometries
