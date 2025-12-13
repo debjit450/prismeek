@@ -5,6 +5,21 @@ import SEOHead from '../components/SEOHead';
 import { BackgroundScene3D } from '../components/Scene3D';
 import { Link } from 'react-router-dom';
 
+const internationalServiceKeywords = [
+  "web design services dubai",
+  "website development uae",
+  "digital agency services usa",
+  "web development uk",
+  "mobile app development canada",
+  "ai development australia",
+  "software development qatar",
+  "european digital services",
+  "luxury web design middle east",
+  "premium website germany",
+  "digital solutions france",
+  "web agency switzerland"
+];
+
 const services = [
   {
     id: "branding",
@@ -105,9 +120,36 @@ const ServicesPage: React.FC = () => {
   return (
     <div className="min-h-screen pt-32 pb-20 relative">
       <SEOHead 
-        title="Services | Prismeek - Digital Atelier"
-        description="Explore our bespoke digital services: brand identity, web development, 3D experiences, mobile apps, and strategic consulting for luxury brands."
-        keywords={["web development", "brand identity", "3D web design", "mobile apps", "digital marketing", "luxury services"]}
+        title="Premium Digital Services - Web, Mobile, AI & Branding | Prismeek"
+        description="Explore Prismeek's comprehensive suite of luxury digital services: bespoke web development, AI integration, mobile apps, brand identity, 3D experiences, and growth strategy. Serving clients in USA, UK, UAE, Dubai, India & worldwide."
+        keywords={[
+          "web development", "brand identity", "3D web design", "mobile apps", "digital marketing", "luxury services",
+          ...internationalServiceKeywords,
+          "ai integration services", "luxury website development", "premium digital agency india"
+        ]}
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Prismeek Digital Services",
+          "description": "Comprehensive suite of luxury digital services for premium brands",
+          "url": "https://prismeek.com/services",
+          "mainEntity": {
+            "@type": "ItemList",
+            "itemListElement": services.map((service, index) => ({
+              "@type": "ListItem",
+              "position": index + 1,
+              "item": {
+                "@type": "Service",
+                "name": service.title,
+                "description": service.description,
+                "provider": { "@id": "https://prismeek.com/#organization" },
+                "serviceType": service.title,
+                "areaServed": ["India", "United States", "United Kingdom", "United Arab Emirates", "Canada", "Australia", "Singapore", "Germany", "Worldwide"]
+              }
+            }))
+          },
+          "provider": { "@id": "https://prismeek.com/#organization" }
+        }}
       />
       
       <BackgroundScene3D />

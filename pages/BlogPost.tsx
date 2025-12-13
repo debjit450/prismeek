@@ -37,7 +37,36 @@ const BlogPost: React.FC = () => {
       <SEOHead 
         title={`${post.title} | Prismeek Journal`}
         description={post.excerpt}
-        keywords={post.tags}
+        keywords={[...post.tags, "luxury digital insights", "web design blog", "digital agency insights india"]}
+        ogType="article"
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "BlogPosting",
+          "@id": `https://prismeek.com/journal/${post.slug}`,
+          "headline": post.title,
+          "description": post.excerpt,
+          "image": post.featuredImage,
+          "datePublished": post.publishedAt,
+          "dateModified": post.publishedAt,
+          "author": {
+            "@type": "Person",
+            "name": post.author.name,
+            "jobTitle": post.author.role,
+            "image": post.author.avatar,
+            "worksFor": { "@id": "https://prismeek.com/#organization" }
+          },
+          "publisher": { "@id": "https://prismeek.com/#organization" },
+          "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": `https://prismeek.com/journal/${post.slug}`
+          },
+          "articleSection": post.category,
+          "keywords": post.tags.join(', '),
+          "wordCount": post.content.split(/\s+/).length,
+          "timeRequired": `PT${post.readTime.match(/\d+/)?.[0] || '5'}M`,
+          "inLanguage": "en-IN",
+          "isAccessibleForFree": true
+        }}
       />
       
       <article className="max-w-4xl mx-auto px-6">

@@ -19,9 +19,52 @@ const WorkPage: React.FC = () => {
   return (
     <div className="min-h-screen pt-32 pb-20 relative">
       <SEOHead 
-        title="Our Work | Prismeek - Digital Atelier"
-        description="Explore our portfolio of bespoke digital experiences crafted for luxury brands, hospitality, fintech, and more."
-        keywords={["portfolio", "case studies", "luxury websites", "web design examples", "digital experiences"]}
+        title="Portfolio & Case Studies - Luxury Web Design Projects Worldwide"
+        description="Explore Prismeek's portfolio of bespoke digital experiences for luxury brands across USA, UK, UAE, Dubai, Canada, Australia, and Europe. Case studies in hospitality, fintech, AI, and e-commerce."
+        keywords={[
+          "luxury web design portfolio",
+          "digital agency case studies",
+          "web design dubai",
+          "website development uae",
+          "luxury brand websites usa",
+          "premium web design uk",
+          "hospitality website examples",
+          "fintech ui ux case study",
+          "ai integration projects",
+          "e-commerce website portfolio",
+          "web design canada",
+          "digital agency australia",
+          "european web design agency",
+          "qatar web development",
+          "middle east digital agency"
+        ]}
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Prismeek Portfolio - Case Studies & Digital Projects",
+          "description": "Portfolio of luxury digital projects by Prismeek for international clients",
+          "url": "https://prismeek.com/work",
+          "mainEntity": {
+            "@type": "ItemList",
+            "name": "Prismeek Case Studies",
+            "numberOfItems": PORTFOLIO_ITEMS.length,
+            "itemListElement": PORTFOLIO_ITEMS.map((item, index) => ({
+              "@type": "ListItem",
+              "position": index + 1,
+              "item": {
+                "@type": "CreativeWork",
+                "name": item.client,
+                "description": item.description,
+                "url": `https://prismeek.com/work/${item.slug}`,
+                "image": item.image,
+                "datePublished": item.year,
+                "genre": item.category,
+                "creator": { "@id": "https://prismeek.com/#organization" }
+              }
+            }))
+          },
+          "provider": { "@id": "https://prismeek.com/#organization" }
+        }}
       />
       
       <BackgroundScene3D />

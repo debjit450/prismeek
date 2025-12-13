@@ -16,9 +16,32 @@ const Blog: React.FC = () => {
   return (
     <div className="min-h-screen pt-32 pb-20 relative">
       <SEOHead 
-        title="The Journal | Prismeek - Digital Atelier"
-        description="Insights on digital craftsmanship, luxury branding, and the future of immersive web experiences from the Prismeek team."
-        keywords={["digital design", "luxury branding", "web development", "UX design", "creative agency blog"]}
+        title="The Journal - Insights on Luxury Digital Design & AI | Prismeek"
+        description="Read Prismeek's journal for insights on luxury digital design, brand strategy, AI integration, and the future of premium web experiences. Expert perspectives from India's leading digital atelier."
+        keywords={[
+          "digital design blog", "luxury branding insights", "web development articles", 
+          "UX design blog", "creative agency blog india", "ai development insights",
+          "luxury web design tips", "digital strategy articles", "brand design blog"
+        ]}
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "Blog",
+          "name": "The Prismeek Journal",
+          "description": "Insights on luxury digital design, brand strategy, and AI integration",
+          "url": "https://prismeek.com/journal",
+          "publisher": { "@id": "https://prismeek.com/#organization" },
+          "blogPost": BLOG_POSTS.map(post => ({
+            "@type": "BlogPosting",
+            "@id": `https://prismeek.com/journal/${post.slug}`,
+            "headline": post.title,
+            "description": post.excerpt,
+            "datePublished": post.publishedAt,
+            "author": {
+              "@type": "Person",
+              "name": post.author.name
+            }
+          }))
+        }}
       />
       
       <BackgroundScene3D />

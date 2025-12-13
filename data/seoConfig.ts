@@ -309,7 +309,7 @@ export const generateBlogPostSchema = (post: typeof BLOG_POSTS[0]) => ({
   "articleSection": post.category,
   "keywords": post.tags.join(', '),
   "wordCount": post.content.split(/\s+/).length,
-  "timeRequired": post.readTime,
+  "timeRequired": `PT${post.readTime.match(/\d+/)?.[0] || '5'}M`,
   "inLanguage": "en-IN",
   "isAccessibleForFree": true
 });

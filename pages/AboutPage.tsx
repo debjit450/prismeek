@@ -61,9 +61,31 @@ const AboutPage: React.FC = () => {
   return (
     <div className="min-h-screen pt-32 pb-20 relative">
       <SEOHead 
-        title="About Prismeek | Digital Atelier"
-        description="Learn about Prismeek, a bespoke digital atelier crafting premium web experiences for luxury brands worldwide."
-        keywords={["about prismeek", "digital agency", "luxury web design", "creative team"]}
+        title="About Prismeek - Luxury Digital Agency Team & Story"
+        description="Meet the artisans behind Prismeek, a boutique digital atelier in Bengaluru serving luxury brands in USA, UK, UAE, Dubai, Canada, Australia, Qatar & Europe with bespoke web design and AI solutions."
+        keywords={[
+          "about prismeek",
+          "digital agency team",
+          "luxury web design agency",
+          "creative team india",
+          "web design company dubai",
+          "digital agency uae",
+          "website development team usa",
+          "web designers uk",
+          "digital studio canada",
+          "creative agency australia",
+          "boutique agency qatar",
+          "european digital agency",
+          "bengaluru web design"
+        ]}
+        structuredData={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "About Prismeek Digital Agency",
+          "description": "Meet the team behind India's premier luxury digital agency",
+          "url": "https://prismeek.com/about",
+          "mainEntity": { "@id": "https://prismeek.com/#organization" }
+        }}
       />
       
       <BackgroundScene3D />
