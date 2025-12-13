@@ -179,7 +179,7 @@ function App() {
                                     <div className="max-w-sm">
                                         <Link to="/" className="flex items-center gap-3 group mb-6">
                                             <img src="/logo.png" className="w-10 h-10 object-contain" alt="" />
-                                            <span className="text-4xl font-cursive text-p-ink dark:text-p-cream tracking-wide transition-colors duration-500 group-hover:text-p-gold">
+                                            <span className="text-4xl font-logo text-p-ink dark:text-p-cream tracking-wide transition-colors duration-500 group-hover:text-p-gold uppercase">
                                                 {AGENCY_INFO.name}
                                             </span>
                                         </Link>
