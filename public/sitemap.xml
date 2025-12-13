@@ -8,9 +8,38 @@
   <!-- Homepage -->
   <url>
     <loc>https://prismeek.com/</loc>
-    <lastmod>2024-12-11</lastmod>
+    <lastmod>2024-12-13</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+  </url>
+  
+  <!-- Main Pages -->
+  <url>
+    <loc>https://prismeek.com/about</loc>
+    <lastmod>2024-12-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://prismeek.com/services</loc>
+    <lastmod>2024-12-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://prismeek.com/work</loc>
+    <lastmod>2024-12-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <url>
+    <loc>https://prismeek.com/journal</loc>
+    <lastmod>2024-12-13</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   
   <!-- Case Studies -->
@@ -21,7 +50,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://images.unsplash.com/photo-1664575602276-acd073f104c1?q=80&amp;w=1200&amp;auto=format&amp;fit=crop</image:loc>
-      <image:title>Collabtalent - AI Meeting Productivity Tool</image:title>
+      <image:title>Collabtalent - AI Meeting Productivity Tool Case Study</image:title>
     </image:image>
   </url>
   
@@ -32,7 +61,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://images.unsplash.com/photo-1695309342594-9ea5e3dae2cd?q=80&amp;w=735&amp;auto=format&amp;fit=crop</image:loc>
-      <image:title>Octa - Travel Tech Platform</image:title>
+      <image:title>Octa - Travel Tech Platform Case Study</image:title>
     </image:image>
   </url>
   
@@ -43,7 +72,7 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://images.unsplash.com/photo-1584291527908-033f4d6542c8?q=80&amp;w=1025&amp;auto=format&amp;fit=crop</image:loc>
-      <image:title>Project Ledger - Fintech Dashboard</image:title>
+      <image:title>Project Ledger - Fintech Dashboard Case Study</image:title>
     </image:image>
   </url>
   
@@ -54,7 +83,74 @@
     <priority>0.8</priority>
     <image:image>
       <image:loc>https://plus.unsplash.com/premium_photo-1661962388409-eb7a041606fb?q=80&amp;w=1170&amp;auto=format&amp;fit=crop</image:loc>
-      <image:title>Vanya Heritage - Luxury Hospitality Website</image:title>
+      <image:title>Vanya Heritage - Luxury Hospitality Website Case Study</image:title>
+    </image:image>
+  </url>
+  
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://prismeek.com/journal/the-art-of-digital-craftsmanship</loc>
+    <lastmod>2024-12-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?q=80&amp;w=1200&amp;auto=format&amp;fit=crop</image:loc>
+      <image:title>The Art of Digital Craftsmanship - Prismeek Journal</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://prismeek.com/journal/luxury-brands-in-the-digital-age</loc>
+    <lastmod>2024-11-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&amp;w=1200&amp;auto=format&amp;fit=crop</image:loc>
+      <image:title>Luxury Brands in the Digital Age - Prismeek Journal</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://prismeek.com/journal/immersive-web-design-future</loc>
+    <lastmod>2024-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&amp;w=1200&amp;auto=format&amp;fit=crop</image:loc>
+      <image:title>The Future of Immersive Web Design - Prismeek Journal</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://prismeek.com/journal/psychology-of-premium-ux</loc>
+    <lastmod>2024-10-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1545239351-ef35f43d514b?q=80&amp;w=1200&amp;auto=format&amp;fit=crop</image:loc>
+      <image:title>The Psychology of Premium UX Design - Prismeek Journal</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://prismeek.com/journal/typography-as-luxury-language</loc>
+    <lastmod>2024-10-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1524712245354-2c4e5e7121c0?q=80&amp;w=1200&amp;auto=format&amp;fit=crop</image:loc>
+      <image:title>Typography as the Language of Luxury - Prismeek Journal</image:title>
+    </image:image>
+  </url>
+  
+  <url>
+    <loc>https://prismeek.com/journal/building-digital-legacy</loc>
+    <lastmod>2024-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&amp;w=1200&amp;auto=format&amp;fit=crop</image:loc>
+      <image:title>Building a Digital Legacy - Prismeek Journal</image:title>
     </image:image>
   </url>
   

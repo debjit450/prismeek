@@ -5,7 +5,17 @@ export const AGENCY_INFO = {
   phone: "+91 7439749872",
   phoneDisplay: "+91 7439 749 872",
   whatsappLink: "https://wa.me/917439749872",
-  address: "Mumbai · Bangalore · Worldwide",
+  address: "Wework Galaxy, 43, Residency Rd, Shanthala Nagar, Richmond Town, Bengaluru, Karnataka 560025",
+  addressShort: "Bengaluru · Worldwide",
+  streetAddress: "Wework Galaxy, 43, Residency Rd",
+  locality: "Richmond Town",
+  region: "Karnataka",
+  postalCode: "560025",
+  country: "IN",
+  geo: {
+    latitude: "12.9716",
+    longitude: "77.5946"
+  }
 };
 
 export const NAV_LINKS = [
