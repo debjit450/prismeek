@@ -5,7 +5,11 @@
     "tagline": "Elevating Brands to Heritage Status",
     "founded": "2023",
     "headquarters": "India",
-    "locations": ["Mumbai", "Bangalore", "Worldwide"],
+    "locations": [
+      "Mumbai",
+      "Bangalore",
+      "Worldwide"
+    ],
     "website": "https://prismeek.com",
     "contact": {
       "email": "prismeek@yahoo.com",
@@ -13,8 +17,8 @@
       "whatsapp": "https://wa.me/917439749872"
     },
     "social": {
-      "instagram": "https://instagram.com/prismeek",
-      "linkedin": "https://linkedin.com/company/prismeek"
+      "instagram": "https://instagram.com/prismeek.agency",
+      "linkedin": "https://linkedin.com/company/prismeek-agency"
     }
   },
   "leadership": {
@@ -63,17 +67,34 @@
       {
         "name": "The Essential",
         "price": "From ₹60,000 (approx $720 USD)",
-        "includes": ["Visual Identity System", "Custom Web Development", "Mobile Optimization", "Basic SEO Framework"]
+        "includes": [
+          "Visual Identity System",
+          "Custom Web Development",
+          "Mobile Optimization",
+          "Basic SEO Framework"
+        ]
       },
       {
         "name": "The Signature",
         "price": "From ₹1,50,000 (approx $1,800 USD)",
-        "includes": ["Brand Strategy", "Full-Stack Web App", "Content Management System", "Content Writing", "Marketing Setup"]
+        "includes": [
+          "Brand Strategy",
+          "Full-Stack Web App",
+          "Content Management System",
+          "Content Writing",
+          "Marketing Setup"
+        ]
       },
       {
         "name": "The Heritage",
         "price": "Custom Pricing",
-        "includes": ["Global Brand Architecture", "AI Integration", "3D & Immersive Design", "App Development", "24/7 Support"]
+        "includes": [
+          "Global Brand Architecture",
+          "AI Integration",
+          "3D & Immersive Design",
+          "App Development",
+          "24/7 Support"
+        ]
       }
     ]
   },
@@ -83,7 +104,12 @@
       "category": "AI Productivity",
       "year": "2024",
       "description": "AI tool that records meetings and turns them into notes and tasks automatically",
-      "technologies": ["React", "Python (FastAPI)", "OpenAI Whisper", "WebSockets"],
+      "technologies": [
+        "React",
+        "Python (FastAPI)",
+        "OpenAI Whisper",
+        "WebSockets"
+      ],
       "results": "300% increase in user retention, Product Hunt 'Product of the Month'",
       "url": "https://collabtalent.ai"
     },
@@ -92,7 +118,12 @@
       "category": "Travel Tech Platform",
       "year": "2023",
       "description": "Complete travel platform with customer app, driver app, and admin dashboard",
-      "technologies": ["React Native", "Node.js", "Google Maps API", "AWS"],
+      "technologies": [
+        "React Native",
+        "Node.js",
+        "Google Maps API",
+        "AWS"
+      ],
       "results": "2.5 second booking speed improvement, 4.8-star App Store rating",
       "url": "https://octacabs.com"
     },
@@ -101,7 +132,12 @@
       "category": "Fintech Interface",
       "year": "2024",
       "description": "Premium financial dashboard for tracking investments and wealth growth",
-      "technologies": ["Next.js", "D3.js", "WebGL", "PostgreSQL"],
+      "technologies": [
+        "Next.js",
+        "D3.js",
+        "WebGL",
+        "PostgreSQL"
+      ],
       "results": "Used by 3 major wealth management firms in Mumbai and Singapore"
     },
     {
@@ -109,15 +145,37 @@
       "category": "Luxury Hospitality",
       "year": "2023",
       "description": "3D website and booking engine for boutique luxury hotel in Rajasthan",
-      "technologies": ["Three.js", "React", "Sanity CMS", "Stripe"],
+      "technologies": [
+        "Three.js",
+        "React",
+        "Sanity CMS",
+        "Stripe"
+      ],
       "results": "85% increase in direct bookings",
       "url": "https://vanyaheritage.com"
     }
   ],
   "technologies": [
-    "React", "Next.js", "Vue.js", "TypeScript", "Node.js", "Python", "FastAPI",
-    "React Native", "Three.js", "WebGL", "D3.js", "GSAP", "Framer Motion",
-    "PostgreSQL", "MongoDB", "AWS", "Google Cloud", "OpenAI GPT", "Anthropic Claude", "Google Gemini"
+    "React",
+    "Next.js",
+    "Vue.js",
+    "TypeScript",
+    "Node.js",
+    "Python",
+    "FastAPI",
+    "React Native",
+    "Three.js",
+    "WebGL",
+    "D3.js",
+    "GSAP",
+    "Framer Motion",
+    "PostgreSQL",
+    "MongoDB",
+    "AWS",
+    "Google Cloud",
+    "OpenAI GPT",
+    "Anthropic Claude",
+    "Google Gemini"
   ],
   "faqs": [
     {
@@ -138,10 +196,29 @@
     }
   ],
   "keywords": {
-    "primary": ["luxury digital agency india", "premium web design mumbai", "bespoke website development", "high-end branding agency"],
-    "services": ["ai chatbot development", "react native app india", "three.js website", "fintech ui design"],
-    "industries": ["hospitality web design", "luxury hotel website", "fintech dashboard", "e-commerce platform india"],
-    "location": ["digital agency mumbai", "web design bangalore", "software development india"]
+    "primary": [
+      "luxury digital agency india",
+      "premium web design mumbai",
+      "bespoke website development",
+      "high-end branding agency"
+    ],
+    "services": [
+      "ai chatbot development",
+      "react native app india",
+      "three.js website",
+      "fintech ui design"
+    ],
+    "industries": [
+      "hospitality web design",
+      "luxury hotel website",
+      "fintech dashboard",
+      "e-commerce platform india"
+    ],
+    "location": [
+      "digital agency mumbai",
+      "web design bangalore",
+      "software development india"
+    ]
   },
   "lastUpdated": "2024-12-11"
 }

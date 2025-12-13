@@ -252,8 +252,8 @@ export const generateLocalBusinessSchema = () => ({
     "Worldwide"
   ],
   "sameAs": [
-    "https://instagram.com/prismeek",
-    "https://linkedin.com/company/prismeek",
+    "https://instagram.com/prismeek.agency",
+    "https://linkedin.com/company/prismeek-agency",
     "https://twitter.com/prismeek"
   ],
   "founder": { "@id": "https://prismeek.com/#founder" },
