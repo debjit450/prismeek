@@ -203,11 +203,12 @@ function App() {
                                         <div>
                                             <h4 className="text-p-ink dark:text-p-cream text-sm mb-6 font-display font-semibold transition-colors duration-500">Connect</h4>
                                             <div className="flex flex-col gap-4">
-                                                {['Instagram', 'LinkedIn', 'Twitter'].map(social => (
-                                                    <a key={social} href="#" className="text-p-ink/40 dark:text-p-cream/40 hover:text-p-gold text-[10px] uppercase tracking-[0.15em] transition-colors font-mono">
-                                                        {social}
-                                                    </a>
-                                                ))}
+                                                <a key='instagram' href="https://www.instagram.com/prismeek.studio/" className="text-p-ink/40 dark:text-p-cream/40 hover:text-p-gold text-[10px] uppercase tracking-[0.15em] transition-colors font-mono">
+                                                    Instagram
+                                                </a>
+                                                <a key='linkedin' href="https://www.linkedin.com/company/prismeek-agency" className="text-p-ink/40 dark:text-p-cream/40 hover:text-p-gold text-[10px] uppercase tracking-[0.15em] transition-colors font-mono">
+                                                    Linkedin
+                                                </a>
                                             </div>
                                         </div>
                                         <div>
