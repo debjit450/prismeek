@@ -195,7 +195,7 @@ const AboutPage: React.FC = () => {
           </div>
         </motion.div>
 
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -229,7 +229,7 @@ const AboutPage: React.FC = () => {
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
       </div>
     </div>
   );

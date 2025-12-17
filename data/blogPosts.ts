@@ -63,9 +63,9 @@ The digital landscape is vast and often impersonal. But within it, there are san
 *This is the art of digital craftsmanship. This is what we do at Prismeek.*
     `,
     author: {
-      name: "Arjun Mehta",
-      role: "Creative Director",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop"
+      name: "Debjit Dey",
+      role: "Founder",
+      avatar: "/debjit.jpg"
     },
     category: "Philosophy",
     publishedAt: "2024-12-01",
@@ -127,9 +127,9 @@ At Prismeek, we help luxury brands navigate this new paradigm without losing the
 *The future of luxury is digital. But it must feel human.*
     `,
     author: {
-      name: "Priya Sharma",
-      role: "Brand Strategist",
-      avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop"
+      name: "Debjit Dey",
+      role: "Founder",
+      avatar: "/debjit.jpg"
     },
     category: "Strategy",
     publishedAt: "2024-11-15",
@@ -206,9 +206,9 @@ The future of the web is immersive. But immersion without purpose is just specta
 *Step into the future of digital experience.*
     `,
     author: {
-      name: "Vikram Desai",
-      role: "Technical Director",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
+      name: "Debjit Dey",
+      role: "Founder",
+      avatar: "/debjit.jpg"
     },
     category: "Technology",
     publishedAt: "2024-11-01",
@@ -293,9 +293,9 @@ Every project begins with understanding the psychological journey we're creating
 *Luxury UX isn't about gold accents and serif fonts. It's about understanding what makes people feel valued.*
     `,
     author: {
-      name: "Anjali Rao",
-      role: "UX Director",
-      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&h=100&fit=crop"
+      name: "Debjit Dey",
+      role: "Founder",
+      avatar: "/debjit.jpg"
     },
     category: "Design",
     publishedAt: "2024-10-15",
@@ -387,9 +387,9 @@ The words matter. But how they look matters equally.
 *Great typography is invisible. You don't notice it—you just feel the difference.*
     `,
     author: {
-      name: "Kiran Patel",
-      role: "Design Director",
-      avatar: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=100&h=100&fit=crop"
+      name: "Debjit Dey",
+      role: "Founder",
+      avatar: "/debjit.jpg"
     },
     category: "Design",
     publishedAt: "2024-10-01",
@@ -500,9 +500,9 @@ This long-term thinking changes everything:
 *Launch is not the end. It's the beginning of building something that lasts.*
     `,
     author: {
-      name: "Arjun Mehta",
-      role: "Creative Director",
-      avatar: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop"
+      name: "Debjit Dey",
+      role: "Founder",
+      avatar: "/debjit.jpg"
     },
     category: "Strategy",
     publishedAt: "2024-09-15",
